@@ -1,0 +1,3045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <!-- Primary SEO -->
+  <title>Win18Games — Draft Your All-Time Women’s European XI</title>
+  <meta name="description" content="Draft your ultimate women’s European XI from 25 years of Champions League history. Pick players from legendary squads — Marta, Prinz, Hegerberg, Putellas, Bonmatí, Margrét Lára and more — then conquer Europe. Free to play.">
+  <meta name="keywords" content="women’s champions league draft, women’s football draft game, all-time XI, uefa women’s cup history, pick your team, Marta, Hegerberg, Putellas, Bonmatí, Prinz, women’s football history game">
+  <meta name="author" content="win18games.com">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://win18games.com/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://win18games.com/">
+  <meta property="og:title" content="Win every game. Become Queens of Europe.">
+  <meta property="og:description" content="Draft an all-time women’s XI from 67 legendary European squads — Marta, Hegerberg, Putellas, Margrét Lára — then survive the league phase and the knockouts. Only ~5% lift the trophy. Free, no signup.">
+  <meta property="og:image" content="https://win18games.com/og-image.png">
+  <meta property="og:image:width" content="2400">
+  <meta property="og:image:height" content="1260">
+  <meta property="og:site_name" content="win18games.com">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://win18games.com/">
+  <meta name="twitter:title" content="Win every game. Become Queens of Europe.">
+  <meta name="twitter:description" content="Draft an all-time women’s XI from 67 legendary European squads and go all the way. Only ~5% lift the trophy.">
+  <meta name="twitter:image" content="https://win18games.com/og-image.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Win18Games","url":"https://win18games.com/","description":"Draft your ultimate women’s European football XI from Champions League history.","applicationCategory":"GameApplication","genre":"Sports","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  </script>
+  <!-- Vercel Analytics -->
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;600;700;800&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700&display=swap" rel="stylesheet">
+<style>/* Mobile-only elements — hidden by default */
+.mobile-tabs{display:none}
+.pitch-pane{display:flex}
+.side{display:flex}
+.mobile-slots-bar{display:none}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+#root{height:100%}
+body{font-family:var(--font-ui);background:var(--bg);color:var(--ink);
+  -webkit-font-smoothing:antialiased;overflow:hidden}
+:root{
+  --font-ui:'Archivo',system-ui,sans-serif;
+  --font-display:'Archivo',system-ui,sans-serif;
+}
+
+/* ---- THEME: broadcast (dark / FIFA) ---- */
+[data-theme="broadcast"]{
+  --bg:#0a0e14; --panel:#121822; --panel2:#0e141d; --card:#161e29;
+  --ink:#eef3f8; --ink-dim:#8a97a8; --line:rgba(255,255,255,.09);
+  --accent:#F0BC42; --accent2:#4a7fd4; --accent-ink:#1a1206;
+  --pitch-a:#10371f; --pitch-b:#0d2e1a; --pitch-line:rgba(255,255,255,.16);
+  --radius:9px; --shadow:0 10px 30px rgba(0,0,0,.45);
+  --font-ui:'Archivo',system-ui,sans-serif; --font-display:'Archivo',system-ui,sans-serif;
+  --display-weight:800; --display-tracking:-.02em; --display-upper:uppercase;
+}
+/* ---- THEME: panini (retro sticker) ---- */
+[data-theme="panini"]{
+  --bg:#e8dcc4; --panel:#f6efe0; --panel2:#efe6d3; --card:#fffdf7;
+  --ink:#132339; --ink-dim:#77839a; --line:rgba(19,35,57,.14);
+  --accent:#0E2A5C; --accent2:#F0BC42; --accent-ink:#fff; --win:#00A862;
+  --pitch-a:#3f8f4f; --pitch-b:#388447; --pitch-line:rgba(255,255,255,.5);
+  --radius:5px; --shadow:0 6px 0 rgba(19,35,57,.12), 0 12px 26px rgba(19,35,57,.18);
+  --font-ui:'Roboto Flex','Archivo',system-ui,sans-serif; --font-display:'Oswald',sans-serif;
+  --display-weight:600; --display-tracking:.01em; --display-upper:uppercase;
+}
+/* ---- THEME: clean (light / grass) ---- */
+[data-theme="clean"]{
+  --bg:#eef1ef; --panel:#ffffff; --panel2:#f6f8f7; --card:#ffffff;
+  --ink:#13181a; --ink-dim:#697479; --line:rgba(0,0,0,.09);
+  --accent:#13a05a; --accent2:#1769d6; --accent-ink:#fff;
+  --pitch-a:#49a464; --pitch-b:#43995b; --pitch-line:rgba(255,255,255,.55);
+  --radius:15px; --shadow:0 12px 34px rgba(20,40,30,.10);
+  --font-ui:'Manrope',system-ui,sans-serif; --font-display:'Manrope',system-ui,sans-serif;
+  --display-weight:800; --display-tracking:-.02em; --display-upper:none;
+}
+
+.app{height:100%;width:100%;display:flex;flex-direction:column;overflow:hidden}
+.display{font-family:var(--font-display);font-weight:var(--display-weight);
+  letter-spacing:var(--display-tracking);text-transform:var(--display-upper)}
+
+/* ================= TOP BAR ================= */
+.topbar{display:flex;align-items:center;gap:14px;padding:12px 20px;
+  border-bottom:1px solid var(--line);background:var(--panel);flex:0 0 auto;z-index:5}
+.brand{font-family:var(--font-display);font-weight:var(--display-weight);
+  text-transform:var(--display-upper);letter-spacing:var(--display-tracking);
+  font-size:18px;display:flex;align-items:center;gap:9px;white-space:nowrap}
+.brand .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);
+  box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 22%,transparent)}
+.topbar .spacer{flex:1}
+.theme-switch{display:flex;gap:4px;background:var(--panel2);border:1px solid var(--line);
+  border-radius:999px;padding:4px}
+.theme-switch button{font:inherit;font-size:12px;font-weight:600;border:0;cursor:pointer;
+  padding:6px 13px;border-radius:999px;background:transparent;color:var(--ink-dim);
+  transition:.15s;text-transform:capitalize}
+.theme-switch button.on{background:var(--accent);color:var(--accent-ink)}
+.theme-switch button:not(.on):hover{color:var(--ink)}
+
+/* ================= GENERIC SCREEN ================= */
+.screen{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column}
+.center-wrap{flex:1;display:flex;flex-direction:column;align-items:center;
+  justify-content:center;padding:36px 24px;gap:34px;text-align:center}
+.eyebrow{font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-dim);font-weight:700}
+.h1{font-family:var(--font-display);font-weight:var(--display-weight);
+  text-transform:var(--display-upper);letter-spacing:var(--display-tracking);
+  font-size:clamp(30px,5.5vw,54px);line-height:1.02}
+.h1 em{font-style:normal;color:var(--accent)}
+.sub{color:var(--ink-dim);font-size:16px;max-width:520px;line-height:1.5}
+
+/* ---- formation cards ---- */
+.formation-grid{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.fcard{width:230px;background:var(--card);border:1.5px solid var(--line);
+  border-radius:var(--radius);padding:18px;cursor:pointer;transition:.18s;text-align:left;
+  position:relative;box-shadow:var(--shadow)}
+.fcard:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+.fcard.sel{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 28%,transparent),var(--shadow)}
+.fcard .fname{font-family:var(--font-display);font-weight:var(--display-weight);
+  font-size:26px;letter-spacing:.02em}
+.fcard .fsub{color:var(--ink-dim);font-size:12.5px;margin-top:3px;line-height:1.35;min-height:34px}
+.mini-pitch{position:relative;width:100%;aspect-ratio:5/6;margin:14px 0 6px;border-radius:6px;
+  background:linear-gradient(var(--pitch-a),var(--pitch-b));overflow:hidden}
+.mini-pitch::before{content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(180deg,rgba(255,255,255,.05) 0 16px,transparent 16px 32px)}
+.mini-dot{position:absolute;width:13px;height:13px;border-radius:50%;
+  background:#fff;transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(0,0,0,.4)}
+.mini-dot.gk{background:var(--accent)}
+.fcard .check{position:absolute;top:14px;right:14px;width:24px;height:24px;border-radius:50%;
+  background:var(--accent);color:var(--accent-ink);display:none;align-items:center;
+  justify-content:center;font-size:14px;font-weight:900}
+.fcard.sel .check{display:flex}
+
+/* ---- buttons ---- */
+.btn{font-family:var(--font-display);font-weight:var(--display-weight);
+  text-transform:var(--display-upper);letter-spacing:.04em;font-size:17px;
+  border:0;cursor:pointer;padding:15px 34px;border-radius:var(--radius);
+  background:var(--accent);color:var(--accent-ink);transition:.15s;
+  box-shadow:0 6px 18px color-mix(in srgb,var(--accent) 35%,transparent)}
+.btn:hover{filter:brightness(1.06);transform:translateY(-2px)}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);
+  box-shadow:none;text-transform:none;font-family:var(--font-ui);font-weight:700;font-size:14px;
+  padding:11px 20px;letter-spacing:0}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ================= DRAFT LAYOUT ================= */
+.draft{display:grid;grid-template-columns:1fr 372px;gap:0;flex:1;min-height:0}
+.pitch-pane{position:relative;display:flex;flex-direction:column;min-height:0;
+  background:var(--panel2);padding:16px 20px}
+.draft-head{display:flex;align-items:center;gap:14px;flex:0 0 auto;padding-bottom:12px}
+.round-chip{display:flex;flex-direction:column;line-height:1}
+.round-chip .lab{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim);font-weight:700}
+.round-chip .val{font-family:var(--font-display);font-weight:var(--display-weight);font-size:30px;margin-top:3px}
+.round-chip .val small{color:var(--ink-dim);font-size:17px}
+.formation-pill{font-family:var(--font-display);font-weight:var(--display-weight);
+  font-size:15px;padding:7px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);letter-spacing:.03em;white-space:nowrap}
+.respins{margin-left:auto;display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-dim);font-weight:600;white-space:nowrap}
+.respins .pips{display:flex;gap:4px}
+.respins .pip{width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.respins .pip.used{background:var(--line)}
+
+/* ---- pitch ---- */
+.pitch-frame{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.pitch{position:relative;height:100%;aspect-ratio:5/6;max-width:100%;max-height:100%;
+  background:linear-gradient(var(--pitch-a),var(--pitch-b));border-radius:12px;
+  border:2px solid color-mix(in srgb,#000 14%,var(--pitch-a));overflow:hidden;
+  box-shadow:inset 0 0 70px rgba(0,0,0,.28)}
+.pitch::before{content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(180deg,rgba(255,255,255,.045) 0 11%,transparent 11% 22%)}
+.pitch-lines{position:absolute;inset:0;pointer-events:none}
+.pitch-lines>div{position:absolute;border:2px solid var(--pitch-line)}
+.pl-circle{width:34%;aspect-ratio:1;border-radius:50%;left:33%;top:42%}
+.pl-half{left:0;right:0;top:50%;height:0;border-width:2px 0 0 0}
+.pl-box{left:26%;right:26%;bottom:0;height:16%;border-bottom:0}
+.pl-box6{left:37%;right:37%;bottom:0;height:7%;border-bottom:0}
+
+.slot{position:absolute;transform:translate(-50%,-50%);z-index:2}
+.slot-empty{width:74px;height:74px;border-radius:50%;border:2px dashed var(--pitch-line);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  color:#fff;background:rgba(0,0,0,.16);transition:.15s}
+.slot-empty .role{font-family:var(--font-display);font-weight:var(--display-weight);
+  font-size:13px;opacity:.92;letter-spacing:.04em}
+.slot.eligible .slot-empty{border-style:solid;border-color:var(--accent);
+  background:color-mix(in srgb,var(--accent) 34%,rgba(0,0,0,.2));
+  cursor:pointer;animation:pulse 1.3s ease-in-out infinite;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 22%,transparent)}
+.slot.eligible .slot-empty:hover{transform:scale(1.07)}
+.slot.eligible .slot-empty .role{color:#fff}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 16%,transparent)}
+  50%{box-shadow:0 0 0 8px color-mix(in srgb,var(--accent) 30%,transparent)}}
+
+.player-token{width:96px;display:flex;flex-direction:column;align-items:center;gap:4px;
+  cursor:default;animation:drop .4s cubic-bezier(.2,1.3,.4,1)}
+@keyframes drop{0%{transform:translateY(-14px) scale(.7)}100%{transform:none}}
+.token-badge{position:relative;width:54px;height:54px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;color:#fff;
+  font-family:var(--font-display);font-weight:var(--display-weight);font-size:18px;
+  border:2.5px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+.token-badge .rt{position:absolute;bottom:-7px;right:-9px;background:var(--accent);
+  color:var(--accent-ink);font-size:11px;font-weight:900;border-radius:6px;
+  padding:1px 5px;border:1.5px solid #fff;font-family:var(--font-ui)}
+.token-name{font-size:12px;font-weight:800;color:#fff;text-align:center;line-height:1.1;
+  text-shadow:0 1px 4px rgba(0,0,0,.7);max-width:104px}
+.token-meta{font-size:10px;color:rgba(255,255,255,.82);font-weight:600;
+  text-shadow:0 1px 3px rgba(0,0,0,.7)}
+
+/* ================= SIDE PANEL ================= */
+.side{background:var(--panel);border-left:1px solid var(--line);display:flex;
+  flex-direction:column;min-height:0}
+.side-spin{padding:22px 22px 16px;border-bottom:1px solid var(--line);text-align:center;display:flex;flex-direction:column;align-items:center}
+.spin-roulette{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:12px;animation:roulette-pop .12s ease-out}
+.spin-flag{width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);box-shadow:0 0 16px color-mix(in srgb,var(--accent) 40%,transparent)}
+.spin-flag-placeholder{width:72px;height:72px;border-radius:50%;background:var(--panel2);border:3px solid var(--accent)}
+.spin-team-name{font-family:var(--font-display);font-weight:var(--display-weight);font-size:18px;letter-spacing:.02em;text-align:center}
+@keyframes roulette-pop{from{transform:scale(0.85);opacity:0.4}to{transform:scale(1);opacity:1}}
+.spin-stage{min-height:148px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px}
+.spin-hint{color:var(--ink-dim);font-size:13.5px;line-height:1.45;max-width:280px}
+.spin-btn{font-family:var(--font-display);font-weight:var(--display-weight);
+  text-transform:uppercase;letter-spacing:.08em;font-size:22px;border:0;cursor:pointer;
+  width:150px;height:150px;border-radius:50%;background:var(--accent);color:var(--accent-ink);
+  transition:.15s;box-shadow:0 10px 28px color-mix(in srgb,var(--accent) 40%,transparent);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;
+  overflow:hidden;position:relative}
+.spin-btn small{font-size:10px;letter-spacing:.16em;opacity:.8;font-weight:600}
+.spin-btn:hover{transform:scale(1.04);filter:brightness(1.05)}
+.spin-btn:disabled{opacity:.5;cursor:not-allowed}
+.spin-btn.spinning{animation:none}
+.spin-btn-flag{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;animation:roulette-pop .1s ease-out}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* revealed team header */
+.team-head{display:flex;align-items:center;gap:13px;text-align:left;width:100%}
+.crest{width:48px;height:54px;flex:0 0 auto;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;
+  font-family:var(--font-display);font-size:14px;border:2px solid rgba(255,255,255,.6);
+  box-shadow:0 3px 9px rgba(0,0,0,.3);position:relative;overflow:hidden}
+.crest.flag{border-radius:50%;background:var(--card);border:2.5px solid var(--card);
+  box-shadow:0 3px 10px rgba(0,0,0,.3),0 0 0 1.5px var(--line)}
+.crest.flag img{width:100%;height:100%;object-fit:cover;display:block}
+.team-head .tinfo{flex:1;min-width:0}
+.team-head .tname{font-family:var(--font-display);font-weight:var(--display-weight);
+  font-size:21px;line-height:1;letter-spacing:.01em}
+.team-head .tyear{color:var(--ink-dim);font-size:13px;font-weight:600;margin-top:3px}
+.team-head .champ-tag{display:inline-block;margin-top:5px;font-size:10px;font-weight:800;
+  letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:4px;
+  background:color-mix(in srgb,var(--accent) 20%,transparent);color:var(--accent)}
+.respin-row{display:flex;gap:8px;align-items:center;justify-content:flex-end;
+  padding:10px 22px 0;font-size:12px;color:var(--ink-dim)}
+
+.pick-prompt{padding:11px 22px;font-size:12.5px;color:var(--ink-dim);font-weight:600;
+  border-bottom:1px solid var(--line);display:flex;align-items:center;gap:8px}
+.pick-prompt b{color:var(--ink)}
+
+/* player list */
+.player-list{flex:1;min-height:0;overflow-y:auto;padding:10px 14px 18px;display:flex;
+  flex-direction:column;gap:7px}
+.prow{display:flex;align-items:center;gap:11px;padding:9px 11px;border-radius:10px;
+  border:1.5px solid var(--line);background:var(--card);cursor:pointer;transition:.13s;
+  text-align:left}
+.prow:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--line))}
+.prow.sel{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--card))}
+.prow.disabled{opacity:.4;cursor:not-allowed;filter:grayscale(.5)}
+.prow.disabled:hover{border-color:var(--line)}
+.prat{width:42px;height:42px;flex:0 0 auto;border-radius:9px;background:var(--panel2);
+  border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;
+  justify-content:center;line-height:1}
+.prat .n{font-family:var(--font-display);font-weight:var(--display-weight);font-size:19px}
+.prat .l{font-size:8px;letter-spacing:.1em;color:var(--ink-dim);font-weight:700;margin-top:1px}
+.pmid{flex:1;min-width:0}
+.pname{font-weight:800;font-size:14.5px;line-height:1.15;white-space:nowrap;overflow:hidden;
+  text-overflow:ellipsis}
+.ptags{display:flex;gap:4px;margin-top:4px;flex-wrap:wrap}
+.ptag{font-size:9.5px;font-weight:800;letter-spacing:.04em;padding:2px 6px;border-radius:4px;
+  background:var(--panel2);color:var(--ink-dim);border:1px solid var(--line)}
+.ptag.fit{background:color-mix(in srgb,var(--accent) 18%,transparent);
+  color:var(--accent);border-color:transparent}
+.pstats{display:flex;gap:11px;flex:0 0 auto;text-align:center}
+.pstat{display:flex;flex-direction:column;line-height:1}
+.pstat .v{font-family:var(--font-display);font-weight:var(--display-weight);font-size:16px}
+.pstat .k{font-size:8px;letter-spacing:.08em;color:var(--ink-dim);font-weight:700;
+  text-transform:uppercase;margin-top:2px}
+
+.placed-flash{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  pointer-events:none;z-index:9}
+
+/* ================= FINAL ================= */
+.final{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;
+  padding:22px 20px;gap:16px;overflow:auto}
+.final>div:first-child{width:100%;max-width:700px}
+.final .pitch-frame{flex:0 0 auto;width:100%;height:min(66vh,580px)}
+.final-actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+
+/* ================= CUP / TOURNAMENT ================= */
+.cup{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;align-items:center;
+  padding:30px 20px 60px;gap:22px}
+.cup-top{text-align:center;width:100%;max-width:680px}
+.cup-strength{color:var(--ink-dim);font-size:14px;margin-top:8px;font-weight:600}
+.cup-strength b{color:var(--ink);font-family:var(--font-display);font-weight:var(--display-weight);font-size:17px}
+.ladder{width:min(560px,100%);display:flex;flex-direction:column;gap:10px}
+.lstage{display:flex;align-items:center;gap:14px;padding:13px 18px;border-radius:var(--radius);
+  background:var(--card);border:1.5px solid var(--line);opacity:0;transform:translateX(-16px);
+  transition:opacity .45s ease,transform .45s cubic-bezier(.2,.9,.3,1);box-shadow:var(--shadow)}
+.lstage.show{opacity:1;transform:none}
+.lstage.lost{border-color:color-mix(in srgb,#e5484d 50%,var(--line))}
+.lstage-name{font-family:var(--font-display);font-weight:var(--display-weight);font-size:18px;flex:1;letter-spacing:.01em}
+.lstage-mid{display:flex;flex-direction:column;align-items:flex-end;gap:1px;text-align:right;
+  flex:0 0 auto;white-space:nowrap}
+.lstage-opp{font-size:12px;color:var(--ink-dim);font-weight:600}
+.lstage-score{font-family:var(--font-display);font-weight:var(--display-weight);font-size:20px;line-height:1.05}
+.lstage-sub{font-size:10.5px;color:var(--ink-dim);font-weight:600}
+.lstage-mark{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:17px;font-weight:900;flex:0 0 auto}
+.lstage.won .lstage-mark{background:color-mix(in srgb,var(--win) 24%,transparent);color:var(--win)}
+.lstage.lost .lstage-mark{background:color-mix(in srgb,#e5484d 18%,transparent);color:#e5484d}
+.lstage.gsum{background:color-mix(in srgb,var(--accent) 9%,var(--card));
+  border-style:dashed;border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+.lstage.gsum.lost{background:color-mix(in srgb,#e5484d 8%,var(--card));
+  border-color:color-mix(in srgb,#e5484d 45%,var(--line))}
+.lstage.gsum .lstage-name{font-size:16px}
+
+.verdict{width:min(560px,100%);text-align:center;padding:30px 24px;border-radius:calc(var(--radius) + 5px);
+  background:var(--card);border:1.5px solid var(--line);box-shadow:var(--shadow);
+  display:flex;flex-direction:column;align-items:center;gap:7px;animation:drop .5s cubic-bezier(.2,1.2,.4,1)}
+.verdict.win{border-color:var(--win);
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 30%,transparent),var(--shadow)}
+.verdict-medal{font-size:58px;line-height:1}
+.verdict-tag{font-family:var(--font-display);font-weight:var(--display-weight);text-transform:uppercase;
+  letter-spacing:.04em;font-size:clamp(26px,4.6vw,42px);line-height:1.02}
+.verdict.win .verdict-tag{color:var(--win)}
+.verdict-line{color:var(--ink-dim);font-size:14.5px;max-width:380px;line-height:1.45}
+.verdict-stat{margin-top:6px;font-size:14px;color:var(--ink-dim);font-weight:600}
+.verdict-stat b{font-family:var(--font-display);font-weight:var(--display-weight);
+  font-size:17px;color:var(--ink)}
+.cup-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--panel);
+  padding:11px 20px;border-radius:999px;font-weight:700;font-size:13px;z-index:50;
+  box-shadow:0 8px 24px rgba(0,0,0,.35);animation:drop .3s ease}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width:880px){
+  .draft{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto}
+  .side{border-left:0;border-top:1px solid var(--line);max-height:none;flex:1;min-height:0}
+  .pitch{aspect-ratio:5/5.6}
+  .player-list{max-height:none;flex:1}
+  .prow{flex-wrap:wrap}
+  .formation-grid{gap:14px}
+  .fcard{width:min(80vw,260px)}
+}
+@media (max-width:560px){
+  .topbar{padding:10px 14px;gap:8px}
+  .brand{font-size:15px}
+  .theme-switch button{padding:5px 9px;font-size:11px}
+  .spin-btn{width:120px;height:120px;font-size:18px}
+
+  .draft{display:flex;flex-direction:column;flex:1;min-height:0}
+  .mobile-tabs{display:flex;border-bottom:1px solid var(--line);flex:0 0 auto}  .mobile-tab{flex:1;padding:11px;text-align:center;font-size:13px;font-weight:700;
+    letter-spacing:.04em;text-transform:uppercase;color:var(--ink-dim);background:transparent;
+    border:none;border-bottom:2px solid transparent;cursor:pointer;font-family:var(--font-ui)}
+  .mobile-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+  .pitch-pane{display:none;flex:1;min-height:0}
+  .pitch-pane.mobile-visible{display:flex}
+  .side{display:none;flex:1;min-height:0;max-height:none;border-top:none}
+  .side.mobile-visible{display:flex}
+
+  /* Mobile slots bar */
+  .mobile-slots-bar{
+    display:flex;flex-wrap:wrap;gap:5px;
+    padding:8px 10px 10px;
+    border-top:1px solid var(--line);
+    background:var(--panel2);
+    flex:0 0 auto;
+    justify-content:center;
+  }
+  .mobile-slot{
+    width:48px;height:48px;border-radius:50%;
+    border:2px dashed var(--line);
+    background:var(--panel);
+    display:flex;align-items:center;justify-content:center;
+    font-size:11px;font-weight:700;color:var(--ink-dim);
+    letter-spacing:.02em;text-transform:uppercase;
+    transition:all .15s;cursor:default;
+    flex-shrink:0;
+  }
+  .mobile-slot.eligible{
+    border:2px solid var(--accent);
+    background:color-mix(in srgb,var(--accent) 15%,var(--panel));
+    color:var(--accent);
+    cursor:pointer;
+    animation:slot-pulse .8s ease-in-out infinite;
+    transform:scale(1.12);
+  }
+  .mobile-slot.filled{
+    border:2px solid var(--ink-dim);
+    background:var(--panel2);
+    color:var(--ink);
+    font-size:10px;
+  }
+  .mobile-slot.filled.eligible{
+    border:2px solid var(--accent);
+    background:color-mix(in srgb,var(--accent) 15%,var(--panel));
+    color:var(--accent);
+    transform:scale(1.12);
+  }
+  @keyframes slot-pulse{
+    0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 40%,transparent)}
+    50%{box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 0%,transparent)}
+  }
+  .mobile-slot-label{font-size:10px;font-weight:800;text-align:center;line-height:1}
+
+  /* Formation screen — compact cards so all 3 + button fit on one screen */
+  .formation-grid{gap:8px;flex-direction:row;flex-wrap:nowrap;align-items:flex-start}
+  .fcard{width:calc(33vw - 12px);min-width:0;padding:8px}
+  .fcard .fname{font-size:14px}
+  .formation-grid .fcard .fsub{display:none}
+  .mini-pitch{margin:6px 0 2px}
+  .screen .h1{font-size:clamp(22px,7vw,40px)}
+  .screen .sub{font-size:13px;margin-top:4px}
+  .center-wrap{padding:12px 16px !important}
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7468010834480565" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+<noscript>
+  <main style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px">
+    <h1>Win18Games — Draft Your All-Time Women’s European XI</h1>
+    <p>Draft your ultimate women’s European squad from the greatest players in history. Pick from 67 legendary club squads spanning the UEFA Women’s Cup and Women’s Champions League, 2001–2026 — Marta, Birgit Prinz, Ada Hegerberg, Alexia Putellas, Aitana Bonmatí, Margrét Lára Viðarsdóttir and hundreds more, including every great Icelandic side from Breiðablik, Valur, KR, Stjarnan and Þór/KA.</p>
+    <h2>How to play</h2>
+    <p>You get 11 rounds. In each round you are shown a legendary European club squad and must pick one player. Fill your formation — goalkeeper, defenders, midfielders, forwards — then play a full European campaign in the modern Women’s Champions League format: a six-game league phase among 18 teams, a play-off round, and two-legged knockouts all the way to the final.</p>
+    <p>Enable JavaScript to play.</p>
+  </main>
+</noscript>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script>window.WC_FLAGS = {};</script>
+<script>// Women’s European Draft — squad data
+// Positions: GK, RB, LB, CB, DM, CM, AM, RW, LW, ST
+window.WC_TEAMS = [
+{ id:'bre2001', team:"Breiðablik", year:2001, cc:'BRE', ctry:'ISL', c1:'#00A650', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Dóra Stefánsdóttir", p:['GK'], g:0, a:0, m:20, age:26, r:71 },
+    { n:"Erla Hendriksdóttir", p:['RB'], g:1, a:2, m:21, age:27, r:72 },
+    { n:"Guðrún Sóley Gunnarsdóttir", p:['CB'], g:1, a:0, m:22, age:24, r:75 },
+    { n:"Katrín Jónsdóttir", p:['CB','DM'], g:2, a:1, m:22, age:24, r:80 },
+    { n:"Auður Skúladóttir", p:['LB'], g:0, a:2, m:20, age:23, r:71 },
+    { n:"Rakel Ögmundsdóttir", p:['CM'], g:4, a:5, m:21, age:22, r:76 },
+    { n:"Íris Sæmundsdóttir", p:['DM','CB'], g:1, a:1, m:19, age:21, r:71 },
+    { n:"Málfríður Erna Sigurðardóttir", p:['CM','AM'], g:3, a:4, m:20, age:22, r:72 },
+    { n:"Erna Þorleifsdóttir", p:['RW'], g:5, a:4, m:19, age:21, r:70 },
+    { n:"Ásthildur Helgadóttir", p:['ST','AM'], g:19, a:7, m:22, age:25, r:84 },
+    { n:"Vanda Sigurgeirsdóttir", p:['LW','CM'], g:6, a:6, m:18, age:29, r:74 },
+    { n:"Kristrún Antonsdóttir", p:['ST'], g:9, a:3, m:20, age:22, r:72 },
+  ]},
+{ id:'fra2002', team:"FFC Frankfurt", year:2002, cc:'FFC', ctry:'GER', c1:'#1D1D1B', c2:'#E30613', champ:true, squad:[
+    { n:"Marleen Wissink", p:['GK'], g:0, a:0, m:26, age:31, r:80 },
+    { n:"Sarah Günther", p:['LB'], g:0, a:1, m:24, age:19, r:74 },
+    { n:"Tina Wunderlich", p:['CB'], g:1, a:1, m:25, age:24, r:79 },
+    { n:"Steffi Jones", p:['CB'], g:2, a:0, m:26, age:29, r:86 },
+    { n:"Sandra Minnert", p:['CB','RB'], g:1, a:1, m:24, age:29, r:82 },
+    { n:"Renate Lingor", p:['CM','AM'], g:9, a:12, m:26, age:26, r:88 },
+    { n:"Pia Wunderlich", p:['AM','CM'], g:7, a:8, m:25, age:26, r:84 },
+    { n:"Nia Künzer", p:['CM','CB'], g:3, a:3, m:22, age:22, r:79 },
+    { n:"Meike Weber", p:['RW','RB'], g:4, a:6, m:24, age:22, r:76 },
+    { n:"Birgit Prinz", p:['ST'], g:24, a:8, m:26, age:24, r:92 },
+    { n:"Sandra Smisek", p:['ST','LW'], g:15, a:6, m:25, age:24, r:84 },
+    { n:"Katrin Kliehm", p:['LW','CM'], g:5, a:5, m:23, age:22, r:75 },
+  ]},
+{ id:'ume2003', team:"Umeå IK", year:2003, cc:'UME', ctry:'SWE', c1:'#FFD200', c2:'#1A3668', champ:true, squad:[
+    { n:"Sofia Lundgren", p:['GK'], g:0, a:0, m:24, age:21, r:77 },
+    { n:"Karolina Westberg", p:['CB'], g:1, a:1, m:25, age:25, r:83 },
+    { n:"Frida Östberg", p:['CB','DM'], g:1, a:2, m:24, age:25, r:81 },
+    { n:"Anna Paulson", p:['LB','CB'], g:1, a:1, m:23, age:21, r:77 },
+    { n:"Maria Bergkvist", p:['RB','DM'], g:0, a:2, m:24, age:27, r:76 },
+    { n:"Malin Moström", p:['CM'], g:8, a:10, m:25, age:27, r:88 },
+    { n:"Elaine", p:['AM','CM'], g:7, a:9, m:23, age:20, r:80 },
+    { n:"Emma Wilhelmsson", p:['CM'], g:3, a:4, m:22, age:22, r:74 },
+    { n:"Linda Nordin", p:['RW'], g:5, a:6, m:21, age:22, r:73 },
+    { n:"Hanna Ljungberg", p:['ST'], g:22, a:9, m:24, age:24, r:90 },
+    { n:"Madelaine Edlund", p:['ST','LW'], g:9, a:4, m:22, age:18, r:75 },
+    { n:"Ulrika Karlsson", p:['LW'], g:4, a:5, m:20, age:23, r:72 },
+  ]},
+{ id:'ume2004', team:"Umeå IK", year:2004, cc:'UME', ctry:'SWE', c1:'#FFD200', c2:'#1A3668', champ:true, squad:[
+    { n:"Sofia Lundgren", p:['GK'], g:0, a:0, m:25, age:22, r:78 },
+    { n:"Karolina Westberg", p:['CB'], g:1, a:1, m:25, age:26, r:84 },
+    { n:"Frida Östberg", p:['DM','CB'], g:2, a:3, m:25, age:26, r:82 },
+    { n:"Anna Paulson", p:['LB','CB'], g:1, a:2, m:24, age:22, r:78 },
+    { n:"Maria Bergkvist", p:['RB'], g:0, a:2, m:24, age:28, r:76 },
+    { n:"Malin Moström", p:['CM'], g:9, a:11, m:25, age:28, r:89 },
+    { n:"Elaine", p:['AM'], g:8, a:10, m:24, age:21, r:82 },
+    { n:"Johanna Frisk", p:['CM','LB'], g:2, a:3, m:22, age:18, r:74 },
+    { n:"Marta", p:['ST','LW'], g:23, a:11, m:24, age:18, r:89 },
+    { n:"Hanna Ljungberg", p:['ST'], g:21, a:10, m:25, age:25, r:91 },
+    { n:"Madelaine Edlund", p:['ST'], g:8, a:3, m:20, age:19, r:76 },
+    { n:"Linda Nordin", p:['RW'], g:5, a:6, m:21, age:23, r:73 },
+  ]},
+{ id:'kri2004', team:"KR Reykjavík", year:2004, cc:'KRR', ctry:'ISL', c1:'#000000', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Þóra Björg Helgadóttir", p:['GK'], g:0, a:0, m:22, age:23, r:79 },
+    { n:"Margrét Ólafsdóttir", p:['RB','CM'], g:2, a:3, m:21, age:26, r:75 },
+    { n:"Anna Björk Kristjánsdóttir", p:['CB'], g:1, a:0, m:22, age:22, r:74 },
+    { n:"Guðlaug Jónsdóttir", p:['CB'], g:1, a:1, m:20, age:24, r:73 },
+    { n:"Ásta Árnadóttir", p:['LB','CB'], g:0, a:1, m:21, age:22, r:73 },
+    { n:"Edda Garðarsdóttir", p:['CM','DM'], g:4, a:5, m:22, age:24, r:79 },
+    { n:"Katrín Ómarsdóttir", p:['CM','AM'], g:5, a:6, m:20, age:17, r:75 },
+    { n:"Björk Gunnarsdóttir", p:['DM'], g:1, a:2, m:19, age:23, r:70 },
+    { n:"Elsa Pálsdóttir", p:['RW'], g:4, a:5, m:19, age:21, r:70 },
+    { n:"Olga Færseth", p:['ST'], g:23, a:6, m:21, age:29, r:83 },
+    { n:"Laufey Ólafsdóttir", p:['AM','ST'], g:8, a:7, m:21, age:19, r:74 },
+    { n:"Hrefna Huld Jóhannesdóttir", p:['LW'], g:6, a:4, m:20, age:22, r:71 },
+  ]},
+{ id:'pot2005', team:"Turbine Potsdam", year:2005, cc:'TUR', ctry:'GER', c1:'#003DA5', c2:'#E30613', champ:true, squad:[
+    { n:"Nadine Angerer", p:['GK'], g:0, a:0, m:26, age:26, r:85 },
+    { n:"Josephine Henning", p:['CB'], g:0, a:0, m:18, age:15, r:70 },
+    { n:"Babett Peter", p:['CB'], g:1, a:0, m:23, age:16, r:74 },
+    { n:"Jennifer Zietz", p:['CB','DM'], g:2, a:2, m:25, age:21, r:80 },
+    { n:"Ariane Hingst", p:['CB','DM'], g:2, a:2, m:24, age:25, r:84 },
+    { n:"Navina Omilade", p:['DM','LB'], g:1, a:3, m:24, age:23, r:79 },
+    { n:"Viola Odebrecht", p:['CM'], g:4, a:5, m:24, age:22, r:78 },
+    { n:"Anja Mittag", p:['ST','AM'], g:14, a:7, m:25, age:20, r:82 },
+    { n:"Petra Wimbersky", p:['LW','ST'], g:11, a:8, m:24, age:22, r:81 },
+    { n:"Conny Pohlers", p:['ST'], g:22, a:6, m:25, age:26, r:86 },
+    { n:"Isabel Kerschowski", p:['LB','LW'], g:2, a:4, m:20, age:17, r:72 },
+    { n:"Anna Felicitas Sarholz", p:['GK'], g:0, a:0, m:6, age:17, r:70 },
+  ]},
+{ id:'dju2005', team:"Djurgården/Älvsjö", year:2005, cc:'DJU', ctry:'SWE', c1:'#0057A0', c2:'#FDB913', champ:false, squad:[
+    { n:"Caroline Jönsson", p:['GK'], g:0, a:0, m:23, age:27, r:79 },
+    { n:"Kristin Bengtsson", p:['LB','CB'], g:2, a:3, m:23, age:34, r:81 },
+    { n:"Sara Thunebro", p:['LB','CB'], g:1, a:2, m:24, age:25, r:80 },
+    { n:"Hanna Marklund", p:['CB'], g:1, a:0, m:23, age:27, r:82 },
+    { n:"Karin Lissel", p:['RB'], g:0, a:1, m:22, age:26, r:74 },
+    { n:"Malin Levenstad", p:['DM'], g:1, a:2, m:23, age:24, r:76 },
+    { n:"Salina Olsson", p:['CM'], g:3, a:4, m:22, age:26, r:74 },
+    { n:"Linda Fagerström", p:['AM','ST'], g:7, a:6, m:21, age:26, r:76 },
+    { n:"Jenny Lindström", p:['RW'], g:4, a:5, m:20, age:21, r:72 },
+    { n:"Victoria Sandell Svensson", p:['ST'], g:18, a:8, m:23, age:28, r:88 },
+    { n:"Anna Sjöström", p:['LW'], g:6, a:7, m:22, age:23, r:75 },
+    { n:"Kosovare Asllani", p:['ST','AM'], g:4, a:2, m:12, age:15, r:70 },
+  ]},
+{ id:'mtp2006', team:"Montpellier HSC", year:2006, cc:'MTP', ctry:'FRA', c1:'#0F4C8B', c2:'#F58220', champ:false, squad:[
+    { n:"Céline Deville", p:['GK'], g:0, a:0, m:22, age:23, r:76 },
+    { n:"Corine Franco", p:['RB','DM'], g:1, a:2, m:22, age:22, r:79 },
+    { n:"Laura Georges", p:['CB'], g:1, a:0, m:21, age:21, r:81 },
+    { n:"Sabrina Viguier", p:['CB'], g:0, a:0, m:22, age:25, r:75 },
+    { n:"Aurélie Groizeleau", p:['LB'], g:0, a:1, m:20, age:22, r:71 },
+    { n:"Sonia Bompastor", p:['CM','LB'], g:6, a:9, m:22, age:25, r:85 },
+    { n:"Ludivine Diguelman", p:['CM'], g:3, a:4, m:21, age:22, r:74 },
+    { n:"Élodie Woock", p:['DM'], g:1, a:1, m:20, age:25, r:72 },
+    { n:"Élodie Thomis", p:['RW'], g:8, a:7, m:21, age:19, r:79 },
+    { n:"Marinette Pichon", p:['ST'], g:21, a:5, m:22, age:30, r:89 },
+    { n:"Hoda Lattaf", p:['ST','LW'], g:12, a:6, m:21, age:27, r:79 },
+    { n:"Virginie Dessalle", p:['LW'], g:4, a:5, m:19, age:24, r:71 },
+  ]},
+{ id:'fra2006', team:"FFC Frankfurt", year:2006, cc:'FFC', ctry:'GER', c1:'#1D1D1B', c2:'#E30613', champ:true, squad:[
+    { n:"Silke Rottenberg", p:['GK'], g:0, a:0, m:24, age:34, r:83 },
+    { n:"Sarah Günther", p:['LB'], g:1, a:2, m:24, age:23, r:77 },
+    { n:"Tina Wunderlich", p:['CB'], g:1, a:0, m:24, age:28, r:80 },
+    { n:"Steffi Jones", p:['CB'], g:1, a:1, m:23, age:33, r:84 },
+    { n:"Sandra Minnert", p:['CB'], g:1, a:0, m:24, age:33, r:81 },
+    { n:"Renate Lingor", p:['AM','CM'], g:10, a:13, m:25, age:30, r:89 },
+    { n:"Pia Wunderlich", p:['CM'], g:5, a:6, m:22, age:30, r:82 },
+    { n:"Kerstin Stegemann", p:['RB','RW'], g:2, a:4, m:23, age:28, r:80 },
+    { n:"Petra Wimbersky", p:['LW','ST'], g:10, a:7, m:23, age:23, r:82 },
+    { n:"Birgit Prinz", p:['ST'], g:22, a:9, m:24, age:28, r:93 },
+    { n:"Sandra Smisek", p:['ST'], g:13, a:5, m:23, age:28, r:83 },
+    { n:"Karolin Thomas", p:['RW'], g:3, a:4, m:19, age:21, r:72 },
+  ]},
+{ id:'kol2007', team:"Kolbotn IL", year:2007, cc:'KOL', ctry:'NOR', c1:'#00205B', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Erika Skarbø", p:['GK'], g:0, a:0, m:21, age:22, r:74 },
+    { n:"Marita Skammelsrud Lund", p:['RB'], g:1, a:2, m:21, age:23, r:73 },
+    { n:"Gunhild Følstad", p:['CB'], g:1, a:0, m:22, age:22, r:75 },
+    { n:"Marit Fiane Christensen", p:['CB'], g:0, a:1, m:21, age:22, r:73 },
+    { n:"Ingrid Camilla Fosse Sæthre", p:['LB'], g:1, a:2, m:20, age:26, r:72 },
+    { n:"Ingvild Stensland", p:['CM','DM'], g:5, a:6, m:22, age:25, r:84 },
+    { n:"Solveig Gulbrandsen", p:['CM','AM'], g:9, a:8, m:22, age:25, r:85 },
+    { n:"Leni Larsen Kaurin", p:['AM','LW'], g:6, a:7, m:21, age:26, r:78 },
+    { n:"Kristine Hegland", p:['RW'], g:4, a:5, m:20, age:19, r:72 },
+    { n:"Isabell Herlovsen", p:['ST'], g:16, a:5, m:21, age:19, r:81 },
+    { n:"Cathrine Dekkerhus", p:['ST','LW'], g:7, a:4, m:19, age:24, r:73 },
+    { n:"Emilie Bosshard Haavi", p:['LW'], g:2, a:1, m:10, age:15, r:68 },
+  ]},
+];
+
+window.WC_TEAMS = window.WC_TEAMS.concat([
+{ id:'arn2007', team:"Arsenal", year:2007, cc:'ARS', ctry:'ENG', c1:'#EF0107', c2:'#FFFFFF', champ:true, squad:[
+    { n:"Emma Byrne", p:['GK'], g:0, a:0, m:30, age:27, r:82 },
+    { n:"Alex Scott", p:['RB'], g:3, a:6, m:30, age:22, r:82 },
+    { n:"Faye White", p:['CB'], g:2, a:1, m:29, age:29, r:83 },
+    { n:"Anita Asante", p:['CB','DM'], g:1, a:2, m:28, age:21, r:79 },
+    { n:"Mary Phillip", p:['LB','CB'], g:0, a:1, m:27, age:29, r:77 },
+    { n:"Katie Chapman", p:['DM','CM'], g:5, a:6, m:29, age:24, r:83 },
+    { n:"Jayne Ludlow", p:['CM','AM'], g:12, a:7, m:28, age:28, r:82 },
+    { n:"Karen Carney", p:['RW','AM'], g:9, a:11, m:29, age:19, r:81 },
+    { n:"Kelly Smith", p:['ST','AM'], g:26, a:12, m:30, age:28, r:91 },
+    { n:"Julie Fleeting", p:['ST'], g:20, a:5, m:26, age:26, r:84 },
+    { n:"Lianne Sanderson", p:['ST','LW'], g:14, a:8, m:27, age:19, r:79 },
+    { n:"Rachel Yankey", p:['LW'], g:8, a:12, m:29, age:27, r:83 },
+  ]},
+{ id:'val2008', team:"Valur", year:2008, cc:'VAL', ctry:'ISL', c1:'#D71920', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Guðbjörg Gunnarsdóttir", p:['GK'], g:0, a:0, m:22, age:22, r:78 },
+    { n:"Katrín Jónsdóttir", p:['CB','DM'], g:2, a:1, m:22, age:31, r:79 },
+    { n:"Elísa Viðarsdóttir", p:['CB'], g:1, a:0, m:20, age:17, r:72 },
+    { n:"Guðrún Sóley Gunnarsdóttir", p:['CB'], g:1, a:1, m:21, age:31, r:75 },
+    { n:"Hallbera Guðný Gísladóttir", p:['LB','LW'], g:2, a:5, m:22, age:22, r:78 },
+    { n:"María Björg Ágústsdóttir", p:['RB'], g:0, a:2, m:20, age:23, r:72 },
+    { n:"Dóra María Lárusdóttir", p:['CM','AM'], g:7, a:9, m:22, age:23, r:81 },
+    { n:"Katrín Ómarsdóttir", p:['CM'], g:5, a:7, m:21, age:21, r:78 },
+    { n:"Kristín Ýr Bjarnadóttir", p:['ST','RW'], g:10, a:5, m:21, age:26, r:76 },
+    { n:"Margrét Lára Viðarsdóttir", p:['ST'], g:28, a:8, m:22, age:21, r:86 },
+    { n:"Rakel Logadóttir", p:['LW'], g:5, a:6, m:20, age:22, r:72 },
+    { n:"Dagný Brynjarsdóttir", p:['AM','ST'], g:3, a:2, m:11, age:16, r:70 },
+  ]},
+{ id:'ume2008', team:"Umeå IK", year:2008, cc:'UME', ctry:'SWE', c1:'#FFD200', c2:'#1A3668', champ:false, squad:[
+    { n:"Sofia Lundgren", p:['GK'], g:0, a:0, m:25, age:26, r:79 },
+    { n:"Emma Berglund", p:['CB'], g:1, a:0, m:23, age:19, r:76 },
+    { n:"Karolina Westberg", p:['CB'], g:1, a:1, m:24, age:30, r:82 },
+    { n:"Johanna Frisk", p:['LB','CB'], g:1, a:2, m:23, age:22, r:76 },
+    { n:"Maria Nordbrandt", p:['LW','LB'], g:3, a:5, m:22, age:29, r:75 },
+    { n:"Lisa Dahlkvist", p:['CM','DM'], g:4, a:5, m:24, age:21, r:79 },
+    { n:"Elaine", p:['AM','CM'], g:7, a:10, m:24, age:25, r:83 },
+    { n:"Ramona Bachmann", p:['ST','RW'], g:12, a:8, m:23, age:17, r:79 },
+    { n:"Sofia Jakobsson", p:['RW','ST'], g:8, a:6, m:22, age:18, r:76 },
+    { n:"Marta", p:['ST','LW'], g:30, a:12, m:25, age:22, r:95 },
+    { n:"Madelaine Edlund", p:['ST'], g:11, a:4, m:22, age:23, r:78 },
+    { n:"Hanna Ljungberg", p:['ST'], g:9, a:4, m:14, age:29, r:85 },
+  ]},
+{ id:'fra2008', team:"FFC Frankfurt", year:2008, cc:'FFC', ctry:'GER', c1:'#1D1D1B', c2:'#E30613', champ:true, squad:[
+    { n:"Desirée Schumann", p:['GK'], g:0, a:0, m:23, age:18, r:75 },
+    { n:"Kerstin Stegemann", p:['RB'], g:1, a:3, m:24, age:30, r:79 },
+    { n:"Saskia Bartusiak", p:['CB'], g:1, a:0, m:25, age:25, r:82 },
+    { n:"Tina Wunderlich", p:['CB'], g:0, a:0, m:23, age:30, r:78 },
+    { n:"Gina Lewandowski", p:['LB','CB'], g:1, a:1, m:24, age:23, r:77 },
+    { n:"Renate Lingor", p:['AM','CM'], g:8, a:11, m:25, age:32, r:87 },
+    { n:"Kerstin Garefrekes", p:['RW','ST'], g:12, a:9, m:25, age:28, r:85 },
+    { n:"Petra Wimbersky", p:['LW'], g:8, a:6, m:22, age:25, r:80 },
+    { n:"Meike Weber", p:['CM','RB'], g:3, a:5, m:23, age:28, r:76 },
+    { n:"Birgit Prinz", p:['ST'], g:19, a:7, m:24, age:30, r:91 },
+    { n:"Sandra Smisek", p:['ST'], g:12, a:5, m:22, age:30, r:81 },
+    { n:"Jessica Landström", p:['ST'], g:7, a:2, m:16, age:23, r:74 },
+  ]},
+{ id:'ver2008', team:"Bardolino Verona", year:2008, cc:'VER', ctry:'ITA', c1:'#FFE600', c2:'#003DA5', champ:false, squad:[
+    { n:"Marika Bianchini", p:['GK'], g:0, a:0, m:22, age:24, r:73 },
+    { n:"Roberta Stefanelli", p:['RB'], g:1, a:2, m:21, age:25, r:72 },
+    { n:"Valentina Boni", p:['CM','RW'], g:4, a:6, m:22, age:24, r:75 },
+    { n:"Elisabetta Tona", p:['CB'], g:1, a:0, m:22, age:23, r:75 },
+    { n:"Federica D\u2019Astolfo", p:['CB'], g:0, a:1, m:21, age:27, r:73 },
+    { n:"Marta Carissimi", p:['DM','CM'], g:2, a:3, m:20, age:21, r:74 },
+    { n:"Alice Parisi", p:['CM','AM'], g:5, a:6, m:21, age:18, r:75 },
+    { n:"Viviana Schiavi", p:['LB'], g:1, a:2, m:20, age:23, r:71 },
+    { n:"Melania Gabbiadini", p:['LW','ST'], g:14, a:8, m:22, age:24, r:84 },
+    { n:"Patrizia Panico", p:['ST'], g:25, a:7, m:22, age:32, r:88 },
+    { n:"Silvia Fuselli", p:['ST','RW'], g:10, a:5, m:21, age:27, r:76 },
+    { n:"Michela Franco", p:['AM'], g:4, a:4, m:18, age:22, r:71 },
+  ]},
+{ id:'dui2009', team:"FCR Duisburg", year:2009, cc:'DUI', ctry:'GER', c1:'#003DA5', c2:'#FFFFFF', champ:true, squad:[
+    { n:"Kathrin Längert", p:['GK'], g:0, a:0, m:25, age:23, r:76 },
+    { n:"Sonja Fuss", p:['CB','DM'], g:2, a:3, m:25, age:30, r:81 },
+    { n:"Annike Krahn", p:['CB'], g:1, a:0, m:26, age:23, r:83 },
+    { n:"Jennifer Oster", p:['RB'], g:0, a:2, m:24, age:21, r:73 },
+    { n:"Anne van Bonn", p:['LB','CB'], g:1, a:1, m:23, age:23, r:73 },
+    { n:"Linda Bresonik", p:['CM','DM'], g:6, a:8, m:26, age:25, r:84 },
+    { n:"Simone Laudehr", p:['CM'], g:7, a:6, m:26, age:22, r:86 },
+    { n:"Fatmire Bajramaj", p:['AM','LW'], g:11, a:10, m:25, age:21, r:85 },
+    { n:"Alexandra Popp", p:['ST','AM'], g:9, a:4, m:20, age:17, r:76 },
+    { n:"Inka Grings", p:['ST'], g:27, a:8, m:26, age:30, r:89 },
+    { n:"Femke Maes", p:['ST'], g:10, a:4, m:21, age:27, r:75 },
+    { n:"Kozue Ando", p:['AM','CM'], g:5, a:6, m:22, age:26, r:76 },
+  ]},
+{ id:'zve2009', team:"Zvezda Perm", year:2009, cc:'ZVE', ctry:'RUS', c1:'#C8102E', c2:'#FFD100', champ:false, squad:[
+    { n:"Yulia Grichenko", p:['GK'], g:0, a:0, m:22, age:22, r:73 },
+    { n:"Ekaterina Sochneva", p:['RB','CM'], g:2, a:4, m:22, age:24, r:74 },
+    { n:"Valentina Savchenkova", p:['CB'], g:1, a:0, m:22, age:26, r:74 },
+    { n:"Maria Dyachkova", p:['CB'], g:0, a:1, m:21, age:23, r:72 },
+    { n:"Elena Morozova", p:['LB','CB'], g:1, a:1, m:22, age:25, r:73 },
+    { n:"Elena Fomina", p:['DM','CM'], g:3, a:4, m:22, age:30, r:78 },
+    { n:"Oksana Shmachkova", p:['CM'], g:4, a:5, m:21, age:24, r:75 },
+    { n:"Tatiana Skotnikova", p:['AM','LW'], g:6, a:6, m:21, age:24, r:74 },
+    { n:"Vera Djatel", p:['RW','AM'], g:8, a:7, m:22, age:26, r:78 },
+    { n:"Elena Danilova", p:['ST'], g:15, a:6, m:22, age:22, r:81 },
+    { n:"Olesya Kurochkina", p:['ST','LW'], g:11, a:5, m:21, age:25, r:76 },
+    { n:"Ekaterina Dmitrenko", p:['LW'], g:4, a:4, m:18, age:22, r:70 },
+  ]},
+{ id:'val2010', team:"Valur", year:2010, cc:'VAL', ctry:'ISL', c1:'#D71920', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Guðbjörg Gunnarsdóttir", p:['GK'], g:0, a:0, m:23, age:24, r:80 },
+    { n:"Katrín Jónsdóttir", p:['CB','DM'], g:1, a:1, m:22, age:33, r:78 },
+    { n:"Elísa Viðarsdóttir", p:['CB'], g:1, a:0, m:22, age:19, r:75 },
+    { n:"Sif Atladóttir", p:['CB','RB'], g:2, a:1, m:21, age:24, r:77 },
+    { n:"Hallbera Guðný Gísladóttir", p:['LB'], g:2, a:6, m:23, age:24, r:80 },
+    { n:"Sara Björk Gunnarsdóttir", p:['CM','DM'], g:8, a:7, m:23, age:19, r:81 },
+    { n:"Dóra María Lárusdóttir", p:['CM','AM'], g:8, a:10, m:23, age:25, r:82 },
+    { n:"Katrín Ómarsdóttir", p:['AM','CM'], g:6, a:8, m:22, age:23, r:79 },
+    { n:"Hólmfríður Magnúsdóttir", p:['LW','ST'], g:12, a:8, m:22, age:26, r:79 },
+    { n:"Margrét Lára Viðarsdóttir", p:['ST'], g:26, a:9, m:23, age:23, r:88 },
+    { n:"Kristín Ýr Bjarnadóttir", p:['RW','ST'], g:9, a:6, m:21, age:28, r:75 },
+    { n:"Þórunn Helga Jónsdóttir", p:['RW'], g:5, a:5, m:19, age:24, r:72 },
+  ]},
+{ id:'pot2010', team:"Turbine Potsdam", year:2010, cc:'TUR', ctry:'GER', c1:'#003DA5', c2:'#E30613', champ:true, squad:[
+    { n:"Anna Felicitas Sarholz", p:['GK'], g:0, a:0, m:25, age:22, r:78 },
+    { n:"Josephine Henning", p:['CB'], g:1, a:0, m:25, age:20, r:79 },
+    { n:"Babett Peter", p:['CB'], g:2, a:1, m:26, age:21, r:81 },
+    { n:"Bianca Schmidt", p:['RB','CB'], g:1, a:2, m:25, age:20, r:78 },
+    { n:"Tabea Kemme", p:['LB'], g:2, a:3, m:24, age:18, r:76 },
+    { n:"Jennifer Zietz", p:['DM','CM'], g:3, a:4, m:26, age:26, r:82 },
+    { n:"Viola Odebrecht", p:['CM'], g:3, a:4, m:23, age:27, r:78 },
+    { n:"Fatmire Bajramaj", p:['AM','LW'], g:13, a:11, m:25, age:22, r:86 },
+    { n:"Yuki Nagasato", p:['ST','AM'], g:14, a:8, m:25, age:22, r:81 },
+    { n:"Anja Mittag", p:['ST'], g:19, a:7, m:26, age:25, r:85 },
+    { n:"Isabel Kerschowski", p:['LW','LB'], g:6, a:7, m:24, age:22, r:77 },
+    { n:"Marie-Louise Bagehorn", p:['ST'], g:5, a:2, m:15, age:19, r:70 },
+  ]},
+]);
+
+window.WC_TEAMS = window.WC_TEAMS.concat([
+{ id:'roa2010', team:"Røa IL", year:2010, cc:'RØA', ctry:'NOR', c1:'#FFD700', c2:'#000000', champ:false, squad:[
+    { n:"Christine Colombo Nilsen", p:['GK'], g:0, a:0, m:21, age:24, r:73 },
+    { n:"Trine Rønning", p:['CB','LB'], g:2, a:2, m:22, age:28, r:79 },
+    { n:"Gunhild Følstad", p:['CB'], g:1, a:0, m:21, age:25, r:75 },
+    { n:"Marita Skammelsrud Lund", p:['RB'], g:1, a:2, m:21, age:26, r:74 },
+    { n:"Kristin Grubb", p:['CB'], g:0, a:1, m:20, age:27, r:72 },
+    { n:"Ingvild Isaksen", p:['CM','DM'], g:3, a:4, m:21, age:21, r:75 },
+    { n:"Lene Mykjåland", p:['CM','AM'], g:8, a:8, m:22, age:23, r:83 },
+    { n:"Marie Knutsen", p:['CM'], g:3, a:4, m:20, age:24, r:73 },
+    { n:"Emilie Bosshard Haavi", p:['LW','RW'], g:9, a:7, m:21, age:18, r:77 },
+    { n:"Elise Thorsnes", p:['ST','RW'], g:14, a:6, m:22, age:22, r:79 },
+    { n:"Cathrine Dekkerhus", p:['ST'], g:8, a:4, m:19, age:27, r:73 },
+    { n:"Kristine Hegland", p:['RW'], g:5, a:5, m:19, age:22, r:72 },
+  ]},
+{ id:'bre2011', team:"Breiðablik", year:2011, cc:'BRE', ctry:'ISL', c1:'#00A650', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Sonný Lára Þráinsdóttir", p:['GK'], g:0, a:0, m:20, age:23, r:72 },
+    { n:"Ólína G. Viðarsdóttir", p:['RB'], g:1, a:2, m:20, age:26, r:71 },
+    { n:"Íris Andrésdóttir", p:['CB'], g:1, a:1, m:21, age:24, r:72 },
+    { n:"Guðrún Björg Hauksdóttir", p:['CB'], g:0, a:0, m:20, age:22, r:71 },
+    { n:"Sigrún Ella Einarsdóttir", p:['LB'], g:0, a:2, m:19, age:21, r:70 },
+    { n:"Greta Mjöll Samúelsdóttir", p:['CM'], g:4, a:5, m:21, age:23, r:74 },
+    { n:"Rakel Ögmundsdóttir", p:['CM','DM'], g:3, a:4, m:20, age:32, r:73 },
+    { n:"Anna Björk Kristjánsdóttir", p:['DM','CB'], g:1, a:2, m:20, age:29, r:73 },
+    { n:"Fanndís Friðriksdóttir", p:['LW','ST'], g:13, a:7, m:21, age:21, r:80 },
+    { n:"Berglind Björg Þorvaldsdóttir", p:['ST'], g:12, a:4, m:20, age:19, r:76 },
+    { n:"Sandra María Jessen", p:['ST','RW'], g:7, a:3, m:17, age:16, r:71 },
+    { n:"Laufey Ólafsdóttir", p:['AM'], g:5, a:6, m:19, age:26, r:74 },
+  ]},
+{ id:'lyo2011', team:"Olympique Lyonnais", year:2011, cc:'LYO', ctry:'FRA', c1:'#1B3D6D', c2:'#E30613', champ:true, squad:[
+    { n:"Sarah Bouhaddi", p:['GK'], g:0, a:0, m:26, age:24, r:84 },
+    { n:"Corine Franco", p:['RB','DM'], g:1, a:2, m:25, age:27, r:81 },
+    { n:"Wendie Renard", p:['CB'], g:4, a:1, m:27, age:20, r:84 },
+    { n:"Laura Georges", p:['CB'], g:1, a:0, m:26, age:26, r:83 },
+    { n:"Sonia Bompastor", p:['LB','CM'], g:4, a:9, m:27, age:30, r:86 },
+    { n:"Shirley Cruz", p:['DM','CM'], g:3, a:5, m:25, age:25, r:82 },
+    { n:"Camille Abily", p:['CM','AM'], g:9, a:11, m:27, age:26, r:87 },
+    { n:"Louisa Nécib", p:['AM'], g:8, a:12, m:26, age:23, r:88 },
+    { n:"Élodie Thomis", p:['RW'], g:10, a:8, m:26, age:24, r:83 },
+    { n:"Lotta Schelin", p:['ST'], g:22, a:8, m:27, age:26, r:89 },
+    { n:"Eugénie Le Sommer", p:['ST','LW'], g:16, a:9, m:26, age:21, r:85 },
+    { n:"Lara Dickenmann", p:['LW','LB'], g:7, a:8, m:25, age:25, r:81 },
+  ]},
+{ id:'lyo2012', team:"Olympique Lyonnais", year:2012, cc:'LYO', ctry:'FRA', c1:'#1B3D6D', c2:'#E30613', champ:true, squad:[
+    { n:"Sarah Bouhaddi", p:['GK'], g:0, a:0, m:27, age:25, r:85 },
+    { n:"Corine Franco", p:['RB','DM'], g:1, a:3, m:26, age:28, r:81 },
+    { n:"Wendie Renard", p:['CB'], g:6, a:1, m:28, age:21, r:87 },
+    { n:"Laura Georges", p:['CB'], g:1, a:0, m:26, age:27, r:83 },
+    { n:"Sonia Bompastor", p:['LB'], g:3, a:8, m:27, age:31, r:85 },
+    { n:"Shirley Cruz", p:['DM'], g:3, a:5, m:26, age:26, r:83 },
+    { n:"Camille Abily", p:['CM','AM'], g:11, a:10, m:28, age:27, r:88 },
+    { n:"Louisa Nécib", p:['AM'], g:9, a:13, m:27, age:24, r:89 },
+    { n:"Élodie Thomis", p:['RW'], g:11, a:9, m:27, age:25, r:84 },
+    { n:"Lotta Schelin", p:['ST'], g:24, a:9, m:28, age:27, r:90 },
+    { n:"Eugénie Le Sommer", p:['ST','LW'], g:18, a:10, m:27, age:22, r:87 },
+    { n:"Camille Catala", p:['LW','RW'], g:5, a:5, m:18, age:20, r:74 },
+  ]},
+{ id:'ffc2012', team:"FFC Frankfurt", year:2012, cc:'FFC', ctry:'GER', c1:'#1D1D1B', c2:'#E30613', champ:false, squad:[
+    { n:"Desirée Schumann", p:['GK'], g:0, a:0, m:25, age:22, r:78 },
+    { n:"Gina Lewandowski", p:['RB','CB'], g:1, a:2, m:25, age:27, r:78 },
+    { n:"Saskia Bartusiak", p:['CB'], g:1, a:0, m:26, age:29, r:83 },
+    { n:"Sonja Fuss", p:['CB','DM'], g:1, a:2, m:24, age:33, r:78 },
+    { n:"Meike Weber", p:['LB','CM'], g:1, a:3, m:24, age:32, r:75 },
+    { n:"Dzsenifer Marozsán", p:['AM','CM'], g:10, a:12, m:26, age:19, r:85 },
+    { n:"Kerstin Garefrekes", p:['RW','ST'], g:11, a:8, m:26, age:32, r:83 },
+    { n:"Simone Laudehr", p:['CM','DM'], g:6, a:5, m:25, age:25, r:85 },
+    { n:"Ana-Maria Crnogorčević", p:['RW','ST'], g:9, a:7, m:25, age:21, r:78 },
+    { n:"Célia Okoyino da Mbabi", p:['ST'], g:17, a:6, m:25, age:23, r:83 },
+    { n:"Jessica Landström", p:['ST'], g:8, a:3, m:19, age:27, r:74 },
+    { n:"Svenja Huth", p:['LW','RW'], g:6, a:6, m:22, age:21, r:76 },
+  ]},
+{ id:'juy2013', team:"Juvisy FCF", year:2013, cc:'JUV', ctry:'FRA', c1:'#0055A4', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Méline Gérard", p:['GK'], g:0, a:0, m:23, age:22, r:76 },
+    { n:"Aurélie Kaci", p:['CM','RB'], g:2, a:3, m:22, age:26, r:75 },
+    { n:"Annaïg Butel", p:['CB'], g:1, a:0, m:23, age:20, r:74 },
+    { n:"Marion Romanelli", p:['LB'], g:0, a:2, m:22, age:27, r:72 },
+    { n:"Julie Soyer", p:['RB'], g:0, a:1, m:22, age:27, r:74 },
+    { n:"Sandrine Soubeyrand", p:['DM','CM'], g:3, a:5, m:23, age:39, r:83 },
+    { n:"Camille Catala", p:['RW','ST'], g:8, a:7, m:23, age:21, r:77 },
+    { n:"Gaëtane Thiney", p:['AM','ST'], g:14, a:10, m:23, age:27, r:86 },
+    { n:"Marie-Charlotte Léger", p:['ST'], g:7, a:3, m:19, age:18, r:71 },
+    { n:"Amandine Soulard", p:['RB','RW'], g:1, a:3, m:21, age:25, r:72 },
+    { n:"Inès Jaurena", p:['CM'], g:2, a:3, m:21, age:22, r:73 },
+    { n:"Charlotte Lozé", p:['LW'], g:5, a:5, m:20, age:24, r:72 },
+  ]},
+{ id:'for2013', team:"Fortuna Hjørring", year:2013, cc:'FOR', ctry:'DEN', c1:'#003DA5', c2:'#FFD100', champ:false, squad:[
+    { n:"Tina Sørensen", p:['GK'], g:0, a:0, m:21, age:24, r:72 },
+    { n:"Janni Arnth", p:['CB'], g:1, a:0, m:22, age:22, r:76 },
+    { n:"Line Røddik Hansen", p:['CB','LB'], g:2, a:2, m:22, age:25, r:79 },
+    { n:"Cecilie Sandvej", p:['RB','CB'], g:0, a:1, m:21, age:23, r:73 },
+    { n:"Mia Brogaard", p:['LB'], g:0, a:1, m:20, age:24, r:71 },
+    { n:"Emma Madsen", p:['CM'], g:3, a:4, m:21, age:22, r:73 },
+    { n:"Louise Hansen", p:['CM','DM'], g:2, a:3, m:21, age:25, r:73 },
+    { n:"Nanna Christiansen", p:['AM','LW'], g:7, a:8, m:22, age:24, r:77 },
+    { n:"Nadia Nadim", p:['ST','AM'], g:18, a:7, m:22, age:25, r:84 },
+    { n:"Sanne Troelsgaard", p:['ST','CM'], g:11, a:6, m:22, age:24, r:78 },
+    { n:"Frederikke Thøgersen", p:['RW'], g:5, a:4, m:18, age:17, r:70 },
+    { n:"Caroline Rask", p:['CM'], g:3, a:3, m:19, age:19, r:70 },
+  ]},
+{ id:'wol2014', team:"VfL Wolfsburg", year:2014, cc:'WOB', ctry:'GER', c1:'#65B32E', c2:'#FFFFFF', champ:true, squad:[
+    { n:"Almuth Schult", p:['GK'], g:0, a:0, m:27, age:23, r:84 },
+    { n:"Luisa Wensing", p:['RB','CB'], g:1, a:1, m:25, age:21, r:77 },
+    { n:"Nilla Fischer", p:['CB','DM'], g:3, a:1, m:27, age:29, r:86 },
+    { n:"Josephine Henning", p:['CB'], g:1, a:0, m:26, age:24, r:81 },
+    { n:"Verena Faißt", p:['LB','CM'], g:2, a:4, m:25, age:25, r:78 },
+    { n:"Lena Goeßling", p:['DM','CM'], g:5, a:6, m:27, age:28, r:85 },
+    { n:"Nadine Keßler", p:['CM','AM'], g:12, a:14, m:27, age:25, r:90 },
+    { n:"Alexandra Popp", p:['ST','AM'], g:14, a:8, m:26, age:23, r:87 },
+    { n:"Martina Müller", p:['ST'], g:17, a:6, m:26, age:33, r:84 },
+    { n:"Conny Pohlers", p:['ST'], g:12, a:5, m:22, age:35, r:79 },
+    { n:"Selina Wagner", p:['RW','AM'], g:4, a:5, m:20, age:23, r:73 },
+    { n:"Lina Magull", p:['CM'], g:3, a:4, m:18, age:19, r:73 },
+  ]},
+{ id:'tyr2014', team:"Tyresö FF", year:2014, cc:'TYR', ctry:'SWE', c1:'#00A3E0', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Carola Söberg", p:['GK'], g:0, a:0, m:22, age:31, r:75 },
+    { n:"Meghan Klingenberg", p:['LB','RB'], g:1, a:5, m:22, age:25, r:80 },
+    { n:"Line Røddik Hansen", p:['CB'], g:1, a:1, m:22, age:26, r:80 },
+    { n:"Amanda Ilestedt", p:['CB'], g:2, a:0, m:21, age:21, r:76 },
+    { n:"Elin Magnusson", p:['RB','CM'], g:0, a:2, m:20, age:26, r:73 },
+    { n:"Caroline Seger", p:['CM','DM'], g:5, a:8, m:22, age:29, r:87 },
+    { n:"Vero Boquete", p:['AM','CM'], g:11, a:13, m:22, age:26, r:89 },
+    { n:"Lisa Dahlkvist", p:['CM','DM'], g:3, a:4, m:21, age:27, r:79 },
+    { n:"Christen Press", p:['ST','RW'], g:19, a:8, m:22, age:25, r:89 },
+    { n:"Marta", p:['ST','LW'], g:21, a:12, m:22, age:28, r:92 },
+    { n:"Madeleine Edlund", p:['ST'], g:8, a:3, m:18, age:29, r:75 },
+    { n:"Johanna Frisk", p:['LB','CM'], g:1, a:2, m:19, age:28, r:74 },
+  ]},
+{ id:'stj2014', team:"Stjarnan", year:2014, cc:'STJ', ctry:'ISL', c1:'#005BAA', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Sandra Sigurðardóttir", p:['GK'], g:0, a:0, m:22, age:28, r:76 },
+    { n:"Ásgerður Stefanía Baldursdóttir", p:['RB','CB'], g:1, a:2, m:21, age:23, r:73 },
+    { n:"Glódís Perla Viggósdóttir", p:['CB'], g:2, a:1, m:22, age:19, r:78 },
+    { n:"Anna Björk Kristjánsdóttir", p:['CB'], g:1, a:0, m:21, age:32, r:73 },
+    { n:"Álfhildur Þorsteinsdóttir", p:['LB'], g:1, a:2, m:20, age:22, r:71 },
+    { n:"Gunnhildur Yrsa Jónsdóttir", p:['CM','DM'], g:6, a:5, m:22, age:26, r:79 },
+    { n:"Katrín Ómarsdóttir", p:['CM','AM'], g:5, a:7, m:20, age:27, r:78 },
+    { n:"Ashley Bares", p:['CM','RW'], g:4, a:6, m:21, age:24, r:74 },
+    { n:"Harpa Þorsteinsdóttir", p:['ST'], g:22, a:6, m:22, age:28, r:82 },
+    { n:"Ólafía Kristinsdóttir", p:['RW'], g:5, a:5, m:19, age:22, r:70 },
+    { n:"Elín Anna Steinarsdóttir", p:['LW','ST'], g:8, a:5, m:20, age:26, r:73 },
+    { n:"Sara Mjöll Magnúsdóttir", p:['ST'], g:6, a:2, m:16, age:20, r:69 },
+  ]},
+]);
+
+window.WC_TEAMS = window.WC_TEAMS.concat([
+{ id:'ffc2015', team:"FFC Frankfurt", year:2015, cc:'FFC', ctry:'GER', c1:'#1D1D1B', c2:'#E30613', champ:true, squad:[
+    { n:"Desirée Schumann", p:['GK'], g:0, a:0, m:26, age:25, r:79 },
+    { n:"Bianca Schmidt", p:['RB','CB'], g:1, a:2, m:25, age:25, r:79 },
+    { n:"Saskia Bartusiak", p:['CB'], g:1, a:0, m:26, age:32, r:82 },
+    { n:"Kathrin Hendrich", p:['CB'], g:1, a:1, m:24, age:23, r:77 },
+    { n:"Peggy Kuznik", p:['LB','CB'], g:0, a:1, m:24, age:27, r:74 },
+    { n:"Simone Laudehr", p:['CM','DM'], g:6, a:6, m:25, age:28, r:85 },
+    { n:"Dzsenifer Marozsán", p:['AM','CM'], g:11, a:14, m:26, age:23, r:90 },
+    { n:"Vero Boquete", p:['AM','CM'], g:9, a:11, m:25, age:27, r:88 },
+    { n:"Kerstin Garefrekes", p:['RW'], g:8, a:7, m:24, age:35, r:80 },
+    { n:"Célia Šašić", p:['ST'], g:23, a:7, m:25, age:26, r:91 },
+    { n:"Mandy Islacker", p:['ST'], g:12, a:4, m:22, age:26, r:78 },
+    { n:"Ana-Maria Crnogorčević", p:['RW','ST'], g:7, a:8, m:24, age:24, r:79 },
+  ]},
+{ id:'psg2015', team:"Paris Saint-Germain", year:2015, cc:'PSG', ctry:'FRA', c1:'#004170', c2:'#E30613', champ:false, squad:[
+    { n:"Katarzyna Kiedrzynek", p:['GK'], g:0, a:0, m:25, age:23, r:82 },
+    { n:"Sabrina Delannoy", p:['CB','RB'], g:2, a:1, m:25, age:28, r:79 },
+    { n:"Laura Georges", p:['CB'], g:1, a:0, m:24, age:30, r:81 },
+    { n:"Caroline Pizzala", p:['CB','DM'], g:0, a:1, m:23, age:27, r:75 },
+    { n:"Laure Boulleau", p:['LB'], g:1, a:5, m:24, age:28, r:81 },
+    { n:"Aminata Diallo", p:['DM','CM'], g:1, a:2, m:20, age:20, r:73 },
+    { n:"Kenza Dali", p:['CM','AM'], g:5, a:7, m:23, age:23, r:78 },
+    { n:"Lindsey Horan", p:['CM','ST'], g:9, a:8, m:24, age:20, r:84 },
+    { n:"Kosovare Asllani", p:['AM','RW'], g:8, a:9, m:24, age:25, r:82 },
+    { n:"Marie-Laure Delie", p:['ST'], g:16, a:5, m:25, age:27, r:85 },
+    { n:"Fatmire Alushi", p:['AM','LW'], g:7, a:8, m:22, age:26, r:83 },
+    { n:"Shirley Cruz", p:['CM','DM'], g:3, a:5, m:23, age:29, r:81 },
+  ]},
+{ id:'ros2016', team:"FC Rosengård", year:2016, cc:'ROS', ctry:'SWE', c1:'#00A9A5', c2:'#E4032E', champ:false, squad:[
+    { n:"Erin McLeod", p:['GK'], g:0, a:0, m:23, age:32, r:80 },
+    { n:"Amanda Ilestedt", p:['CB'], g:2, a:0, m:23, age:23, r:79 },
+    { n:"Emma Berglund", p:['CB'], g:1, a:1, m:23, age:27, r:79 },
+    { n:"Alexandra Nilsson", p:['RB'], g:0, a:2, m:21, age:22, r:72 },
+    { n:"Malin Diaz", p:['CM','LB'], g:3, a:5, m:22, age:22, r:75 },
+    { n:"Sanne Troelsgaard", p:['CM'], g:4, a:5, m:22, age:27, r:78 },
+    { n:"Ella Masar", p:['RW','ST'], g:7, a:6, m:22, age:29, r:76 },
+    { n:"Lieke Martens", p:['LW','AM'], g:10, a:9, m:23, age:23, r:86 },
+    { n:"Marta", p:['ST','AM'], g:17, a:10, m:23, age:30, r:90 },
+    { n:"Anja Mittag", p:['ST'], g:14, a:6, m:23, age:31, r:85 },
+    { n:"Gaëlle Enganamouit", p:['ST'], g:9, a:3, m:18, age:23, r:77 },
+    { n:"Hanna Folkesson", p:['DM','CM'], g:2, a:3, m:21, age:27, r:74 },
+  ]},
+{ id:'bsc2016', team:"Brescia CF", year:2016, cc:'BSC', ctry:'ITA', c1:'#0F4C8B', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Chiara Marchitelli", p:['GK'], g:0, a:0, m:24, age:30, r:77 },
+    { n:"Elisa Bartoli", p:['RB'], g:1, a:3, m:23, age:25, r:77 },
+    { n:"Cecilia Salvai", p:['CB'], g:1, a:0, m:24, age:22, r:78 },
+    { n:"Roberta D\u2019Adda", p:['CB'], g:1, a:1, m:23, age:35, r:74 },
+    { n:"Martina Rosucci", p:['CM','DM'], g:4, a:5, m:23, age:24, r:78 },
+    { n:"Valentina Cernoia", p:['CM','AM'], g:6, a:8, m:24, age:25, r:79 },
+    { n:"Daniela Sabatino", p:['ST'], g:15, a:5, m:24, age:31, r:81 },
+    { n:"Cristiana Girelli", p:['ST','AM'], g:18, a:8, m:24, age:26, r:85 },
+    { n:"Barbara Bonansea", p:['LW','ST'], g:13, a:10, m:24, age:25, r:85 },
+    { n:"Alia Guagni", p:['RB','RW'], g:2, a:4, m:22, age:28, r:78 },
+    { n:"Sandy Iannella", p:['CM'], g:3, a:3, m:20, age:26, r:71 },
+    { n:"Marta Varriale", p:['LB'], g:0, a:1, m:20, age:24, r:70 },
+  ]},
+{ id:'lyo2016', team:"Olympique Lyonnais", year:2016, cc:'LYO', ctry:'FRA', c1:'#1B3D6D', c2:'#E30613', champ:true, squad:[
+    { n:"Sarah Bouhaddi", p:['GK'], g:0, a:0, m:27, age:29, r:87 },
+    { n:"Pauline Bremer", p:['ST','RW'], g:8, a:4, m:20, age:20, r:76 },
+    { n:"Wendie Renard", p:['CB'], g:5, a:1, m:28, age:25, r:90 },
+    { n:"Griedge Mbock", p:['CB'], g:2, a:0, m:26, age:21, r:83 },
+    { n:"Jessica Houara", p:['RB'], g:1, a:3, m:24, age:28, r:78 },
+    { n:"Amel Majri", p:['LB','LW'], g:3, a:7, m:26, age:23, r:82 },
+    { n:"Saki Kumagai", p:['DM','CB'], g:2, a:3, m:27, age:25, r:85 },
+    { n:"Camille Abily", p:['CM','AM'], g:10, a:11, m:27, age:31, r:87 },
+    { n:"Louisa Nécib", p:['AM'], g:8, a:11, m:26, age:28, r:88 },
+    { n:"Ada Hegerberg", p:['ST'], g:26, a:9, m:28, age:20, r:92 },
+    { n:"Eugénie Le Sommer", p:['ST','LW'], g:19, a:10, m:27, age:26, r:89 },
+    { n:"Élodie Thomis", p:['RW'], g:8, a:8, m:24, age:29, r:81 },
+  ]},
+{ id:'psg2017', team:"Paris Saint-Germain", year:2017, cc:'PSG', ctry:'FRA', c1:'#004170', c2:'#E30613', champ:false, squad:[
+    { n:"Katarzyna Kiedrzynek", p:['GK'], g:0, a:0, m:26, age:25, r:84 },
+    { n:"Ève Périsset", p:['RB'], g:1, a:3, m:24, age:22, r:77 },
+    { n:"Irene Paredes", p:['CB'], g:2, a:0, m:26, age:25, r:87 },
+    { n:"Laura Georges", p:['CB'], g:1, a:0, m:23, age:32, r:79 },
+    { n:"Sabrina Delannoy", p:['LB','CB'], g:1, a:1, m:23, age:30, r:77 },
+    { n:"Formiga", p:['DM'], g:2, a:4, m:25, age:39, r:85 },
+    { n:"Grace Geyoro", p:['CM'], g:3, a:4, m:23, age:19, r:78 },
+    { n:"Marie-Antoinette Katoto", p:['ST'], g:9, a:3, m:16, age:18, r:77 },
+    { n:"Shirley Cruz", p:['CM','AM'], g:4, a:6, m:24, age:31, r:80 },
+    { n:"Cristiane", p:['ST'], g:17, a:6, m:25, age:31, r:87 },
+    { n:"Marie-Laure Delie", p:['ST'], g:12, a:4, m:22, age:29, r:82 },
+    { n:"Sakina Karchaoui", p:['LB'], g:0, a:3, m:21, age:21, r:78 },
+  ]},
+{ id:'mci2018', team:"Manchester City", year:2018, cc:'MCI', ctry:'ENG', c1:'#6CABDD', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Karen Bardsley", p:['GK'], g:0, a:0, m:24, age:33, r:80 },
+    { n:"Lucy Bronze", p:['RB'], g:3, a:6, m:25, age:26, r:88 },
+    { n:"Steph Houghton", p:['CB'], g:3, a:1, m:25, age:30, r:86 },
+    { n:"Jen Beattie", p:['CB'], g:1, a:0, m:23, age:26, r:79 },
+    { n:"Demi Stokes", p:['LB'], g:0, a:3, m:24, age:26, r:79 },
+    { n:"Keira Walsh", p:['DM'], g:1, a:4, m:25, age:21, r:82 },
+    { n:"Jill Scott", p:['CM'], g:4, a:5, m:25, age:31, r:83 },
+    { n:"Izzy Christiansen", p:['CM','AM'], g:6, a:6, m:23, age:26, r:79 },
+    { n:"Nikita Parris", p:['RW','ST'], g:13, a:7, m:25, age:24, r:83 },
+    { n:"Jane Ross", p:['ST'], g:11, a:4, m:22, age:28, r:78 },
+    { n:"Georgia Stanway", p:['ST','AM'], g:9, a:4, m:21, age:19, r:76 },
+    { n:"Mel Lawley", p:['LW'], g:4, a:6, m:20, age:24, r:73 },
+  ]},
+{ id:'lyo2018', team:"Olympique Lyonnais", year:2018, cc:'LYO', ctry:'FRA', c1:'#1B3D6D', c2:'#E30613', champ:true, squad:[
+    { n:"Sarah Bouhaddi", p:['GK'], g:0, a:0, m:27, age:31, r:88 },
+    { n:"Lucy Bronze", p:['RB'], g:3, a:7, m:27, age:26, r:89 },
+    { n:"Wendie Renard", p:['CB'], g:7, a:1, m:28, age:27, r:91 },
+    { n:"Griedge Mbock", p:['CB'], g:2, a:1, m:26, age:23, r:85 },
+    { n:"Amel Majri", p:['LB','LW'], g:4, a:9, m:27, age:25, r:84 },
+    { n:"Saki Kumagai", p:['DM','CB'], g:2, a:2, m:27, age:27, r:86 },
+    { n:"Amandine Henry", p:['CM','DM'], g:4, a:5, m:24, age:28, r:88 },
+    { n:"Dzsenifer Marozsán", p:['AM','CM'], g:9, a:13, m:26, age:26, r:91 },
+    { n:"Delphine Cascarino", p:['RW'], g:7, a:8, m:25, age:21, r:80 },
+    { n:"Ada Hegerberg", p:['ST'], g:31, a:8, m:28, age:22, r:94 },
+    { n:"Eugénie Le Sommer", p:['ST','LW'], g:16, a:9, m:26, age:28, r:88 },
+    { n:"Shanice van de Sanden", p:['RW'], g:5, a:9, m:24, age:25, r:80 },
+  ]},
+{ id:'tka2018', team:"Þór/KA", year:2018, cc:'ÞKA', ctry:'ISL', c1:'#E4002B', c2:'#003DA5', champ:false, squad:[
+    { n:"Sandra Sigurðardóttir", p:['GK'], g:0, a:0, m:21, age:32, r:75 },
+    { n:"Anna Rakel Pétursdóttir", p:['RB','CM'], g:2, a:3, m:21, age:25, r:73 },
+    { n:"Sif Atladóttir", p:['CB'], g:1, a:0, m:20, age:32, r:76 },
+    { n:"María Aldís Kristinsdóttir", p:['CB'], g:1, a:1, m:20, age:24, r:71 },
+    { n:"Kristín Þórhallsdóttir", p:['LB'], g:0, a:2, m:19, age:23, r:70 },
+    { n:"Nína Sólrún Tamimi", p:['DM','CB'], g:1, a:1, m:20, age:22, r:71 },
+    { n:"Kayla Rendon", p:['CM'], g:3, a:4, m:20, age:24, r:72 },
+    { n:"Sandra María Jessen", p:['ST','AM'], g:19, a:6, m:21, age:23, r:79 },
+    { n:"Rakel Hönnudóttir", p:['LW','ST'], g:12, a:7, m:21, age:30, r:78 },
+    { n:"Tinna Rós Þrastardóttir", p:['RW'], g:6, a:5, m:19, age:23, r:71 },
+    { n:"Fanndís Friðriksdóttir", p:['LW'], g:8, a:6, m:18, age:28, r:77 },
+    { n:"Katrín Ásbjörnsdóttir", p:['CM','AM'], g:4, a:4, m:18, age:21, r:70 },
+  ]},
+{ id:'bre2020', team:"Breiðablik", year:2020, cc:'BRE', ctry:'ISL', c1:'#00A650', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Cecilía Rán Rúnarsdóttir", p:['GK'], g:0, a:0, m:18, age:17, r:75 },
+    { n:"Berglind Rós Ágústsdóttir", p:['RB'], g:1, a:3, m:19, age:23, r:71 },
+    { n:"Sif Atladóttir", p:['CB'], g:1, a:0, m:18, age:34, r:74 },
+    { n:"Guðmunda Brynja Óladóttir", p:['CB'], g:1, a:1, m:19, age:21, r:71 },
+    { n:"Hallbera Guðný Gísladóttir", p:['LB'], g:1, a:4, m:19, age:34, r:75 },
+    { n:"Karólína Lea Vilhjálmsdóttir", p:['CM','AM'], g:8, a:9, m:19, age:19, r:80 },
+    { n:"Selma Sól Magnúsdóttir", p:['CM'], g:5, a:7, m:19, age:22, r:74 },
+    { n:"Anita Lind Daníelsdóttir", p:['DM'], g:1, a:2, m:18, age:23, r:70 },
+    { n:"Agla María Albertsdóttir", p:['RW','ST'], g:11, a:8, m:19, age:21, r:78 },
+    { n:"Berglind Björg Þorvaldsdóttir", p:['ST'], g:24, a:5, m:19, age:27, r:84 },
+    { n:"Hlín Eiríksdóttir", p:['LW','ST'], g:9, a:6, m:18, age:22, r:73 },
+    { n:"Svava Rós Guðmundsdóttir", p:['LW','AM'], g:7, a:7, m:17, age:24, r:75 },
+  ]},
+]);
+
+window.WC_TEAMS = window.WC_TEAMS.concat([
+{ id:'lyo2020', team:"Olympique Lyonnais", year:2020, cc:'LYO', ctry:'FRA', c1:'#1B3D6D', c2:'#E30613', champ:true, squad:[
+    { n:"Sarah Bouhaddi", p:['GK'], g:0, a:0, m:24, age:33, r:87 },
+    { n:"Lucy Bronze", p:['RB'], g:2, a:6, m:24, age:28, r:90 },
+    { n:"Wendie Renard", p:['CB'], g:6, a:1, m:25, age:29, r:91 },
+    { n:"Griedge Mbock", p:['CB'], g:1, a:0, m:22, age:25, r:85 },
+    { n:"Selma Bacha", p:['LB','LW'], g:2, a:6, m:21, age:19, r:79 },
+    { n:"Saki Kumagai", p:['DM'], g:2, a:2, m:24, age:29, r:86 },
+    { n:"Amandine Henry", p:['CM'], g:3, a:4, m:23, age:30, r:87 },
+    { n:"Dzsenifer Marozsán", p:['AM'], g:7, a:10, m:23, age:28, r:89 },
+    { n:"Delphine Cascarino", p:['RW'], g:6, a:8, m:23, age:23, r:83 },
+    { n:"Eugénie Le Sommer", p:['ST','LW'], g:14, a:7, m:24, age:31, r:87 },
+    { n:"Nikita Parris", p:['ST','RW'], g:11, a:5, m:23, age:26, r:83 },
+    { n:"Jodie Taylor", p:['ST'], g:6, a:2, m:14, age:34, r:76 },
+  ]},
+{ id:'wol2020', team:"VfL Wolfsburg", year:2020, cc:'WOB', ctry:'GER', c1:'#65B32E', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Friederike Abt", p:['GK'], g:0, a:0, m:23, age:28, r:79 },
+    { n:"Kathrin Hendrich", p:['CB','RB'], g:1, a:1, m:23, age:28, r:81 },
+    { n:"Dominique Janssen", p:['CB','DM'], g:2, a:2, m:24, age:25, r:82 },
+    { n:"Felicitas Rauch", p:['LB'], g:2, a:5, m:23, age:24, r:80 },
+    { n:"Joelle Wedemeyer", p:['RB','CB'], g:0, a:1, m:21, age:24, r:74 },
+    { n:"Sara Björk Gunnarsdóttir", p:['CM','DM'], g:6, a:5, m:24, age:29, r:88 },
+    { n:"Ingrid Syrstad Engen", p:['DM','CM'], g:1, a:2, m:21, age:22, r:78 },
+    { n:"Svenja Huth", p:['RW','AM'], g:8, a:12, m:24, age:29, r:86 },
+    { n:"Pernille Harder", p:['AM','ST'], g:27, a:11, m:24, age:27, r:92 },
+    { n:"Ewa Pajor", p:['ST'], g:18, a:6, m:23, age:23, r:88 },
+    { n:"Alexandra Popp", p:['ST','CB'], g:11, a:5, m:21, age:29, r:88 },
+    { n:"Fridolina Rolfö", p:['LW'], g:9, a:7, m:22, age:26, r:84 },
+  ]},
+{ id:'bar2021', team:"FC Barcelona", year:2021, cc:'BAR', ctry:'ESP', c1:'#A50044', c2:'#004D98', champ:true, squad:[
+    { n:"Sandra Paños", p:['GK'], g:0, a:0, m:30, age:28, r:88 },
+    { n:"Marta Torrejón", p:['RB','CB'], g:3, a:6, m:29, age:31, r:84 },
+    { n:"Irene Paredes", p:['CB'], g:2, a:0, m:12, age:29, r:87 },
+    { n:"Mapi León", p:['CB'], g:2, a:2, m:29, age:26, r:88 },
+    { n:"Leila Ouahabi", p:['LB'], g:1, a:4, m:27, age:28, r:81 },
+    { n:"Patri Guijarro", p:['DM','CM'], g:5, a:6, m:30, age:23, r:87 },
+    { n:"Alexia Putellas", p:['CM','AM'], g:18, a:14, m:30, age:27, r:93 },
+    { n:"Aitana Bonmatí", p:['CM','AM'], g:9, a:10, m:29, age:23, r:89 },
+    { n:"Caroline Graham Hansen", p:['RW'], g:14, a:15, m:28, age:26, r:91 },
+    { n:"Jenni Hermoso", p:['ST','AM'], g:24, a:9, m:29, age:31, r:92 },
+    { n:"Lieke Martens", p:['LW'], g:12, a:10, m:26, age:28, r:88 },
+    { n:"Asisat Oshoala", p:['ST'], g:15, a:3, m:22, age:26, r:84 },
+  ]},
+{ id:'che2021', team:"Chelsea", year:2021, cc:'CHE', ctry:'ENG', c1:'#034694', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Ann-Katrin Berger", p:['GK'], g:0, a:0, m:28, age:30, r:87 },
+    { n:"Maren Mjelde", p:['RB','CB'], g:2, a:2, m:24, age:31, r:82 },
+    { n:"Millie Bright", p:['CB'], g:2, a:1, m:29, age:27, r:85 },
+    { n:"Magdalena Eriksson", p:['CB','LB'], g:1, a:1, m:28, age:27, r:86 },
+    { n:"Jonna Andersson", p:['LB'], g:0, a:5, m:25, age:28, r:79 },
+    { n:"Sophie Ingle", p:['DM'], g:1, a:2, m:27, age:29, r:80 },
+    { n:"Ji So-yun", p:['CM','AM'], g:7, a:9, m:28, age:30, r:88 },
+    { n:"Melanie Leupolz", p:['CM'], g:4, a:4, m:26, age:27, r:83 },
+    { n:"Fran Kirby", p:['AM','ST'], g:16, a:11, m:28, age:27, r:89 },
+    { n:"Sam Kerr", p:['ST'], g:21, a:7, m:29, age:27, r:92 },
+    { n:"Pernille Harder", p:['ST','AM'], g:13, a:9, m:27, age:28, r:91 },
+    { n:"Guro Reiten", p:['LW'], g:8, a:10, m:26, age:26, r:84 },
+  ]},
+{ id:'psg2021', team:"Paris Saint-Germain", year:2021, cc:'PSG', ctry:'FRA', c1:'#004170', c2:'#E30613', champ:false, squad:[
+    { n:"Christiane Endler", p:['GK'], g:0, a:0, m:27, age:29, r:90 },
+    { n:"Ashley Lawrence", p:['RB','LB'], g:1, a:5, m:27, age:25, r:84 },
+    { n:"Paulina Dudek", p:['CB'], g:2, a:0, m:26, age:23, r:81 },
+    { n:"Irene Paredes", p:['CB'], g:2, a:1, m:26, age:29, r:87 },
+    { n:"Perle Morroni", p:['LB'], g:0, a:3, m:22, age:23, r:75 },
+    { n:"Grace Geyoro", p:['CM','DM'], g:5, a:5, m:27, age:23, r:87 },
+    { n:"Sara Däbritz", p:['CM'], g:7, a:6, m:26, age:26, r:86 },
+    { n:"Sandy Baltimore", p:['LW','LB'], g:6, a:6, m:24, age:21, r:79 },
+    { n:"Kadidiatou Diani", p:['RW','ST'], g:12, a:9, m:27, age:25, r:89 },
+    { n:"Marie-Antoinette Katoto", p:['ST'], g:22, a:6, m:27, age:22, r:90 },
+    { n:"Ramona Bachmann", p:['LW','AM'], g:7, a:7, m:24, age:30, r:84 },
+    { n:"Formiga", p:['DM'], g:0, a:2, m:18, age:43, r:78 },
+  ]},
+{ id:'bay2021', team:"Bayern München", year:2021, cc:'FCB', ctry:'GER', c1:'#DC052D', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Laura Benkarth", p:['GK'], g:0, a:0, m:26, age:28, r:80 },
+    { n:"Giulia Gwinn", p:['RB','RW'], g:3, a:5, m:24, age:21, r:84 },
+    { n:"Marina Hegering", p:['CB'], g:2, a:0, m:25, age:30, r:84 },
+    { n:"Amanda Ilestedt", p:['CB'], g:3, a:1, m:24, age:28, r:82 },
+    { n:"Hanna Glas", p:['RB'], g:1, a:4, m:23, age:27, r:84 },
+    { n:"Sarah Zadrazil", p:['DM','CM'], g:2, a:3, m:26, age:28, r:81 },
+    { n:"Lina Magull", p:['CM','AM'], g:8, a:7, m:26, age:26, r:86 },
+    { n:"Sydney Lohmann", p:['CM'], g:5, a:4, m:24, age:20, r:79 },
+    { n:"Lea Schüller", p:['ST'], g:16, a:4, m:25, age:23, r:86 },
+    { n:"Klara Bühl", p:['LW'], g:9, a:8, m:25, age:20, r:84 },
+    { n:"Linda Dallmann", p:['AM'], g:6, a:7, m:24, age:26, r:81 },
+    { n:"Viviane Asseyi", p:['ST','LW'], g:7, a:4, m:22, age:27, r:79 },
+  ]},
+{ id:'lyo2022', team:"OL Lyonnes", year:2022, cc:'LYO', ctry:'FRA', c1:'#1B3D6D', c2:'#E30613', champ:true, squad:[
+    { n:"Christiane Endler", p:['GK'], g:0, a:0, m:26, age:30, r:90 },
+    { n:"Ellie Carpenter", p:['RB'], g:1, a:4, m:25, age:22, r:83 },
+    { n:"Wendie Renard", p:['CB'], g:5, a:1, m:27, age:31, r:90 },
+    { n:"Griedge Mbock", p:['CB'], g:1, a:0, m:18, age:27, r:84 },
+    { n:"Selma Bacha", p:['LB','LW'], g:3, a:10, m:26, age:21, r:88 },
+    { n:"Damaris Egurrola", p:['DM'], g:1, a:2, m:22, age:22, r:80 },
+    { n:"Amandine Henry", p:['CM'], g:3, a:4, m:22, age:32, r:85 },
+    { n:"Daniëlle van de Donk", p:['AM','CM'], g:7, a:6, m:24, age:30, r:85 },
+    { n:"Delphine Cascarino", p:['RW'], g:6, a:9, m:24, age:25, r:85 },
+    { n:"Ada Hegerberg", p:['ST'], g:16, a:5, m:24, age:26, r:91 },
+    { n:"Catarina Macario", p:['ST','AM'], g:14, a:7, m:25, age:22, r:89 },
+    { n:"Melvine Malard", p:['ST','LW'], g:8, a:4, m:22, age:21, r:78 },
+  ]},
+{ id:'juv2022', team:"Juventus", year:2022, cc:'JUV', ctry:'ITA', c1:'#000000', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Pauline Peyraud-Magnin", p:['GK'], g:0, a:0, m:27, age:29, r:83 },
+    { n:"Lucia Di Guglielmo", p:['RB'], g:1, a:2, m:24, age:24, r:76 },
+    { n:"Cecilia Salvai", p:['CB'], g:2, a:0, m:25, age:28, r:81 },
+    { n:"Linda Sembrant", p:['CB'], g:2, a:0, m:24, age:34, r:80 },
+    { n:"Lisa Boattin", p:['LB'], g:2, a:5, m:26, age:24, r:80 },
+    { n:"Julia Grosso", p:['CM','DM'], g:3, a:3, m:22, age:21, r:77 },
+    { n:"Arianna Caruso", p:['CM','AM'], g:7, a:6, m:27, age:22, r:83 },
+    { n:"Martina Rosucci", p:['DM','CM'], g:2, a:3, m:23, age:29, r:79 },
+    { n:"Barbara Bonansea", p:['LW','ST'], g:8, a:7, m:25, age:30, r:85 },
+    { n:"Cristiana Girelli", p:['ST'], g:17, a:6, m:26, age:31, r:88 },
+    { n:"Andrea Stašková", p:['ST'], g:6, a:2, m:18, age:21, r:74 },
+    { n:"Lineth Beerensteyn", p:['RW','ST'], g:9, a:5, m:24, age:25, r:80 },
+  ]},
+{ id:'val2022', team:"Valur", year:2022, cc:'VAL', ctry:'ISL', c1:'#D71920', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Anna María Baldursdóttir", p:['GK'], g:0, a:0, m:19, age:23, r:72 },
+    { n:"Anna Björk Kristjánsdóttir", p:['CB'], g:1, a:0, m:18, age:34, r:71 },
+    { n:"Elísa Viðarsdóttir", p:['CB'], g:1, a:1, m:19, age:31, r:75 },
+    { n:"María Aldís Kristinsdóttir", p:['RB'], g:1, a:2, m:19, age:28, r:71 },
+    { n:"Hallbera Guðný Gísladóttir", p:['LB'], g:0, a:3, m:18, age:36, r:72 },
+    { n:"Dóra María Lárusdóttir", p:['CM'], g:3, a:5, m:18, age:37, r:74 },
+    { n:"Kolfinna Bjarney Magnúsdóttir", p:['CM','AM'], g:5, a:6, m:19, age:22, r:73 },
+    { n:"Rakel Ýr Einarsdóttir", p:['DM'], g:1, a:2, m:18, age:24, r:70 },
+    { n:"Elín Metta Jensen", p:['ST','AM'], g:17, a:7, m:19, age:27, r:80 },
+    { n:"Fanndís Friðriksdóttir", p:['LW'], g:8, a:6, m:18, age:32, r:75 },
+    { n:"Katla Tryggvadóttir", p:['RW','ST'], g:7, a:5, m:18, age:19, r:72 },
+    { n:"Amanda Jacobsen Andradóttir", p:['CM','AM'], g:4, a:5, m:16, age:19, r:72 },
+  ]},
+{ id:'wol2023', team:"VfL Wolfsburg", year:2023, cc:'WOB', ctry:'GER', c1:'#65B32E', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Merle Frohms", p:['GK'], g:0, a:0, m:28, age:28, r:86 },
+    { n:"Kathrin Hendrich", p:['CB','RB'], g:1, a:1, m:26, age:31, r:82 },
+    { n:"Dominique Janssen", p:['CB','DM'], g:3, a:2, m:28, age:28, r:83 },
+    { n:"Marina Hegering", p:['CB'], g:1, a:0, m:22, age:32, r:83 },
+    { n:"Felicitas Rauch", p:['LB'], g:2, a:6, m:27, age:27, r:81 },
+    { n:"Lena Oberdorf", p:['DM','CB'], g:2, a:3, m:28, age:21, r:89 },
+    { n:"Lena Lattwein", p:['CM'], g:3, a:4, m:26, age:23, r:79 },
+    { n:"Svenja Huth", p:['RW','AM'], g:9, a:13, m:29, age:32, r:85 },
+    { n:"Jill Roord", p:['CM','AM'], g:10, a:6, m:28, age:26, r:85 },
+    { n:"Ewa Pajor", p:['ST'], g:23, a:7, m:29, age:26, r:90 },
+    { n:"Alexandra Popp", p:['ST'], g:14, a:5, m:25, age:32, r:88 },
+    { n:"Sveindís Jane Jónsdóttir", p:['LW','RW'], g:8, a:8, m:26, age:21, r:84 },
+  ]},
+]);
+
+window.WC_TEAMS = window.WC_TEAMS.concat([
+{ id:'bar2024', team:"FC Barcelona", year:2024, cc:'BAR', ctry:'ESP', c1:'#A50044', c2:'#004D98', champ:true, squad:[
+    { n:"Cata Coll", p:['GK'], g:0, a:0, m:28, age:23, r:87 },
+    { n:"Ona Batlle", p:['RB'], g:2, a:8, m:30, age:24, r:89 },
+    { n:"Irene Paredes", p:['CB'], g:4, a:1, m:29, age:32, r:86 },
+    { n:"Mapi León", p:['CB'], g:1, a:2, m:28, age:28, r:89 },
+    { n:"Fridolina Rolfö", p:['LB','LW'], g:6, a:7, m:28, age:30, r:87 },
+    { n:"Keira Walsh", p:['DM'], g:2, a:4, m:29, age:26, r:90 },
+    { n:"Patri Guijarro", p:['DM','CM'], g:4, a:5, m:29, age:25, r:91 },
+    { n:"Aitana Bonmatí", p:['CM','AM'], g:15, a:13, m:31, age:26, r:95 },
+    { n:"Alexia Putellas", p:['CM','AM'], g:11, a:9, m:26, age:29, r:92 },
+    { n:"Caroline Graham Hansen", p:['RW'], g:17, a:16, m:30, age:29, r:92 },
+    { n:"Salma Paralluelo", p:['ST','LW'], g:16, a:7, m:29, age:20, r:89 },
+    { n:"Mariona Caldentey", p:['LW','AM'], g:12, a:10, m:29, age:27, r:88 },
+  ]},
+{ id:'bay2024', team:"Bayern München", year:2024, cc:'FCB', ctry:'GER', c1:'#DC052D', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Maria Luisa Grohs", p:['GK'], g:0, a:0, m:27, age:22, r:82 },
+    { n:"Giulia Gwinn", p:['RB'], g:4, a:6, m:27, age:24, r:86 },
+    { n:"Glódís Perla Viggósdóttir", p:['CB'], g:3, a:1, m:28, age:28, r:88 },
+    { n:"Magdalena Eriksson", p:['CB'], g:1, a:1, m:26, age:30, r:85 },
+    { n:"Katharina Naschenweng", p:['LB','LW'], g:2, a:5, m:25, age:26, r:79 },
+    { n:"Sarah Zadrazil", p:['DM','CM'], g:3, a:4, m:27, age:31, r:83 },
+    { n:"Georgia Stanway", p:['CM'], g:9, a:6, m:28, age:25, r:88 },
+    { n:"Pernille Harder", p:['AM','ST'], g:15, a:9, m:26, age:31, r:89 },
+    { n:"Klara Bühl", p:['LW'], g:11, a:10, m:28, age:23, r:88 },
+    { n:"Lea Schüller", p:['ST'], g:18, a:4, m:27, age:26, r:87 },
+    { n:"Jovana Damnjanović", p:['ST'], g:7, a:3, m:20, age:29, r:77 },
+    { n:"Karólína Lea Vilhjálmsdóttir", p:['CM','AM'], g:4, a:4, m:18, age:22, r:79 },
+  ]},
+{ id:'rom2024', team:"AS Roma", year:2024, cc:'ROM', ctry:'ITA', c1:'#8E1F2F', c2:'#F0BC42', champ:false, squad:[
+    { n:"Camelia Ceasar", p:['GK'], g:0, a:0, m:26, age:26, r:79 },
+    { n:"Elisa Bartoli", p:['RB'], g:1, a:3, m:25, age:33, r:78 },
+    { n:"Elena Linari", p:['CB'], g:3, a:1, m:27, age:29, r:85 },
+    { n:"Moeka Minami", p:['CB'], g:1, a:0, m:25, age:25, r:81 },
+    { n:"Lucia Di Guglielmo", p:['LB','RB'], g:1, a:2, m:24, age:26, r:77 },
+    { n:"Giada Greggi", p:['CM','DM'], g:3, a:4, m:26, age:23, r:79 },
+    { n:"Manuela Giugliano", p:['CM','AM'], g:8, a:10, m:27, age:26, r:87 },
+    { n:"Emilie Bosshard Haavi", p:['LW'], g:8, a:7, m:26, age:31, r:84 },
+    { n:"Valentina Giacinti", p:['ST'], g:14, a:4, m:26, age:29, r:84 },
+    { n:"Evelyne Viens", p:['ST'], g:10, a:4, m:22, age:26, r:79 },
+    { n:"Sophie Haug", p:['ST','RW'], g:9, a:3, m:21, age:24, r:78 },
+    { n:"Benedetta Glionna", p:['RW'], g:4, a:5, m:22, age:24, r:75 },
+  ]},
+{ id:'ajx2024', team:"Ajax", year:2024, cc:'AJX', ctry:'NED', c1:'#D2122E', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Regina van Eijk", p:['GK'], g:0, a:0, m:25, age:24, r:77 },
+    { n:"Kay-Lee de Sanders", p:['RB','CB'], g:1, a:1, m:24, age:22, r:73 },
+    { n:"Sherida Spitse", p:['DM','CB'], g:4, a:7, m:26, age:33, r:84 },
+    { n:"Isa Kardinaal", p:['CB'], g:1, a:0, m:24, age:24, r:73 },
+    { n:"Lisa Doorn", p:['LB'], g:0, a:2, m:23, age:22, r:71 },
+    { n:"Jonna van de Velde", p:['RW'], g:5, a:6, m:24, age:22, r:74 },
+    { n:"Danique Noordman", p:['CM'], g:3, a:3, m:23, age:23, r:73 },
+    { n:"Quinty Sabajo", p:['ST','RW'], g:7, a:4, m:22, age:21, r:73 },
+    { n:"Romée Leuchter", p:['ST'], g:16, a:5, m:25, age:23, r:82 },
+    { n:"Chasity Grant", p:['RW','AM'], g:8, a:9, m:25, age:23, r:78 },
+    { n:"Nadine Noordam", p:['CM','AM'], g:4, a:4, m:22, age:24, r:72 },
+    { n:"Tiny Hoekstra", p:['LW'], g:9, a:6, m:24, age:27, r:76 },
+  ]},
+{ id:'ben2024', team:"Benfica", year:2024, cc:'BEN', ctry:'POR', c1:'#E30613', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Lena Pauels", p:['GK'], g:0, a:0, m:26, age:25, r:78 },
+    { n:"Catarina Amado", p:['RB'], g:1, a:3, m:26, age:24, r:76 },
+    { n:"Carole Costa", p:['CB'], g:3, a:1, m:26, age:33, r:80 },
+    { n:"Christy Ucheibe", p:['DM','CB'], g:1, a:1, m:25, age:23, r:79 },
+    { n:"Lúcia Alves", p:['LB'], g:0, a:3, m:24, age:26, r:74 },
+    { n:"Andreia Faria", p:['CM'], g:5, a:6, m:26, age:23, r:79 },
+    { n:"Kika Nazareth", p:['AM','ST'], g:12, a:11, m:26, age:21, r:86 },
+    { n:"Andreia Norton", p:['CM','AM'], g:6, a:5, m:24, age:27, r:76 },
+    { n:"Marie Alidou", p:['RW','ST'], g:14, a:6, m:26, age:23, r:82 },
+    { n:"Jéssica Silva", p:['LW','ST'], g:9, a:7, m:23, age:29, r:80 },
+    { n:"Nycole Raysla", p:['LW'], g:7, a:5, m:22, age:23, r:75 },
+    { n:"Pauleta", p:['ST'], g:8, a:3, m:20, age:22, r:73 },
+  ]},
+{ id:'rma2024', team:"Real Madrid", year:2024, cc:'RMA', ctry:'ESP', c1:'#FFFFFF', c2:'#00529F', champ:false, squad:[
+    { n:"Misa Rodríguez", p:['GK'], g:0, a:0, m:27, age:24, r:82 },
+    { n:"Kenti Robles", p:['RB'], g:1, a:3, m:25, age:33, r:77 },
+    { n:"Rocío Gálvez", p:['CB'], g:1, a:0, m:24, age:26, r:77 },
+    { n:"Kathellen", p:['CB'], g:2, a:0, m:24, age:27, r:79 },
+    { n:"Olga Carmona", p:['LB'], g:3, a:5, m:27, age:23, r:86 },
+    { n:"Teresa Abelleira", p:['DM','CM'], g:2, a:5, m:27, age:23, r:86 },
+    { n:"Maëlle Lakrar", p:['CB','DM'], g:1, a:1, m:23, age:23, r:78 },
+    { n:"Caroline Weir", p:['AM','CM'], g:14, a:8, m:27, age:28, r:88 },
+    { n:"Athenea del Castillo", p:['RW'], g:8, a:7, m:26, age:23, r:82 },
+    { n:"Signe Bruun", p:['ST'], g:12, a:3, m:24, age:25, r:80 },
+    { n:"Linda Caicedo", p:['LW','ST'], g:10, a:6, m:26, age:18, r:88 },
+    { n:"Naomie Feller", p:['ST','RW'], g:6, a:3, m:20, age:22, r:74 },
+  ]},
+{ id:'hac2024', team:"BK Häcken", year:2024, cc:'HAC', ctry:'SWE', c1:'#FFE100', c2:'#000000', champ:false, squad:[
+    { n:"Jennifer Falk", p:['GK'], g:0, a:0, m:26, age:30, r:86 },
+    { n:"Emma Wijkström", p:['RB'], g:1, a:2, m:24, age:22, r:72 },
+    { n:"Emma Östlund", p:['CB'], g:1, a:0, m:25, age:21, r:73 },
+    { n:"Felicia Rogic", p:['CM','AM'], g:6, a:5, m:25, age:25, r:76 },
+    { n:"Nathalie Hoff Persson", p:['CM'], g:3, a:5, m:25, age:28, r:75 },
+    { n:"Elin Rubensson", p:['DM','RB'], g:4, a:5, m:26, age:30, r:80 },
+    { n:"Anna Csiki", p:['AM'], g:5, a:4, m:22, age:22, r:73 },
+    { n:"Rosa Kafaji", p:['AM','LW'], g:10, a:8, m:25, age:20, r:81 },
+    { n:"Stina Blackstenius", p:['ST'], g:5, a:2, m:8, age:27, r:84 },
+    { n:"Anna Anvegård", p:['ST'], g:12, a:4, m:24, age:26, r:79 },
+    { n:"Monica Jusu Bah", p:['LW','RW'], g:6, a:6, m:23, age:21, r:74 },
+    { n:"Hanna Wijk", p:['CB'], g:0, a:1, m:22, age:22, r:71 },
+  ]},
+{ id:'arn2025', team:"Arsenal", year:2025, cc:'ARS', ctry:'ENG', c1:'#EF0107', c2:'#FFFFFF', champ:true, squad:[
+    { n:"Daphne van Domselaar", p:['GK'], g:0, a:0, m:28, age:25, r:87 },
+    { n:"Emily Fox", p:['RB'], g:1, a:4, m:27, age:26, r:82 },
+    { n:"Leah Williamson", p:['CB','DM'], g:2, a:2, m:28, age:28, r:90 },
+    { n:"Lotte Wubben-Moy", p:['CB'], g:2, a:0, m:24, age:26, r:81 },
+    { n:"Katie McCabe", p:['LB','LW'], g:4, a:9, m:29, age:29, r:86 },
+    { n:"Kim Little", p:['CM','DM'], g:5, a:6, m:27, age:34, r:87 },
+    { n:"Frida Maanum", p:['CM','AM'], g:8, a:6, m:28, age:25, r:84 },
+    { n:"Mariona Caldentey", p:['AM','LW'], g:13, a:10, m:29, age:29, r:90 },
+    { n:"Caitlin Foord", p:['LW','ST'], g:11, a:8, m:28, age:30, r:86 },
+    { n:"Alessia Russo", p:['ST'], g:19, a:7, m:29, age:26, r:90 },
+    { n:"Stina Blackstenius", p:['ST'], g:14, a:4, m:27, age:29, r:89 },
+    { n:"Chloe Kelly", p:['RW','LW'], g:5, a:8, m:16, age:27, r:87 },
+  ]},
+{ id:'bre2025', team:"Breiðablik", year:2025, cc:'BRE', ctry:'ISL', c1:'#00A650', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Elín Lóa Kristjánsdóttir", p:['GK'], g:0, a:0, m:19, age:22, r:72 },
+    { n:"Katrín Ásbjörnsdóttir", p:['RB','CM'], g:2, a:4, m:19, age:28, r:73 },
+    { n:"Guðmunda Brynja Óladóttir", p:['CB'], g:1, a:1, m:19, age:26, r:74 },
+    { n:"Elísa Ósk Viðarsdóttir", p:['CB'], g:1, a:0, m:18, age:34, r:72 },
+    { n:"Hafrún Rakel Halldórsdóttir", p:['LB'], g:1, a:3, m:18, age:22, r:71 },
+    { n:"Selma Sól Magnúsdóttir", p:['CM','AM'], g:6, a:8, m:19, age:27, r:76 },
+    { n:"Anita Lind Daníelsdóttir", p:['DM'], g:1, a:2, m:18, age:28, r:71 },
+    { n:"Ísold Erlingsdóttir", p:['CM'], g:4, a:5, m:18, age:21, r:72 },
+    { n:"Agla María Albertsdóttir", p:['RW','ST'], g:10, a:9, m:19, age:26, r:79 },
+    { n:"Berglind Björg Þorvaldsdóttir", p:['ST'], g:23, a:6, m:19, age:32, r:82 },
+    { n:"Hlín Eiríksdóttir", p:['LW','ST'], g:11, a:5, m:18, age:27, r:75 },
+    { n:"Katla Tryggvadóttir", p:['LW','AM'], g:8, a:7, m:18, age:22, r:75 },
+  ]},
+{ id:'oll2026', team:"OL Lyonnes", year:2026, cc:'LYO', ctry:'FRA', c1:'#1B3D6D', c2:'#E30613', champ:false, squad:[
+    { n:"Christiane Endler", p:['GK'], g:0, a:0, m:26, age:34, r:88 },
+    { n:"Ellie Carpenter", p:['RB'], g:1, a:5, m:24, age:25, r:84 },
+    { n:"Wendie Renard", p:['CB'], g:4, a:1, m:24, age:35, r:85 },
+    { n:"Vanessa Gilles", p:['CB'], g:3, a:0, m:25, age:29, r:85 },
+    { n:"Selma Bacha", p:['LB','LW'], g:2, a:11, m:26, age:25, r:89 },
+    { n:"Ingrid Syrstad Engen", p:['DM','CM'], g:2, a:3, m:25, age:27, r:85 },
+    { n:"Lindsey Heaps", p:['CM','AM'], g:8, a:7, m:26, age:31, r:87 },
+    { n:"Jule Brand", p:['RW','AM'], g:9, a:9, m:26, age:23, r:88 },
+    { n:"Melchie Dumornay", p:['AM','CM'], g:16, a:10, m:26, age:22, r:93 },
+    { n:"Tabitha Chawinga", p:['ST','LW'], g:15, a:8, m:25, age:29, r:89 },
+    { n:"Ada Hegerberg", p:['ST'], g:11, a:4, m:21, age:30, r:86 },
+    { n:"Kadidiatou Diani", p:['RW','ST'], g:12, a:7, m:25, age:30, r:88 },
+  ]},
+{ id:'bar2026', team:"FC Barcelona", year:2026, cc:'BAR', ctry:'ESP', c1:'#A50044', c2:'#004D98', champ:true, squad:[
+    { n:"Cata Coll", p:['GK'], g:0, a:0, m:29, age:25, r:88 },
+    { n:"Ona Batlle", p:['RB'], g:3, a:9, m:29, age:26, r:90 },
+    { n:"Irene Paredes", p:['CB'], g:3, a:1, m:27, age:34, r:85 },
+    { n:"Mapi León", p:['CB'], g:1, a:2, m:27, age:30, r:88 },
+    { n:"Esmee Brugts", p:['LB','LW'], g:4, a:7, m:27, age:22, r:83 },
+    { n:"Patri Guijarro", p:['DM'], g:3, a:5, m:29, age:27, r:92 },
+    { n:"Aitana Bonmatí", p:['CM','AM'], g:14, a:12, m:30, age:28, r:95 },
+    { n:"Alexia Putellas", p:['CM','AM'], g:13, a:11, m:29, age:31, r:92 },
+    { n:"Caroline Graham Hansen", p:['RW'], g:12, a:14, m:28, age:31, r:90 },
+    { n:"Ewa Pajor", p:['ST'], g:28, a:8, m:30, age:29, r:93 },
+    { n:"Clàudia Pina", p:['LW','AM'], g:17, a:9, m:29, age:24, r:90 },
+    { n:"Vicky López", p:['AM','RW'], g:10, a:8, m:27, age:19, r:88 },
+  ]},
+{ id:'mun2026', team:"Manchester United", year:2026, cc:'MUN', ctry:'ENG', c1:'#DA291C', c2:'#000000', champ:false, squad:[
+    { n:"Phallon Tullis-Joyce", p:['GK'], g:0, a:0, m:27, age:28, r:85 },
+    { n:"Maya Le Tissier", p:['CB','RB'], g:2, a:2, m:28, age:23, r:85 },
+    { n:"Millie Turner", p:['CB'], g:1, a:0, m:25, age:29, r:79 },
+    { n:"Gemma Evans", p:['CB','LB'], g:1, a:1, m:24, age:29, r:76 },
+    { n:"Hannah Blundell", p:['LB'], g:0, a:3, m:23, age:31, r:75 },
+    { n:"Dominique Janssen", p:['DM','CB'], g:2, a:3, m:26, age:31, r:81 },
+    { n:"Grace Clinton", p:['CM','AM'], g:7, a:6, m:27, age:22, r:83 },
+    { n:"Ella Toone", p:['AM'], g:10, a:9, m:28, age:26, r:86 },
+    { n:"Leah Galton", p:['LW'], g:6, a:7, m:25, age:31, r:78 },
+    { n:"Elisabeth Terland", p:['ST'], g:14, a:4, m:27, age:24, r:82 },
+    { n:"Melvine Malard", p:['ST','LW'], g:9, a:5, m:24, age:25, r:79 },
+    { n:"Jayde Riviere", p:['RB'], g:0, a:4, m:22, age:24, r:76 },
+  ]},
+{ id:'pfc2026', team:"Paris FC", year:2026, cc:'PFC', ctry:'FRA', c1:'#0E2A5C', c2:'#B99976', champ:false, squad:[
+    { n:"Chiamaka Nnadozie", p:['GK'], g:0, a:0, m:26, age:25, r:86 },
+    { n:"Thelma Eninger", p:['CM'], g:2, a:3, m:23, age:25, r:74 },
+    { n:"Jade Le Guilly", p:['CB'], g:1, a:0, m:24, age:23, r:75 },
+    { n:"Teninsoun Sissoko", p:['CB'], g:1, a:1, m:23, age:23, r:74 },
+    { n:"Émilie Bourdin", p:['LB'], g:0, a:2, m:22, age:24, r:72 },
+    { n:"Océane Hurtré", p:['RB'], g:0, a:2, m:23, age:24, r:73 },
+    { n:"Daphne Corboz", p:['CM','AM'], g:6, a:8, m:25, age:31, r:80 },
+    { n:"Julie Dufour", p:['RW','AM'], g:7, a:6, m:24, age:24, r:76 },
+    { n:"Clara Mateo", p:['ST','AM'], g:18, a:7, m:26, age:28, r:87 },
+    { n:"Lorena Azzaro", p:['ST'], g:9, a:3, m:22, age:24, r:75 },
+    { n:"Célina Ould Hocine", p:['DM'], g:1, a:2, m:21, age:22, r:72 },
+    { n:"Margaux Bueno", p:['LW'], g:5, a:5, m:21, age:23, r:73 },
+  ]},
+{ id:'atm2026', team:"Atlético Madrid", year:2026, cc:'ATM', ctry:'ESP', c1:'#CB3524', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Lola Gallardo", p:['GK'], g:0, a:0, m:26, age:32, r:81 },
+    { n:"Lauren Leal", p:['RB'], g:1, a:2, m:24, age:22, r:74 },
+    { n:"Andrea Medina", p:['CB','LB'], g:1, a:1, m:25, age:23, r:76 },
+    { n:"Aleksandra Turkowska", p:['CB'], g:1, a:0, m:23, age:25, r:75 },
+    { n:"Silvia Lloris", p:['CB'], g:2, a:0, m:24, age:23, r:76 },
+    { n:"Fiamma Benítez", p:['CM','AM'], g:6, a:6, m:25, age:21, r:79 },
+    { n:"Alexia Fernández", p:['DM'], g:1, a:2, m:23, age:23, r:73 },
+    { n:"Gio Garbelini", p:['LW','ST'], g:11, a:7, m:25, age:22, r:81 },
+    { n:"Luany", p:['AM','RW'], g:9, a:8, m:25, age:24, r:80 },
+    { n:"Rasheedat Ajibade", p:['RW','ST'], g:10, a:5, m:24, age:26, r:81 },
+    { n:"Synne Jensen", p:['ST'], g:8, a:4, m:22, age:29, r:76 },
+    { n:"Vilde Bøe Risa", p:['CM'], g:3, a:4, m:22, age:30, r:76 },
+  ]},
+{ id:'vaa2026', team:"Vålerenga", year:2026, cc:'VÅL', ctry:'NOR', c1:'#00205B', c2:'#E4002B', champ:false, squad:[
+    { n:"Jalen Tompkins", p:['GK'], g:0, a:0, m:24, age:26, r:77 },
+    { n:"Thea Bjelde", p:['RB','CM'], g:3, a:5, m:24, age:25, r:79 },
+    { n:"Stine Ballisager", p:['CB'], g:1, a:0, m:24, age:31, r:78 },
+    { n:"Andrine Hegerberg", p:['CM','CB'], g:2, a:3, m:23, age:32, r:76 },
+    { n:"Rikke Nygard", p:['DM','CM'], g:2, a:3, m:23, age:25, r:75 },
+    { n:"Ylinn Tennebø", p:['CM'], g:3, a:4, m:23, age:22, r:74 },
+    { n:"Karina Sævik", p:['AM','RW'], g:9, a:8, m:24, age:29, r:81 },
+    { n:"Olaug Tvedten", p:['AM','ST'], g:8, a:6, m:23, age:25, r:77 },
+    { n:"Elise Thorsnes", p:['ST'], g:11, a:4, m:23, age:37, r:75 },
+    { n:"Janni Thomsen", p:['RW','RB'], g:5, a:6, m:23, age:25, r:77 },
+    { n:"Mathilde Harviken", p:['CB'], g:1, a:0, m:22, age:23, r:75 },
+    { n:"Sara Hørte", p:['LB'], g:0, a:2, m:22, age:24, r:72 },
+  ]},
+{ id:'stp2026', team:"St. Pölten", year:2026, cc:'STP', ctry:'AUT', c1:'#004F9F', c2:'#FFD500', champ:false, squad:[
+    { n:"Carina Schlüter", p:['GK'], g:0, a:0, m:24, age:29, r:76 },
+    { n:"Valentina Mädl", p:['RW','ST'], g:7, a:5, m:23, age:20, r:75 },
+    { n:"Jasmin Eder", p:['DM','RB'], g:1, a:3, m:23, age:33, r:73 },
+    { n:"Dominika Škorvánková", p:['CM'], g:5, a:5, m:24, age:34, r:76 },
+    { n:"Melanie Brunnthaler", p:['ST'], g:12, a:4, m:24, age:23, r:77 },
+    { n:"Rita Schumacher", p:['AM','LW'], g:6, a:6, m:23, age:24, r:74 },
+    { n:"Mateja Zver", p:['LW','ST'], g:9, a:5, m:23, age:37, r:73 },
+    { n:"Micaela Kläui", p:['CB'], g:1, a:0, m:22, age:24, r:72 },
+    { n:"Anna Wirnsberger", p:['RB'], g:1, a:2, m:22, age:22, r:71 },
+    { n:"Jennifer Klein", p:['CM','DM'], g:2, a:3, m:23, age:26, r:74 },
+    { n:"Lema Abdulai", p:['CB','LB'], g:0, a:1, m:21, age:22, r:70 },
+    { n:"Fanni Vachter", p:['LB'], g:0, a:1, m:20, age:23, r:69 },
+  ]},
+{ id:'twe2026', team:"FC Twente", year:2026, cc:'TWE', ctry:'NED', c1:'#E4002B', c2:'#FFFFFF', champ:false, squad:[
+    { n:"Diede Lemey", p:['GK'], g:0, a:0, m:24, age:29, r:77 },
+    { n:"Danique van Ginkel", p:['RB'], g:1, a:2, m:23, age:23, r:73 },
+    { n:"Marisa Olislagers", p:['LB','LW'], g:2, a:4, m:24, age:24, r:76 },
+    { n:"Aniek Nouwen", p:['CB'], g:1, a:0, m:23, age:26, r:78 },
+    { n:"Kim Everaerts", p:['CB','DM'], g:1, a:1, m:23, age:22, r:73 },
+    { n:"Jaimy Ravensbergen", p:['DM','CM'], g:2, a:3, m:23, age:24, r:74 },
+    { n:"Kayleigh van Dooren", p:['AM','CM'], g:7, a:7, m:24, age:24, r:77 },
+    { n:"Jill Diekman", p:['CM'], g:3, a:4, m:22, age:23, r:73 },
+    { n:"Sophie Proost", p:['RW','AM'], g:8, a:6, m:23, age:22, r:75 },
+    { n:"Liz Rijsbergen", p:['ST'], g:10, a:4, m:23, age:23, r:75 },
+    { n:"Nikita Tromp", p:['ST','LW'], g:11, a:5, m:23, age:23, r:76 },
+    { n:"Lieske Carleer", p:['LW'], g:5, a:5, m:21, age:22, r:71 },
+  ]},
+{ id:'leu2026', team:"OH Leuven", year:2026, cc:'OHL', ctry:'BEL', c1:'#FFFFFF', c2:'#1D1D1B', champ:false, squad:[
+    { n:"Louise Van Den Bergh", p:['GK'], g:0, a:0, m:23, age:23, r:74 },
+    { n:"Amber Tysiak", p:['CB'], g:2, a:1, m:23, age:25, r:77 },
+    { n:"Zenia Mertens", p:['CB'], g:1, a:0, m:22, age:23, r:73 },
+    { n:"Luna Vanhoudt", p:['RB'], g:0, a:2, m:22, age:22, r:72 },
+    { n:"Sari Kees", p:['CB','DM'], g:1, a:1, m:22, age:24, r:74 },
+    { n:"Marie Detruyer", p:['AM','CM'], g:7, a:7, m:23, age:22, r:78 },
+    { n:"Lore Jacobs", p:['RW','ST'], g:8, a:5, m:23, age:21, r:75 },
+    { n:"Estée Cattoor", p:['CM'], g:3, a:4, m:22, age:24, r:72 },
+    { n:"Hannah Eurlings", p:['ST','RW'], g:11, a:5, m:23, age:22, r:77 },
+    { n:"Jill Janssens", p:['CM','DM'], g:2, a:3, m:22, age:22, r:72 },
+    { n:"Ella Vierendeels", p:['LB'], g:0, a:1, m:21, age:23, r:70 },
+    { n:"Emma Coppens", p:['LW'], g:4, a:4, m:20, age:21, r:70 },
+  ]},
+]);
+</script>
+<script>// Formation layouts. Pitch is portrait: y=8 (top, attack) → y=92 (bottom, own GK).
+// Each slot: id, role label, x/y in %, accepts = which player position tags fit here.
+window.WC_FORMATIONS = {
+  '4-3-3': {
+    name: '4-3-3',
+    sub: 'The classic. Wingers high, three in midfield.',
+    slots: [
+      { id:'gk',  role:'GK',  x:50, y:90, accepts:['GK'] },
+      { id:'lb',  role:'LB',  x:15, y:71, accepts:['LB'] },
+      { id:'cbl', role:'CB',  x:38, y:75, accepts:['CB'] },
+      { id:'cbr', role:'CB',  x:62, y:75, accepts:['CB'] },
+      { id:'rb',  role:'RB',  x:85, y:71, accepts:['RB'] },
+      { id:'cml', role:'CM',  x:30, y:50, accepts:['CM','DM'] },
+      { id:'cmc', role:'CDM', x:50, y:55, accepts:['DM','CM'] },
+      { id:'cmr', role:'CM',  x:70, y:50, accepts:['CM'] },
+      { id:'lw',  role:'LW',  x:20, y:25, accepts:['LW'] },
+      { id:'st',  role:'ST',  x:50, y:18, accepts:['ST'] },
+      { id:'rw',  role:'RW',  x:80, y:25, accepts:['RW'] },
+    ],
+  },
+  '4-2-3-1': {
+    name: '4-2-3-1',
+    sub: 'Double pivot, a number ten, lone striker.',
+    slots: [
+      { id:'gk',  role:'GK',  x:50, y:90, accepts:['GK'] },
+      { id:'lb',  role:'LB',  x:15, y:72, accepts:['LB'] },
+      { id:'cbl', role:'CB',  x:38, y:76, accepts:['CB'] },
+      { id:'cbr', role:'CB',  x:62, y:76, accepts:['CB'] },
+      { id:'rb',  role:'RB',  x:85, y:72, accepts:['RB'] },
+      { id:'dml', role:'CDM', x:37, y:57, accepts:['DM','CM'] },
+      { id:'dmr', role:'CDM', x:63, y:57, accepts:['DM','CM'] },
+      { id:'lw',  role:'LW',  x:18, y:34, accepts:['LW'] },
+      { id:'cam', role:'CAM', x:50, y:38, accepts:['AM','CM'] },
+      { id:'rw',  role:'RW',  x:82, y:34, accepts:['RW'] },
+      { id:'st',  role:'ST',  x:50, y:17, accepts:['ST'] },
+    ],
+  },
+  '4-4-2': {
+    name: '4-4-2',
+    sub: 'Two banks of four, a strike partnership.',
+    slots: [
+      { id:'gk',  role:'GK', x:50, y:90, accepts:['GK'] },
+      { id:'lb',  role:'LB', x:15, y:73, accepts:['LB'] },
+      { id:'cbl', role:'CB', x:38, y:77, accepts:['CB'] },
+      { id:'cbr', role:'CB', x:62, y:77, accepts:['CB'] },
+      { id:'rb',  role:'RB', x:85, y:73, accepts:['RB'] },
+      { id:'lm',  role:'LM', x:15, y:48, accepts:['LW'] },
+      { id:'cml', role:'CM', x:40, y:52, accepts:['CM','DM'] },
+      { id:'cmr', role:'CM', x:60, y:52, accepts:['CM','DM'] },
+      { id:'rm',  role:'RM', x:85, y:48, accepts:['RW'] },
+      { id:'stl', role:'ST', x:38, y:20, accepts:['ST'] },
+      { id:'str', role:'ST', x:62, y:20, accepts:['ST'] },
+    ],
+  },
+};
+</script>
+<script type="text/babel">// @ds-adherence-ignore -- omelette starter scaffold (raw elements/hex/px by design)
+
+/* BEGIN USAGE */
+// tweaks-panel.jsx
+// Reusable Tweaks shell + form-control helpers.
+// Exports (to window): useTweaks, TweaksPanel, TweakSection, TweakRow, TweakSlider,
+//   TweakToggle, TweakRadio, TweakSelect, TweakText, TweakNumber, TweakColor, TweakButton.
+//
+// Owns the host protocol (listens for __activate_edit_mode / __deactivate_edit_mode,
+// posts __edit_mode_available / __edit_mode_set_keys / __edit_mode_dismissed) so
+// individual prototypes don't re-roll it. Ships a consistent set of controls so you
+// don't hand-draw <input type="range">, segmented radios, steppers, etc.
+//
+// Usage (in an HTML file that loads React + Babel):
+//
+//   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+//     "primaryColor": "#D97757",
+//     "palette": ["#D97757", "#29261b", "#f6f4ef"],
+//     "fontSize": 16,
+//     "density": "regular",
+//     "dark": false
+//   }/*EDITMODE-END*/;
+//
+//   function App() {
+//     const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+//     return (
+//       <div style={{ fontSize: t.fontSize, color: t.primaryColor }}>
+//         Hello
+//         <TweaksPanel>
+//           <TweakSection label="Typography" />
+//           <TweakSlider label="Font size" value={t.fontSize} min={10} max={32} unit="px"
+//                        onChange={(v) => setTweak('fontSize', v)} />
+//           <TweakRadio  label="Density" value={t.density}
+//                        options={['compact', 'regular', 'comfy']}
+//                        onChange={(v) => setTweak('density', v)} />
+//           <TweakSection label="Theme" />
+//           <TweakColor  label="Primary" value={t.primaryColor}
+//                        options={['#D97757', '#2A6FDB', '#1F8A5B', '#7A5AE0']}
+//                        onChange={(v) => setTweak('primaryColor', v)} />
+//           <TweakColor  label="Palette" value={t.palette}
+//                        options={[['#D97757', '#29261b', '#f6f4ef'],
+//                                  ['#475569', '#0f172a', '#f1f5f9']]}
+//                        onChange={(v) => setTweak('palette', v)} />
+//           <TweakToggle label="Dark mode" value={t.dark}
+//                        onChange={(v) => setTweak('dark', v)} />
+//         </TweaksPanel>
+//       </div>
+//     );
+//   }
+//
+// TweakRadio is the segmented control for 2–3 short options (auto-falls-back to
+// TweakSelect past ~16/~10 chars per label); reach for TweakSelect directly when
+// options are many or long. For color tweaks always curate 3-4 options rather than
+// a free picker; an option can also be a whole 2–5 color palette (the stored value
+// is the array). The Tweak* controls are a floor, not a ceiling — build custom
+// controls inside the panel if a tweak calls for UI they don't cover.
+/* END USAGE */
+// ─────────────────────────────────────────────────────────────────────────────
+
+const __TWEAKS_STYLE = `
+  .twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
+    max-height:calc(100vh - 32px);display:flex;flex-direction:column;
+    transform:scale(var(--dc-inv-zoom,1));transform-origin:bottom right;
+    background:rgba(250,249,247,.78);color:#29261b;
+    -webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);
+    border:.5px solid rgba(255,255,255,.6);border-radius:14px;
+    box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 12px 40px rgba(0,0,0,.18);
+    font:11.5px/1.4 ui-sans-serif,system-ui,-apple-system,sans-serif;overflow:hidden}
+  .twk-hd{display:flex;align-items:center;justify-content:space-between;
+    padding:10px 8px 10px 14px;cursor:move;user-select:none}
+  .twk-hd b{font-size:12px;font-weight:600;letter-spacing:.01em}
+  .twk-x{appearance:none;border:0;background:transparent;color:rgba(41,38,27,.55);
+    width:22px;height:22px;border-radius:6px;cursor:default;font-size:13px;line-height:1}
+  .twk-x:hover{background:rgba(0,0,0,.06);color:#29261b}
+  .twk-body{padding:2px 14px 14px;display:flex;flex-direction:column;gap:10px;
+    overflow-y:auto;overflow-x:hidden;min-height:0;
+    scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.15) transparent}
+  .twk-body::-webkit-scrollbar{width:8px}
+  .twk-body::-webkit-scrollbar-track{background:transparent;margin:2px}
+  .twk-body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.15);border-radius:4px;
+    border:2px solid transparent;background-clip:content-box}
+  .twk-body::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.25);
+    border:2px solid transparent;background-clip:content-box}
+  .twk-row{display:flex;flex-direction:column;gap:5px}
+  .twk-row-h{flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
+  .twk-lbl{display:flex;justify-content:space-between;align-items:baseline;
+    color:rgba(41,38,27,.72)}
+  .twk-lbl>span:first-child{font-weight:500}
+  .twk-val{color:rgba(41,38,27,.5);font-variant-numeric:tabular-nums}
+
+  .twk-sect{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:rgba(41,38,27,.45);padding:10px 0 0}
+  .twk-sect:first-child{padding-top:0}
+
+  .twk-field{appearance:none;box-sizing:border-box;width:100%;min-width:0;height:26px;padding:0 8px;
+    border:.5px solid rgba(0,0,0,.1);border-radius:7px;
+    background:rgba(255,255,255,.6);color:inherit;font:inherit;outline:none}
+  .twk-field:focus{border-color:rgba(0,0,0,.25);background:rgba(255,255,255,.85)}
+  select.twk-field{padding-right:22px;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='rgba(0,0,0,.5)' d='M0 0h10L5 6z'/></svg>");
+    background-repeat:no-repeat;background-position:right 8px center}
+
+  .twk-slider{appearance:none;-webkit-appearance:none;width:100%;height:4px;margin:6px 0;
+    border-radius:999px;background:rgba(0,0,0,.12);outline:none}
+  .twk-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
+    width:14px;height:14px;border-radius:50%;background:#fff;
+    border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+  .twk-slider::-moz-range-thumb{width:14px;height:14px;border-radius:50%;
+    background:#fff;border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+
+  .twk-seg{position:relative;display:flex;padding:2px;border-radius:8px;
+    background:rgba(0,0,0,.06);user-select:none}
+  .twk-seg-thumb{position:absolute;top:2px;bottom:2px;border-radius:6px;
+    background:rgba(255,255,255,.9);box-shadow:0 1px 2px rgba(0,0,0,.12);
+    transition:left .15s cubic-bezier(.3,.7,.4,1),width .15s}
+  .twk-seg.dragging .twk-seg-thumb{transition:none}
+  .twk-seg button{appearance:none;position:relative;z-index:1;flex:1;border:0;
+    background:transparent;color:inherit;font:inherit;font-weight:500;min-height:22px;
+    border-radius:6px;cursor:default;padding:4px 6px;line-height:1.2;
+    overflow-wrap:anywhere}
+
+  .twk-toggle{position:relative;width:32px;height:18px;border:0;border-radius:999px;
+    background:rgba(0,0,0,.15);transition:background .15s;cursor:default;padding:0}
+  .twk-toggle[data-on="1"]{background:#34c759}
+  .twk-toggle i{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;
+    background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .15s}
+  .twk-toggle[data-on="1"] i{transform:translateX(14px)}
+
+  .twk-num{display:flex;align-items:center;box-sizing:border-box;min-width:0;height:26px;padding:0 0 0 8px;
+    border:.5px solid rgba(0,0,0,.1);border-radius:7px;background:rgba(255,255,255,.6)}
+  .twk-num-lbl{font-weight:500;color:rgba(41,38,27,.6);cursor:ew-resize;
+    user-select:none;padding-right:8px}
+  .twk-num input{flex:1;min-width:0;height:100%;border:0;background:transparent;
+    font:inherit;font-variant-numeric:tabular-nums;text-align:right;padding:0 8px 0 0;
+    outline:none;color:inherit;-moz-appearance:textfield}
+  .twk-num input::-webkit-inner-spin-button,.twk-num input::-webkit-outer-spin-button{
+    -webkit-appearance:none;margin:0}
+  .twk-num-unit{padding-right:8px;color:rgba(41,38,27,.45)}
+
+  .twk-btn{appearance:none;height:26px;padding:0 12px;border:0;border-radius:7px;
+    background:rgba(0,0,0,.78);color:#fff;font:inherit;font-weight:500;cursor:default}
+  .twk-btn:hover{background:rgba(0,0,0,.88)}
+  .twk-btn.secondary{background:rgba(0,0,0,.06);color:inherit}
+  .twk-btn.secondary:hover{background:rgba(0,0,0,.1)}
+
+  .twk-swatch{appearance:none;-webkit-appearance:none;width:56px;height:22px;
+    border:.5px solid rgba(0,0,0,.1);border-radius:6px;padding:0;cursor:default;
+    background:transparent;flex-shrink:0}
+  .twk-swatch::-webkit-color-swatch-wrapper{padding:0}
+  .twk-swatch::-webkit-color-swatch{border:0;border-radius:5.5px}
+  .twk-swatch::-moz-color-swatch{border:0;border-radius:5.5px}
+
+  .twk-chips{display:flex;gap:6px}
+  .twk-chip{position:relative;appearance:none;flex:1;min-width:0;height:46px;
+    padding:0;border:0;border-radius:6px;overflow:hidden;cursor:default;
+    box-shadow:0 0 0 .5px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.06);
+    transition:transform .12s cubic-bezier(.3,.7,.4,1),box-shadow .12s}
+  .twk-chip:hover{transform:translateY(-1px);
+    box-shadow:0 0 0 .5px rgba(0,0,0,.18),0 4px 10px rgba(0,0,0,.12)}
+  .twk-chip[data-on="1"]{box-shadow:0 0 0 1.5px rgba(0,0,0,.85),
+    0 2px 6px rgba(0,0,0,.15)}
+  .twk-chip>span{position:absolute;top:0;bottom:0;right:0;width:34%;
+    display:flex;flex-direction:column;box-shadow:-1px 0 0 rgba(0,0,0,.1)}
+  .twk-chip>span>i{flex:1;box-shadow:0 -1px 0 rgba(0,0,0,.1)}
+  .twk-chip>span>i:first-child{box-shadow:none}
+  .twk-chip svg{position:absolute;top:6px;left:6px;width:13px;height:13px;
+    filter:drop-shadow(0 1px 1px rgba(0,0,0,.3))}
+`;
+
+// ── useTweaks ───────────────────────────────────────────────────────────────
+// Single source of truth for tweak values. setTweak persists via the host
+// (__edit_mode_set_keys → host rewrites the EDITMODE block on disk).
+function useTweaks(defaults) {
+  const [values, setValues] = React.useState(defaults);
+  // Accepts either setTweak('key', value) or setTweak({ key: value, ... }) so a
+  // useState-style call doesn't write a "[object Object]" key into the persisted
+  // JSON block.
+  const setTweak = React.useCallback((keyOrEdits, val) => {
+    const edits = typeof keyOrEdits === 'object' && keyOrEdits !== null
+      ? keyOrEdits : { [keyOrEdits]: val };
+    setValues((prev) => ({ ...prev, ...edits }));
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits }, '*');
+    // Same-window signal so in-page listeners (deck-stage rail thumbnails)
+    // can react — the parent message only reaches the host, not peers.
+    window.dispatchEvent(new CustomEvent('tweakchange', { detail: edits }));
+  }, []);
+  return [values, setTweak];
+}
+
+// ── TweaksPanel ─────────────────────────────────────────────────────────────
+// Floating shell. Registers the protocol listener BEFORE announcing
+// availability — if the announce ran first, the host's activate could land
+// before our handler exists and the toolbar toggle would silently no-op.
+// The close button posts __edit_mode_dismissed so the host's toolbar toggle
+// flips off in lockstep; the host echoes __deactivate_edit_mode back which
+// is what actually hides the panel.
+function TweaksPanel({ title = 'Tweaks', children }) {
+  const [open, setOpen] = React.useState(false);
+  const dragRef = React.useRef(null);
+  const offsetRef = React.useRef({ x: 16, y: 16 });
+  const PAD = 16;
+
+  const clampToViewport = React.useCallback(() => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const w = panel.offsetWidth, h = panel.offsetHeight;
+    const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
+    const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
+    offsetRef.current = {
+      x: Math.min(maxRight, Math.max(PAD, offsetRef.current.x)),
+      y: Math.min(maxBottom, Math.max(PAD, offsetRef.current.y)),
+    };
+    panel.style.right = offsetRef.current.x + 'px';
+    panel.style.bottom = offsetRef.current.y + 'px';
+  }, []);
+
+  React.useEffect(() => {
+    if (!open) return;
+    clampToViewport();
+    if (typeof ResizeObserver === 'undefined') {
+      window.addEventListener('resize', clampToViewport);
+      return () => window.removeEventListener('resize', clampToViewport);
+    }
+    const ro = new ResizeObserver(clampToViewport);
+    ro.observe(document.documentElement);
+    return () => ro.disconnect();
+  }, [open, clampToViewport]);
+
+  React.useEffect(() => {
+    const onMsg = (e) => {
+      const t = e?.data?.type;
+      if (t === '__activate_edit_mode') setOpen(true);
+      else if (t === '__deactivate_edit_mode') setOpen(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const dismiss = () => {
+    setOpen(false);
+    window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
+  };
+
+  const onDragStart = (e) => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const r = panel.getBoundingClientRect();
+    const sx = e.clientX, sy = e.clientY;
+    const startRight = window.innerWidth - r.right;
+    const startBottom = window.innerHeight - r.bottom;
+    const move = (ev) => {
+      offsetRef.current = {
+        x: startRight - (ev.clientX - sx),
+        y: startBottom - (ev.clientY - sy),
+      };
+      clampToViewport();
+    };
+    const up = () => {
+      window.removeEventListener('mousemove', move);
+      window.removeEventListener('mouseup', up);
+    };
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', up);
+  };
+
+  if (!open) return null;
+  return (
+    <>
+      <style>{__TWEAKS_STYLE}</style>
+      <div ref={dragRef} className="twk-panel" data-omelette-chrome=""
+           style={{ right: offsetRef.current.x, bottom: offsetRef.current.y }}>
+        <div className="twk-hd" onMouseDown={onDragStart}>
+          <b>{title}</b>
+          <button className="twk-x" aria-label="Close tweaks"
+                  onMouseDown={(e) => e.stopPropagation()}
+                  onClick={dismiss}>✕</button>
+        </div>
+        <div className="twk-body">
+          {children}
+        </div>
+      </div>
+    </>
+  );
+}
+
+// ── Layout helpers ──────────────────────────────────────────────────────────
+
+function TweakSection({ label, children }) {
+  return (
+    <>
+      <div className="twk-sect">{label}</div>
+      {children}
+    </>
+  );
+}
+
+function TweakRow({ label, value, children, inline = false }) {
+  return (
+    <div className={inline ? 'twk-row twk-row-h' : 'twk-row'}>
+      <div className="twk-lbl">
+        <span>{label}</span>
+        {value != null && <span className="twk-val">{value}</span>}
+      </div>
+      {children}
+    </div>
+  );
+}
+
+// ── Controls ────────────────────────────────────────────────────────────────
+
+function TweakSlider({ label, value, min = 0, max = 100, step = 1, unit = '', onChange }) {
+  return (
+    <TweakRow label={label} value={`${value}${unit}`}>
+      <input type="range" className="twk-slider" min={min} max={max} step={step}
+             value={value} onChange={(e) => onChange(Number(e.target.value))} />
+    </TweakRow>
+  );
+}
+
+function TweakToggle({ label, value, onChange }) {
+  return (
+    <div className="twk-row twk-row-h">
+      <div className="twk-lbl"><span>{label}</span></div>
+      <button type="button" className="twk-toggle" data-on={value ? '1' : '0'}
+              role="switch" aria-checked={!!value}
+              onClick={() => onChange(!value)}><i /></button>
+    </div>
+  );
+}
+
+function TweakRadio({ label, value, options, onChange }) {
+  const trackRef = React.useRef(null);
+  const [dragging, setDragging] = React.useState(false);
+  // The active value is read by pointer-move handlers attached for the lifetime
+  // of a drag — ref it so a stale closure doesn't fire onChange for every move.
+  const valueRef = React.useRef(value);
+  valueRef.current = value;
+
+  // Segments wrap mid-word once per-segment width runs out. The track is
+  // ~248px (280 panel − 28 body pad − 4 seg pad), each button loses 12px
+  // to its own padding, and 11.5px system-ui averages ~6.3px/char — so 2
+  // options fit ~16 chars each, 3 fit ~10. Past that (or >3 options), fall
+  // back to a dropdown rather than wrap.
+  const labelLen = (o) => String(typeof o === 'object' ? o.label : o).length;
+  const maxLen = options.reduce((m, o) => Math.max(m, labelLen(o)), 0);
+  const fitsAsSegments = maxLen <= ({ 2: 16, 3: 10 }[options.length] ?? 0);
+  if (!fitsAsSegments) {
+    // <select> emits strings — map back to the original option value so the
+    // fallback stays type-preserving (numbers, booleans) like the segment path.
+    const resolve = (s) => {
+      const m = options.find((o) => String(typeof o === 'object' ? o.value : o) === s);
+      return m === undefined ? s : typeof m === 'object' ? m.value : m;
+    };
+    return <TweakSelect label={label} value={value} options={options}
+                        onChange={(s) => onChange(resolve(s))} />;
+  }
+  const opts = options.map((o) => (typeof o === 'object' ? o : { value: o, label: o }));
+  const idx = Math.max(0, opts.findIndex((o) => o.value === value));
+  const n = opts.length;
+
+  const segAt = (clientX) => {
+    const r = trackRef.current.getBoundingClientRect();
+    const inner = r.width - 4;
+    const i = Math.floor(((clientX - r.left - 2) / inner) * n);
+    return opts[Math.max(0, Math.min(n - 1, i))].value;
+  };
+
+  const onPointerDown = (e) => {
+    setDragging(true);
+    const v0 = segAt(e.clientX);
+    if (v0 !== valueRef.current) onChange(v0);
+    const move = (ev) => {
+      if (!trackRef.current) return;
+      const v = segAt(ev.clientX);
+      if (v !== valueRef.current) onChange(v);
+    };
+    const up = () => {
+      setDragging(false);
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
+
+  return (
+    <TweakRow label={label}>
+      <div ref={trackRef} role="radiogroup" onPointerDown={onPointerDown}
+           className={dragging ? 'twk-seg dragging' : 'twk-seg'}>
+        <div className="twk-seg-thumb"
+             style={{ left: `calc(2px + ${idx} * (100% - 4px) / ${n})`,
+                      width: `calc((100% - 4px) / ${n})` }} />
+        {opts.map((o) => (
+          <button key={o.value} type="button" role="radio" aria-checked={o.value === value}>
+            {o.label}
+          </button>
+        ))}
+      </div>
+    </TweakRow>
+  );
+}
+
+function TweakSelect({ label, value, options, onChange }) {
+  return (
+    <TweakRow label={label}>
+      <select className="twk-field" value={value} onChange={(e) => onChange(e.target.value)}>
+        {options.map((o) => {
+          const v = typeof o === 'object' ? o.value : o;
+          const l = typeof o === 'object' ? o.label : o;
+          return <option key={v} value={v}>{l}</option>;
+        })}
+      </select>
+    </TweakRow>
+  );
+}
+
+function TweakText({ label, value, placeholder, onChange }) {
+  return (
+    <TweakRow label={label}>
+      <input className="twk-field" type="text" value={value} placeholder={placeholder}
+             onChange={(e) => onChange(e.target.value)} />
+    </TweakRow>
+  );
+}
+
+function TweakNumber({ label, value, min, max, step = 1, unit = '', onChange }) {
+  const clamp = (n) => {
+    if (min != null && n < min) return min;
+    if (max != null && n > max) return max;
+    return n;
+  };
+  const startRef = React.useRef({ x: 0, val: 0 });
+  const onScrubStart = (e) => {
+    e.preventDefault();
+    startRef.current = { x: e.clientX, val: value };
+    const decimals = (String(step).split('.')[1] || '').length;
+    const move = (ev) => {
+      const dx = ev.clientX - startRef.current.x;
+      const raw = startRef.current.val + dx * step;
+      const snapped = Math.round(raw / step) * step;
+      onChange(clamp(Number(snapped.toFixed(decimals))));
+    };
+    const up = () => {
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
+  return (
+    <div className="twk-num">
+      <span className="twk-num-lbl" onPointerDown={onScrubStart}>{label}</span>
+      <input type="number" value={value} min={min} max={max} step={step}
+             onChange={(e) => onChange(clamp(Number(e.target.value)))} />
+      {unit && <span className="twk-num-unit">{unit}</span>}
+    </div>
+  );
+}
+
+// Relative-luminance contrast pick — checkmarks drawn over a swatch need to
+// read on both #111 and #fafafa without per-option configuration. Hex input
+// only (#rgb / #rrggbb); named or rgb()/hsl() colors fall through to "light".
+function __twkIsLight(hex) {
+  const h = String(hex).replace('#', '');
+  const x = h.length === 3 ? h.replace(/./g, (c) => c + c) : h.padEnd(6, '0');
+  const n = parseInt(x.slice(0, 6), 16);
+  if (Number.isNaN(n)) return true;
+  const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+  return r * 299 + g * 587 + b * 114 > 148000;
+}
+
+const __TwkCheck = ({ light }) => (
+  <svg viewBox="0 0 14 14" aria-hidden="true">
+    <path d="M3 7.2 5.8 10 11 4.2" fill="none" strokeWidth="2.2"
+          strokeLinecap="round" strokeLinejoin="round"
+          stroke={light ? 'rgba(0,0,0,.78)' : '#fff'} />
+  </svg>
+);
+
+// TweakColor — curated color/palette picker. Each option is either a single
+// hex string or an array of 1-5 hex strings; the card adapts — a lone color
+// renders solid, a palette renders colors[0] as the hero (left ~2/3) with the
+// rest stacked in a sharp column on the right. onChange emits the
+// option in the shape it was passed (string stays string, array stays array).
+// Without options it falls back to the native color input for back-compat.
+function TweakColor({ label, value, options, onChange }) {
+  if (!options || !options.length) {
+    return (
+      <div className="twk-row twk-row-h">
+        <div className="twk-lbl"><span>{label}</span></div>
+        <input type="color" className="twk-swatch" value={value}
+               onChange={(e) => onChange(e.target.value)} />
+      </div>
+    );
+  }
+  // Native <input type=color> emits lowercase hex per the HTML spec, so
+  // compare case-insensitively. String() guards JSON.stringify(undefined),
+  // which returns the primitive undefined (no .toLowerCase).
+  const key = (o) => String(JSON.stringify(o)).toLowerCase();
+  const cur = key(value);
+  return (
+    <TweakRow label={label}>
+      <div className="twk-chips" role="radiogroup">
+        {options.map((o, i) => {
+          const colors = Array.isArray(o) ? o : [o];
+          const [hero, ...rest] = colors;
+          const sup = rest.slice(0, 4);
+          const on = key(o) === cur;
+          return (
+            <button key={i} type="button" className="twk-chip" role="radio"
+                    aria-checked={on} data-on={on ? '1' : '0'}
+                    aria-label={colors.join(', ')} title={colors.join(' · ')}
+                    style={{ background: hero }}
+                    onClick={() => onChange(o)}>
+              {sup.length > 0 && (
+                <span>
+                  {sup.map((c, j) => <i key={j} style={{ background: c }} />)}
+                </span>
+              )}
+              {on && <__TwkCheck light={__twkIsLight(hero)} />}
+            </button>
+          );
+        })}
+      </div>
+    </TweakRow>
+  );
+}
+
+function TweakButton({ label, onClick, secondary = false }) {
+  return (
+    <button type="button" className={secondary ? 'twk-btn secondary' : 'twk-btn'}
+            onClick={onClick}>{label}</button>
+  );
+}
+
+Object.assign(window, {
+  useTweaks, TweaksPanel, TweakSection, TweakRow,
+  TweakSlider, TweakToggle, TweakRadio, TweakSelect,
+  TweakText, TweakNumber, TweakColor, TweakButton,
+});
+</script>
+<script>// Women's European Draft — tournament simulation
+// Modern Women's Champions League format: 18-team league phase (6 matches, two opponents from
+// each of three pots), top 4 straight to the quarter-finals, 5th–12th into a two-legged
+// play-off, 13th–18th out. Then two-legged QF + SF and a one-off final.
+(function (G) {
+  // 2025/26 league-phase field in three seeding pots (name, rating)
+  const POTS = [
+    [['Barcelona',93],['OL Lyonnes',91],['Chelsea',90],['Arsenal',90],['Bayern',88],['Wolfsburg',86]],
+    [['Paris SG',85],['Juventus',84],['Real Madrid',84],['Man United',82],['Atlético',81],['Roma',81]],
+    [['Benfica',79],['Paris FC',78],['Twente',77],['St. Pölten',75],['Vålerenga',75],['OH Leuven',74]],
+  ];
+
+  const rint = (n) => Math.floor(Math.random() * n);
+  const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+
+  // One match. League: draws allowed. Knockout leg: draws allowed (aggregate decides).
+  function playMatch(strength, oppRating, home) {
+    const d = strength - oppRating + (home === null ? 0 : home ? 1.4 : -1.4) - 0.5;
+    const eW = Math.exp(d / 4.6), eL = Math.exp(-d / 4.6), eD = 1.25;
+    const tot = eW + eL + eD;
+    const pW = eW / tot, pD = eD / tot;
+    const roll = Math.random();
+    let result, gf, ga;
+    if (roll < pW) { result = 'W'; gf = 1 + rint(3); ga = rint(gf); }
+    else if (roll < pW + pD) { result = 'D'; gf = rint(3); ga = gf; }
+    else { result = 'L'; ga = 1 + rint(3); gf = rint(ga); }
+    return { result, gf, ga, winPct: Math.round(pW * 100) };
+  }
+
+  function drawFrom(potIdx, used) {
+    const pool = POTS[potIdx].filter(([n]) => !used.has(n));
+    const pick = pool[rint(pool.length)] || POTS[potIdx][rint(POTS[potIdx].length)];
+    used.add(pick[0]);
+    return pick;
+  }
+
+  // Opponent rating band per knockout round
+  const KO_ROUNDS = [
+    { key:'po',  name:'Play-off',      lo:77, hi:83 },
+    { key:'qf',  name:'Quarter-final', lo:81, hi:87 },
+    { key:'sf',  name:'Semi-final',    lo:84, hi:90 },
+  ];
+
+  function drawKO(lo, hi, used) {
+    const all = POTS.flat().filter(([n, r]) => !used.has(n) && r >= lo && r <= hi);
+    const pick = all.length ? all[rint(all.length)]
+      : POTS.flat().filter(([n]) => !used.has(n)).sort((a,b)=>Math.abs(a[1]-(lo+hi)/2)-Math.abs(b[1]-(lo+hi)/2))[0]
+      || POTS[1][rint(6)];
+    used.add(pick[0]);
+    return pick;
+  }
+
+  function simulateCup(ratings, fk) {
+    const sorted = ratings.slice().sort((a, b) => b - a);
+    const avg = ratings.reduce((s, r) => s + r, 0) / ratings.length;
+    const strength = avg + (sorted[0] - avg) * 0.15;
+
+    const used = new Set();
+    const entries = [];
+    let totGf = 0, totGa = 0, w = 0, d = 0, l = 0;
+
+    function record(stage, opp, m) {
+      totGf += m.gf; totGa += m.ga;
+      if (m.result === 'W') w++; else if (m.result === 'D') d++; else l++;
+      entries.push({ kind:'match', stage, opp, score:`${m.gf}\u2013${m.ga}`,
+        sub: m.sub || `${m.winPct}% to win`, won: m.result==='W', draw: m.result==='D', result: m.result });
+      return m;
+    }
+
+    // ---- League phase: 6 matches, two opponents from each of the three pots ----
+    const fixtures = [];
+    for (let pot = 0; pot < 3; pot++) {
+      fixtures.push({ o: drawFrom(pot, used), home: true });
+      fixtures.push({ o: drawFrom(pot, used), home: false });
+    }
+    for (let i = fixtures.length - 1; i > 0; i--) { const j = rint(i + 1); [fixtures[i], fixtures[j]] = [fixtures[j], fixtures[i]]; }
+
+    let pts = 0;
+    fixtures.forEach((f, i) => {
+      const m = playMatch(strength, f.o[1], f.home);
+      pts += m.result === 'W' ? 3 : m.result === 'D' ? 1 : 0;
+      record(`MD ${i + 1} \u00b7 ${f.home ? 'Home' : 'Away'}`, f.o[0], m);
+    });
+
+    // Points -> table position among 18 (anchored to realistic league-phase spreads)
+    let rank = Math.round(18 - (pts / 18) * 17 + (Math.random() * 4 - 2));
+    if (pts >= 16) rank = Math.min(rank, 2);
+    if (pts >= 14) rank = Math.min(rank, 4);
+    if (pts >= 11) rank = Math.min(rank, 7 - (Math.random() < 0.5 ? 1 : 0));
+    if (pts >= 8) rank = Math.min(rank, 12);
+    if (pts <= 4) rank = Math.max(rank, 13);
+    rank = clamp(rank, 1, 18);
+    const top4 = rank <= 4, inKO = rank <= 12;
+    entries.push({ kind:'season', pts, w:entries.filter(e=>e.won).length, d, l, place: rank, gd: totGf - totGa, top8: top4, out: !inKO });
+
+    let placeKey, placeLabel, championFlag = false;
+
+    if (!inKO) { placeKey = 'league'; placeLabel = `${ord(rank)} \u00b7 Out in the league phase`; }
+    else {
+      placeKey = 'champion'; placeLabel = 'Queens of Europe'; championFlag = true;
+      const rounds = top4 ? KO_ROUNDS.slice(1) : KO_ROUNDS.slice();
+      for (const R of rounds) {
+        const [oppName, oppR] = drawKO(R.lo, R.hi, used);
+        // Two legs, aggregate
+        const m1 = playMatch(strength, oppR, false);
+        record(`${R.name} \u00b7 1st leg`, oppName, m1);
+        const m2 = playMatch(strength, oppR, true);
+        let agg1 = m1.gf + m2.gf, agg2 = m1.ga + m2.ga;
+        let through = agg1 > agg2, pens = false;
+        if (agg1 === agg2) {
+          pens = true;
+          const pWin = clamp(0.5 + (strength - oppR) * 0.014, 0.25, 0.72);
+          through = Math.random() < pWin;
+        }
+        m2.sub = `agg ${agg1}\u2013${agg2}` + (pens ? (through ? ' \u00b7 won on pens' : ' \u00b7 lost on pens') : '');
+        const rec = record(`${R.name} \u00b7 2nd leg`, oppName, m2);
+        if (pens) { rec.won = through; rec.draw = false; entries[entries.length-1].won = through; entries[entries.length-1].draw = false; }
+        if (!through) {
+          championFlag = false;
+          placeKey = R.key; placeLabel = `Out \u00b7 ${R.name}`;
+          break;
+        }
+      }
+      if (championFlag) {
+        // The Final — one game, neutral ground, no draws
+        const [oppName, oppR] = drawKO(85, 90, used);
+        const m = playMatch(strength, oppR, null);
+        if (m.result === 'D') {
+          const pWin = clamp(0.5 + (strength - oppR) * 0.014, 0.25, 0.72);
+          const won = Math.random() < pWin;
+          m.result = won ? 'W' : 'L';
+          m.sub = `${m.winPct}% to win \u00b7 ` + (won ? 'won on pens' : 'lost on pens');
+        }
+        record('The Final', oppName, m);
+        if (m.result !== 'W') { championFlag = false; placeKey = 'runner'; placeLabel = 'Runners-up'; }
+      }
+    }
+
+    const wins = entries.filter(e => e.kind === 'match' && e.won).length;
+    const draws = entries.filter(e => e.kind === 'match' && e.draw).length;
+    const losses = entries.filter(e => e.kind === 'match' && !e.won && !e.draw).length;
+    return { strength: Math.round(strength), avg: Math.round(avg), entries,
+      placeKey, placeLabel, champion: championFlag, rank, pts,
+      w: wins, d: draws, l: losses, gf: totGf, ga: totGa, gd: totGf - totGa };
+  }
+
+  function ord(n) { const s = ['th','st','nd','rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
+
+  function recordVerdict(r) {
+    if (r.placeKey === 'champion' && r.l === 0)
+      return { grade:'S', medal:'\ud83d\udc51', tag:'IMMORTALS', line:'Queens of Europe without losing a single game. That XI belongs in a museum.', win:true };
+    if (r.placeKey === 'champion')
+      return { grade:'A+', medal:'\ud83c\udfc6', tag:'QUEENS OF EUROPE', line:'You lifted the trophy. Football immortality, secured.', win:true };
+    if (r.placeKey === 'runner')
+      return { grade:'A\u2212', medal:'\ud83e\udd48', tag:'RUNNERS-UP', line:'Ninety minutes from glory. The cruellest way to finish.', win:false };
+    if (r.placeKey === 'sf')
+      return { grade:'B+', medal:'\ud83d\udd25', tag:'SEMI-FINALS', line:'One of the last four in Europe. The trophy was so close you could hear it.', win:false };
+    if (r.placeKey === 'qf')
+      return { grade:'B', medal:'\ud83d\udcc8', tag:'QUARTER-FINALS', line:'A proper European run. Now build an XI that goes all the way.', win:false };
+    if (r.placeKey === 'po')
+      return { grade:'D', medal:'\ud83d\ude05', tag:'PLAY-OFF EXIT', line:'Knocked out before the real knockouts. The draft owes you one.', win:false };
+    return { grade:'F', medal:'\ud83d\ude31', tag:'LEAGUE-PHASE EXIT', line:'Bottom third of 18. We won\u2019t tell anyone. Spin up a new XI.', win:false };
+  }
+
+  G.simulateCup = simulateCup;
+  G.recordVerdict = recordVerdict;
+})(typeof window !== 'undefined' ? window : (globalThis.SIMG = globalThis.SIMG || {}));
+</script>
+<script type="text/babel">// European Draft — campaign screen + share cards. Uses window.simulateCup / window.recordVerdict.
+(function () {
+  const { useState, useEffect, useRef } = React;
+  const fmt = (n) => (n > 0 ? '+' : '') + n;
+  const ord = (n) => { const s = ['th','st','nd','rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); };
+  const recordVerdict = window.recordVerdict;
+
+  const POS_EMOJI = { GK:'🧤', RB:'🛡️', LB:'🛡️', CB:'🛡️', DM:'⚙️', CM:'⚙️', AM:'✨', RW:'⚡', LW:'⚡', ST:'⚽' };
+
+  function buildSquadText(placements, fk) {
+    const FORMATION_ROWS = {
+      '4-3-3': [['gk'],['lb','cbl','cbr','rb'],['cml','cmc','cmr'],['lw','st','rw']],
+      '4-2-3-1': [['gk'],['lb','cbl','cbr','rb'],['dml','dmr'],['lw','cam','rw'],['st']],
+      '4-4-2': [['gk'],['lb','cbl','cbr','rb'],['lm','cml','cmr','rm'],['stl','str']],
+    };
+    const rows = FORMATION_ROWS[fk] || FORMATION_ROWS['4-3-3'];
+    let lines = [`⚽ Women's European Draft — ${fk}`,''];
+    for (const row of rows) {
+      const parts = row.map(slotId => {
+        const pl = placements[slotId];
+        if (!pl) return '—';
+        const emoji = POS_EMOJI[pl.slotRole] || '⚽';
+        return `${emoji} ${pl.p.n} (${pl.p.r})`;
+      });
+      lines.push(parts.join('  ·  '));
+    }
+    return lines.join('\n');
+  }
+
+  function shareSquad({ fk, placements, mode, onToast }) {
+    const modeTag = mode === 'pro' ? '🧠 Pro mode' : '📋 Classic mode';
+    const text = modeTag + '\n' + buildSquadText(placements, fk);
+    const url = location.href.split('#')[0];
+    if (navigator.share) {
+      navigator.share({ title: 'Women\u2019s European Draft — My XI', text, url }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(text + '\n' + url).then(
+        () => onToast('Squad copied to clipboard ✓'),
+        () => onToast('Could not copy')
+      );
+    }
+  }
+
+  function shareResult({ fk, result, placements, mode, onToast }) {
+    generateShareImage({ fk, placements, result, onToast });
+  }
+
+  function drawCard(ctx, W, placements, result) {
+    const v = result ? recordVerdict(result) : null;
+    // ── Panini background (beige) ──
+    ctx.fillStyle = '#e8dcc4';
+    ctx.fillRect(0, 0, W, 1400);
+    ctx.strokeStyle = 'rgba(43,33,23,0.04)';
+    ctx.lineWidth = 1;
+    for (let y = 0; y < 1400; y += 18) { ctx.beginPath(); ctx.moveTo(0,y); ctx.lineTo(W,y); ctx.stroke(); }
+
+    const headerH = result ? 220 : 160;
+    ctx.fillStyle = '#0E2A5C';
+    ctx.fillRect(0, headerH - 6, W, 6);
+
+    ctx.fillStyle = '#857a64';
+    ctx.font = 'bold 26px Arial, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('WIN18GAMES.COM', 48, 48);
+    ctx.textAlign = 'right';
+    ctx.font = '24px Arial, sans-serif';
+    ctx.fillText(new Date().getFullYear(), W - 48, 48);
+
+    if (v && result) {
+      ctx.fillStyle = '#132339';
+      ctx.font = 'bold 64px Arial, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText(`${v.grade}  \u00b7  ${v.tag}`, 48, 148);
+      ctx.fillStyle = '#857a64';
+      ctx.font = 'italic 26px Arial, sans-serif';
+      ctx.fillText(`${result.placeLabel} \u00b7 ${result.w}W ${result.d}D ${result.l}L`, 48, 192);
+    } else {
+      ctx.fillStyle = '#132339';
+      ctx.font = 'bold 72px Arial, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText('⚽  MY ALL-TIME XI', 48, headerH - 30);
+    }
+
+    const players = Object.entries(placements)
+      .map(([slotId, pl]) => ({...pl, slotId}))
+      .sort((a, b) => {
+        const order = {GK:0,CB:1,LB:2,RB:3,DM:4,CM:5,AM:6,LW:7,RW:8,ST:9};
+        return (order[a.slotRole]??5) - (order[b.slotRole]??5);
+      });
+    const listY = headerH + 10;
+    const rowH = 88;
+    players.forEach((pl, i) => {
+      const y = listY + i * rowH;
+      ctx.fillStyle = i % 2 === 0 ? '#f6efe0' : '#ede3cc';
+      ctx.fillRect(0, y, W, rowH);
+      ctx.fillStyle = 'rgba(43,33,23,0.08)';
+      ctx.fillRect(0, y + rowH - 1, W, 1);
+      const c1 = pl.team && pl.team.c1 ? pl.team.c1 : '#0E2A5C';
+      const r = parseInt(c1.slice(1,3),16)/255, g = parseInt(c1.slice(3,5),16)/255, b = parseInt(c1.slice(5,7),16)/255;
+      const lum = 0.299*r + 0.587*g + 0.114*b;
+      const badgeBg = lum > 0.85 ? (pl.team && pl.team.c2 ? pl.team.c2 : '#0E2A5C') : c1;
+      const r2 = parseInt(badgeBg.slice(1,3),16)/255, g2 = parseInt(badgeBg.slice(3,5),16)/255, b2 = parseInt(badgeBg.slice(5,7),16)/255;
+      const lum2 = 0.299*r2 + 0.587*g2 + 0.114*b2;
+      const textCol = lum2 > 0.45 ? '#132339' : '#ffffff';
+      const textColDim = lum2 > 0.45 ? 'rgba(43,33,23,0.6)' : 'rgba(255,255,255,0.65)';
+      ctx.fillStyle = badgeBg;
+      ctx.beginPath(); ctx.roundRect(48, y + 18, 64, 52, 6); ctx.fill();
+      ctx.fillStyle = textCol;
+      ctx.font = 'bold 30px Arial, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(pl.p.r, 80, y + 52);
+      ctx.font = '11px Arial, sans-serif';
+      ctx.fillStyle = textColDim;
+      ctx.fillText('OVR', 80, y + 65);
+      ctx.fillStyle = '#857a64';
+      ctx.font = 'bold 20px Arial, sans-serif';
+      ctx.textAlign = 'left';
+      ctx.fillText(pl.slotRole, 128, y + 50);
+      ctx.fillStyle = '#132339';
+      ctx.font = 'bold 34px Arial, sans-serif';
+      ctx.fillText(pl.p.n, 200, y + 48);
+      ctx.fillStyle = '#857a64';
+      ctx.font = '22px Arial, sans-serif';
+      ctx.fillText(`${pl.team.team} \u00b7 ${pl.team.year} \u00b7 ${pl.team.ctry}`, 200, y + 74);
+    });
+
+    const footerY = listY + players.length * rowH;
+    ctx.fillStyle = '#0E2A5C';
+    ctx.fillRect(0, footerY, W, 130);
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 36px Arial, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('CAN YOU CONQUER EUROPE?', W/2, footerY + 52);
+    ctx.fillStyle = '#F0BC42';
+    ctx.font = 'bold 30px Arial, sans-serif';
+    ctx.fillText('win18games.com', W/2, footerY + 96);
+  }
+
+  function generateShareImage({ fk, placements, result, onToast }) {
+    const W = 1080, H = 1400;
+    const canvas = document.createElement('canvas');
+    canvas.width = W; canvas.height = H;
+    const ctx = canvas.getContext('2d');
+    drawCard(ctx, W, placements, result);
+    const v = result ? recordVerdict(result) : null;
+
+    canvas.toBlob(blob => {
+      const file = new File([blob], 'my-womens-european-xi.png', {type: 'image/png'});
+      const shareText = result && v
+        ? `${v.grade} grade \u2014 ${result.placeLabel}. Can you conquer Europe?\nhttps://win18games.com`
+        : `My all-time women's European XI \u2014 can you conquer Europe?\nhttps://win18games.com`;
+      const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+      if (isMobile && navigator.share && navigator.canShare && navigator.canShare({files: [file]})) {
+        navigator.share({files: [file], title: 'Women\u2019s European Draft', text: shareText}).catch(() => {
+          const a = document.createElement('a');
+          a.href = URL.createObjectURL(blob); a.download = 'my-womens-european-xi.png'; a.click();
+        });
+      } else {
+        const imgUrl = URL.createObjectURL(blob);
+        const overlay = document.createElement('div');
+        overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.82);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;';
+        const img = document.createElement('img');
+        img.src = imgUrl;
+        img.style.cssText = 'max-height:70vh;max-width:min(400px,90vw);border-radius:12px;box-shadow:0 8px 40px rgba(0,0,0,0.6);';
+        const btnRow = document.createElement('div');
+        btnRow.style.cssText = 'display:flex;gap:12px;flex-wrap:wrap;justify-content:center;';
+        const copyBtn = document.createElement('button');
+        copyBtn.textContent = '🔗 Copy link';
+        copyBtn.style.cssText = 'padding:12px 24px;border-radius:999px;border:none;background:#fff;color:#111;font-weight:700;font-size:15px;cursor:pointer;';
+        copyBtn.onclick = () => {
+          navigator.clipboard.writeText('https://win18games.com').then(() => {
+            copyBtn.textContent = 'Copied ✓';
+            setTimeout(() => { copyBtn.textContent = '🔗 Copy link'; }, 2000);
+          });
+        };
+        const dlBtn = document.createElement('button');
+        dlBtn.textContent = '⬇ Download image';
+        dlBtn.style.cssText = 'padding:12px 24px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;font-weight:700;font-size:15px;cursor:pointer;';
+        dlBtn.onclick = () => {
+          const a = document.createElement('a');
+          a.href = imgUrl; a.download = 'my-womens-european-xi.png'; a.click();
+        };
+        const closeBtn = document.createElement('button');
+        closeBtn.textContent = '✕';
+        closeBtn.style.cssText = 'position:fixed;top:20px;right:24px;background:rgba(0,0,0,0.5);border:none;color:#fff;font-size:24px;cursor:pointer;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;';
+        closeBtn.onclick = () => document.body.removeChild(overlay);
+        overlay.onclick = (e) => { if (e.target === overlay) document.body.removeChild(overlay); };
+        btnRow.appendChild(copyBtn);
+        btnRow.appendChild(dlBtn);
+        overlay.appendChild(closeBtn);
+        overlay.appendChild(img);
+        overlay.appendChild(btnRow);
+        document.body.appendChild(overlay);
+      }
+    }, 'image/png');
+  }
+
+  function MatchRow({ m, show }) {
+    return (
+      <div className={'lstage' + (show ? ' show' : '') + (m.won ? ' won' : m.draw ? '' : ' lost')}>
+        <div className="lstage-name">{m.stage}</div>
+        <div className="lstage-mid">
+          <span className="lstage-opp">vs {m.opp}</span>
+          <span className="lstage-score">{m.score}</span>
+          <span className="lstage-sub">{m.sub}</span>
+        </div>
+        <div className="lstage-mark">{m.won ? '✓' : m.draw ? '=' : '✕'}</div>
+      </div>
+    );
+  }
+
+  function SeasonRow({ e, show }) {
+    const sub = e.out ? 'Eliminated' : e.top8 ? 'Straight to the quarter-finals' : 'Into the play-off round';
+    return (
+      <div className={'lstage gsum' + (show ? ' show' : '') + (e.out ? ' lost' : e.top8 ? ' won' : '')}>
+        <div className="lstage-name">League phase</div>
+        <div className="lstage-mid">
+          <span className="lstage-opp">{ord(e.place)} of 18 · {e.pts} pts</span>
+          <span className="lstage-score">{sub}</span>
+          <span className="lstage-sub">GD {fmt(e.gd)}</span>
+        </div>
+        <div className="lstage-mark">{e.out ? '✕' : e.top8 ? '✓' : '→'}</div>
+      </div>
+    );
+  }
+
+  function XIOverlay({ placements, fk, onClose }) {
+    const [imgSrc, setImgSrc] = React.useState(null);
+    React.useEffect(() => {
+      const W = 1080, H = 1400;
+      const canvas = document.createElement('canvas');
+      canvas.width = W; canvas.height = H;
+      const ctx = canvas.getContext('2d');
+      drawCard(ctx, W, placements, null);
+      setImgSrc(canvas.toDataURL('image/png'));
+    }, []);
+    return (
+      <div onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
+        style={{ position:'fixed', inset:0, background:'rgba(0,0,0,0.85)', zIndex:9999, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'flex-start', overflowY:'auto', padding:'56px 16px 24px' }}>
+        <button onClick={onClose} style={{ position:'fixed', top:16, right:20, background:'rgba(0,0,0,0.5)', border:'none', color:'#fff', fontSize:22, cursor:'pointer', width:38, height:38, borderRadius:'50%' }}>✕</button>
+        {imgSrc
+          ? <img src={imgSrc} style={{ maxWidth:'min(420px,92vw)', borderRadius:12, boxShadow:'0 8px 40px rgba(0,0,0,0.6)' }} />
+          : <div style={{ color:'#fff', marginTop:80 }}>Loading...</div>
+        }
+      </div>
+    );
+  }
+
+  function CupScreen({ fk, result, placements, mode, onBack, onReset }) {
+    const [rev, setRev] = useState(0);
+    const [toast, setToast] = useState(null);
+    const [showXI, setShowXI] = useState(false);
+    const ladderRef = useRef(null);
+    const total = result.entries.length;
+    useEffect(() => {
+      if (rev < total) {
+        const t = setTimeout(() => setRev(rev + 1), rev === 0 ? 400 : rev === total - 1 ? 700 : 130);
+        return () => clearTimeout(t);
+      }
+    }, [rev, total]);
+    useEffect(() => {
+      if (rev > 0 && ladderRef.current) {
+        const el = ladderRef.current.children[Math.min(rev, total) - 1];
+        if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }, [rev, total]);
+    useEffect(() => { if (!toast) return; const t = setTimeout(() => setToast(null), 2200); return () => clearTimeout(t); }, [toast]);
+    const done = rev >= total;
+    const v = recordVerdict(result);
+    useEffect(() => {
+      if (done && window.va) {
+        window.va('event', { name: 'game_completed', data: { finish: result.placeKey, rank: result.rank, record: `${result.w}-${result.d}-${result.l}` } });
+      }
+    }, [done]);
+    useEffect(() => {
+      if (done) {
+        const t = setTimeout(() => {
+          const el = document.querySelector('.verdict');
+          if (el) el.scrollIntoView({ block: 'end', behavior: 'smooth' });
+        }, 150);
+        return () => clearTimeout(t);
+      }
+    }, [done]);
+
+    return (
+      <div className="cup">
+        <div className="cup-top">
+          <div className="eyebrow">Eight league games. Then the knockouts.</div>
+          <h1 className="h1" style={{ marginTop: 8, fontSize: 'clamp(26px,4.4vw,44px)' }}>Your European campaign</h1>
+          <div className="cup-strength">Squad rating <b>{result.strength}</b> · avg {result.avg} OVR · {fk}</div>
+        </div>
+
+        <div className="ladder" ref={ladderRef}>
+          {result.entries.map((e, i) =>
+            e.kind === 'season'
+              ? <SeasonRow key={i} e={e} show={i < rev} />
+              : <MatchRow key={i} m={e} show={i < rev} />
+          )}
+        </div>
+
+        {done && (
+          <div className={'verdict' + (v.win ? ' win' : '')}>
+            <div style={{fontFamily:'var(--font-display)', fontWeight:'var(--display-weight)', fontSize:26, color:'var(--ink)', marginBottom:8}}>Can you conquer Europe?</div>
+            <div style={{display:'inline-block', background:'var(--ink)', color:'var(--bg)', fontSize:11, fontWeight:800, letterSpacing:'.12em', padding:'4px 14px', borderRadius:999, marginBottom:14}}>{mode === 'pro' ? 'PRO MODE' : 'CLASSIC MODE'}</div>
+            <div style={{fontSize:12, fontWeight:700, letterSpacing:'.14em', color:'var(--ink-dim)', textTransform:'uppercase'}}>Final result</div>
+            <div className="verdict-tag">{result.placeLabel}</div>
+            <div style={{fontSize:20, fontWeight:800, margin:'2px 0 6px'}}>
+              <span style={{color: v.win ? 'var(--win)' : ({'A+':'#00A862','A':'#00A862','A−':'#4a9d5f','B+':'#7a9d3f','B':'#b8860b','C':'#c47a1a','D':'#e5484d','F':'#e5484d'})[v.grade]}}>{v.grade}</span>
+              <span style={{color:'var(--ink)', marginLeft:10, letterSpacing:'.04em'}}>{v.medal} {v.tag}</span>
+            </div>
+            <div className="verdict-line">{v.line}</div>
+            <div className="verdict-stat">🎯 The goal: <b>lift the trophy</b> · {result.w}W {result.d}D {result.l}L · ⚽ {result.gf}–{result.ga}</div>
+            <div className="cup-actions">
+              <button className="btn" onClick={() => shareResult({ fk, result, placements, mode, onToast: setToast })}>Share result</button>
+              <button className="btn" style={{ background:'var(--panel)', color:'var(--ink)', border:'2px solid var(--ink)' }} onClick={() => setShowXI(true)}>See your XI</button>
+              <button className="btn" style={{ background:'var(--panel)', color:'var(--ink)', border:'2px solid var(--ink)' }} onClick={onReset}>Build another XI</button>
+            </div>
+          </div>
+        )}
+        {showXI && (
+          <XIOverlay placements={placements} fk={fk} onClose={() => setShowXI(false)} />
+        )}
+
+        {toast && <div className="toast">{toast}</div>}
+      </div>
+    );
+  }
+
+  window.CupScreen = CupScreen;
+})();
+</script>
+
+<script type="text/babel">// European Draft — main app
+const { useState, useEffect, useMemo, useRef } = React;
+const TEAMS = window.WC_TEAMS;
+const FORMATIONS = window.WC_FORMATIONS;
+const LS_KEY = 'w18-draft-v1';
+const CFG_KEY = 'w18-cfg-v1';
+const THEMES = ['broadcast', 'panini', 'clean'];
+
+/* ---------- helpers ---------- */
+const teamById = (id) => TEAMS.find((t) => t.id === id);
+const surname = (n) => {const w = n.replace(/'/g, '’').split(' ');return w.length > 1 ? w.slice(-1)[0] : w[0];};
+function lum(hex) {
+  const h = hex.replace('#', '');const r = parseInt(h.slice(0, 2), 16) / 255,
+    g = parseInt(h.slice(2, 4), 16) / 255,b = parseInt(h.slice(4, 6), 16) / 255;
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+const kitBg = (t) => lum(t.c1) > 0.62 ? lum(t.c2) > 0.62 ? '#2a2a2a' : t.c2 : t.c1;
+const kitStripe = (t) => lum(t.c1) > 0.62 ? t.c1 : t.c2;
+function shuffle(a) {const r = a.slice();for (let i = r.length - 1; i > 0; i--) {const j = Math.floor(Math.random() * (i + 1));[r[i], r[j]] = [r[j], r[i]];}return r;}
+
+/* ---------- crest ---------- */
+function Crest({ t, big }) {
+  const bg = kitBg(t), stripe = kitStripe(t);
+  return (
+    <div className="crest" style={{ background: bg, width: big ? 56 : undefined, height: big ? 56 : undefined }}>
+      <div style={{ position: 'absolute', inset: 0, background: `repeating-linear-gradient(90deg, transparent 0 7px, ${stripe}55 7px 12px)` }}></div>
+      <span style={{ position: 'relative', textShadow: '0 1px 3px rgba(0,0,0,.5)' }}>{t.cc}</span>
+    </div>);
+
+}
+
+/* ---------- mini pitch for formation card ---------- */
+function MiniPitch({ fk }) {
+  const slots = FORMATIONS[fk].slots;
+  return (
+    <div className="mini-pitch">
+      {slots.map((s) =>
+      <div key={s.id} className={'mini-dot' + (s.role === 'GK' ? ' gk' : '')}
+      style={{ left: s.x + '%', top: s.y + '%' }}></div>
+      )}
+    </div>);
+
+}
+
+/* ---------- pitch ---------- */
+function Pitch({ fk, placements, eligible, onSlot, showLines = true }) {
+  const slots = FORMATIONS[fk].slots;
+  return (
+    <div className="pitch-frame">
+      <div className="pitch">
+        {showLines &&
+        <div className="pitch-lines">
+          <div className="pl-half"></div><div className="pl-circle"></div>
+          <div className="pl-box"></div><div className="pl-box6"></div>
+        </div>}
+        {slots.map((s) => {
+          const pl = placements[s.id];
+          const isElig = eligible.has(s.id);
+          return (
+            <div key={s.id} className={'slot' + (isElig ? ' eligible' : '')}
+            style={{ left: s.x + '%', top: s.y + '%' }}
+            onClick={() => isElig && onSlot(s.id)}>
+              {pl ? <Token pl={pl} /> :
+              <div className="slot-empty"><span className="role">{s.role}</span></div>
+              }
+            </div>);
+
+        })}
+      </div>
+    </div>);
+
+}
+function Token({ pl }) {
+  const t = pl.team;
+  return (
+    <div className="player-token">
+      <div className="token-badge" style={{ background: kitBg(t) }}>
+        {pl.p.r}
+        <span className="rt">{pl.slotRole}</span>
+      </div>
+      <div className="token-name">{surname(pl.p.n)}</div>
+      <div className="token-meta">{t.cc} ’{String(t.year).slice(2)}</div>
+    </div>);
+
+}
+
+/* ---------- player row ---------- */
+function PlayerRow({ p, fits, selected, disabled, onClick, hideStats, teamC1, teamC2 }) {
+  function luminance(hex) {
+    const r = parseInt(hex.slice(1,3),16)/255;
+    const g = parseInt(hex.slice(3,5),16)/255;
+    const b = parseInt(hex.slice(5,7),16)/255;
+    return 0.299*r + 0.587*g + 0.114*b;
+  }
+  const textColor = teamC1 ? (luminance(teamC1) > 0.45 ? '#2f0a38' : '#ffffff') : null;
+  const pratStyle = teamC1 ? {background: teamC1, color: textColor, borderColor: teamC1} : {};
+  const lStyle = teamC1 ? {color: textColor ? textColor + 'bb' : 'rgba(255,255,255,0.75)'} : {};
+  return (
+    <div className={'prow' + (selected ? ' sel' : '') + (disabled ? ' disabled' : '')}
+    onClick={() => !disabled && onClick()}>
+      {!hideStats && <div className="prat" style={pratStyle}><span className="n">{p.r}</span><span className="l" style={lStyle}>OVR</span></div>}
+      {hideStats && <div className="prat" style={{fontSize:11,letterSpacing:'0.04em',color:'var(--ink-dim)',display:'flex',alignItems:'center',justifyContent:'center'}}>PRO</div>}
+      <div className="pmid">
+        <div className="pname">{p.n}</div>
+        <div className="ptags">
+          {p.p.map((pos) => <span key={pos} className={'ptag' + (fits.has(pos) ? ' fit' : '')}>{pos}</span>)}
+        </div>
+      </div>
+      {!hideStats && <div className="pstats">
+        <div className="pstat"><span className="v">{p.g}</span><span className="k">G</span></div>
+        <div className="pstat"><span className="v">{p.a}</span><span className="k">A</span></div>
+        <div className="pstat"><span className="v">{p.m}</span><span className="k">MP</span></div>
+        <div className="pstat"><span className="v">{p.age}</span><span className="k">Age</span></div>
+      </div>}
+    </div>);
+
+}
+
+/* ================= APP ================= */
+function App() {
+  const cfg0 = useMemo(() => {try {return JSON.parse(localStorage.getItem(CFG_KEY)) || {};} catch {return {};}}, []);
+  const [theme] = useState('panini');
+  const [strict, setStrict] = useState(cfg0.strict == null ? true : cfg0.strict);
+  const [accent, setAccent] = useState(cfg0.accent === undefined ? '#E9B824' : cfg0.accent);
+  const [pitchLines, setPitchLines] = useState(cfg0.pitchLines == null ? true : cfg0.pitchLines);
+  useEffect(() => {
+    localStorage.setItem(CFG_KEY, JSON.stringify({ theme, strict, accent, pitchLines }));
+  }, [theme, strict, accent, pitchLines]);
+
+  const saved = useMemo(() => {try {return JSON.parse(localStorage.getItem(LS_KEY)) || {};} catch {return {};}}, []);
+  const [phase, setPhase] = useState(saved.phase || 'mode');
+  const [mode, setMode] = useState(saved.mode || null); // 'classic' | 'pro'
+  const [fk, setFk] = useState(saved.fk || '4-3-3');
+  const [placements, setPlacements] = useState(saved.placements || {}); // slotId -> {p, team, slotRole}
+  const [usedTeams, setUsedTeams] = useState(saved.usedTeams || []);
+  const [currentId, setCurrentId] = useState(saved.currentId || null);
+  const [respins, setRespins] = useState(saved.respins == null ? 3 : saved.respins);
+  const [confirmReset, setConfirmReset] = useState(false);
+  useEffect(() => {
+    if (!confirmReset) return;
+    const t = setTimeout(() => setConfirmReset(false), 4000);
+    return () => clearTimeout(t);
+  }, [confirmReset]);
+  const [cupRun, setCupRun] = useState(saved.cupRun || null);
+  const [spinning, setSpinning] = useState(false);
+  const [selIdx, setSelIdx] = useState(null);
+  const [mobileTab, setMobileTab] = useState('players');
+
+  useEffect(() => {document.documentElement.setAttribute('data-theme', theme);}, [theme]);
+  useEffect(() => {
+    const root = document.documentElement.style;
+    if (accent) {root.setProperty('--accent', accent);root.setProperty('--accent-ink', lum(accent) > 0.6 ? '#08130c' : '#fff');} else
+    {root.removeProperty('--accent');root.removeProperty('--accent-ink');}
+  }, [accent, theme]);
+  useEffect(() => {
+    localStorage.setItem(LS_KEY, JSON.stringify({ phase, mode, fk, placements, usedTeams, currentId, respins, cupRun }));
+  }, [phase, fk, placements, usedTeams, currentId, respins, cupRun]);
+
+  const formation = FORMATIONS[fk];
+  const filledCount = Object.keys(placements).length;
+  const round = filledCount + 1;
+  const current = currentId ? teamById(currentId) : null;
+
+  const openSlots = useMemo(() => formation.slots.filter((s) => !placements[s.id]), [formation, placements]);
+  const teamHasEligible = (team) => !team || team.squad.some((p) => openSlots.some((s) => s.accepts.some((a) => p.p.includes(a))));
+  const [deadEnd, setDeadEnd] = useState(false);
+  useEffect(() => {
+    if (current && !spinning && openSlots.length > 0 && !teamHasEligible(current)) {
+      setDeadEnd(true);
+      const t = setTimeout(() => { setDeadEnd(false); doSpin(true, true); }, 2200);
+      return () => clearTimeout(t);
+    }
+    setDeadEnd(false);
+  }, [currentId, spinning]);
+
+  // which open slots does a player fit?
+  const slotsForPlayer = (p) => openSlots.filter((s) => strict ? s.accepts.some((a) => p.p.includes(a)) : true);
+  const playerFits = (p) => slotsForPlayer(p).length > 0;
+  // tags on the player that match some open slot (for green highlight)
+  const fitTagsFor = (p) => {
+    const set = new Set();
+    openSlots.forEach((s) => s.accepts.forEach((a) => {if (p.p.includes(a)) set.add(a);}));
+    return set;
+  };
+
+  const selPlayer = current && selIdx != null ? current.squad[selIdx] : null;
+  const eligibleSlots = useMemo(() => {
+    if (!selPlayer) return new Set();
+    return new Set(slotsForPlayer(selPlayer).map((s) => s.id));
+  }, [selPlayer, openSlots, strict]);
+
+  /* ---- actions ---- */
+  const [spinDisplay, setSpinDisplay] = useState(null); // {cc, name} shown during spin
+
+  function doSpin(isRespin, free) {
+    if (spinning) return;
+    if (isRespin && !free) {if (respins <= 0) return;setRespins((r) => r - 1);}
+    setSelIdx(null);
+    const prevId = currentId;
+    setCurrentId(null);
+    setSpinning(true);
+    let pool = TEAMS.filter((t) => !usedTeams.includes(t.id) && t.id !== prevId);
+    if (free) {
+      // Free re-spin after a dead-end team: guarantee the next team has an eligible player
+      const fitting = pool.filter((t) => teamHasEligible(t));
+      if (fitting.length) pool = fitting;
+    }
+    const pick = shuffle(pool)[0];
+
+    const allTeams = TEAMS.slice();
+    const interval = 175;
+    const duration = 3000;
+    let elapsed = 0;
+
+    // Show first flag immediately
+    const firstTeam = allTeams[Math.floor(Math.random() * allTeams.length)];
+    setSpinDisplay(firstTeam);
+
+    const tick = () => {
+      const randTeam = allTeams[Math.floor(Math.random() * allTeams.length)];
+      setSpinDisplay(randTeam);
+      elapsed += interval;
+      if (elapsed < duration) {
+        setTimeout(tick, interval);
+      } else {
+        setSpinDisplay(pick);
+        setTimeout(() => {setCurrentId(pick.id);setSpinning(false);setSpinDisplay(null);}, 400);
+      }
+    };
+    setTimeout(tick, interval);
+  }
+
+  function placeAt(slotId) {
+    if (!selPlayer || !current) return;
+    const slot = formation.slots.find((s) => s.id === slotId);
+    setPlacements((prev) => ({ ...prev, [slotId]: { p: selPlayer, team: current, slotRole: slot.role } }));
+    setUsedTeams((prev) => [...prev, current.id]);
+    setCurrentId(null);setSelIdx(null);
+    if (filledCount + 1 >= 11) setTimeout(() => setPhase('final'), 350);
+  }
+
+  function startDraft() {setPhase('draft');}
+  function pickMode(m) {setMode(m);setPhase('formation');}
+  function enterCup() {
+    let run = cupRun;
+    if (!run) {
+      const ratings = Object.values(placements).map((x) => x.p.r);
+      run = window.simulateCup(ratings, fk);
+      setCupRun(run);
+    }
+    setPhase('cup');
+  }
+  function resetGame() {
+    setPlacements({});setUsedTeams([]);setCurrentId(null);setSelIdx(null);
+    setRespins(3);setSpinning(false);setCupRun(null);setMode(null);setPhase('mode');
+  }
+
+  /* ================= RENDER ================= */
+  return (
+    <div className="app">
+      <header className="topbar">
+        <div className="brand"><span className="dot"></span>WIN&nbsp;ALL&nbsp;GAMES</div>
+        <div className="spacer"></div>
+        {phase !== 'formation' && !confirmReset &&
+        <button className="btn ghost" onClick={() => setConfirmReset(true)} title="Start over">Reset</button>
+        }
+        {phase !== 'formation' && confirmReset &&
+        <span style={{display:'flex', alignItems:'center', gap:8}}>
+          <span style={{fontSize:13, fontWeight:700, color:'var(--ink-dim)'}}>Reset game?</span>
+          <button className="btn" style={{background:'var(--accent)', color:'var(--accent-ink)'}} onClick={() => {setConfirmReset(false); resetGame();}}>Yes, reset</button>
+          <button className="btn ghost" onClick={() => setConfirmReset(false)}>Cancel</button>
+        </span>
+        }
+      </header>
+
+      {phase === 'mode' &&
+      <ModeScreen onPick={pickMode} />}
+      {phase === 'formation' &&
+      <FormationScreen fk={fk} setFk={setFk} onStart={startDraft} />
+      }
+
+      {phase === 'draft' &&
+      <div className="draft">
+          <div className="mobile-tabs">
+            <button className={'mobile-tab' + (mobileTab === 'players' ? ' active' : '')} onClick={() => setMobileTab('players')}>Players</button>
+            <button className={'mobile-tab' + (mobileTab === 'pitch' ? ' active' : '')} onClick={() => setMobileTab('pitch')}>My XI</button>
+          </div>
+          <section className={'pitch-pane' + (mobileTab === 'pitch' ? ' mobile-visible' : '')}>
+            <div className="draft-head">
+              <div className="round-chip">
+                <span className="lab">Round</span>
+                <span className="val">{Math.min(round, 11)}<small>/11</small></span>
+              </div>
+              <div className="formation-pill">{formation.name}</div>
+              <div className="respins">
+                Re-spins
+                <span className="pips">
+                  {[0, 1, 2].map((i) => <span key={i} className={'pip' + (i >= respins ? ' used' : '')}></span>)}
+                </span>
+              </div>
+            </div>
+            <Pitch fk={fk} placements={placements} eligible={eligibleSlots} onSlot={placeAt} showLines={pitchLines} />
+          </section>
+
+          <aside className={'side' + (mobileTab === 'players' ? ' mobile-visible' : '')}>
+            <div className="side-spin" style={{padding:'10px 16px 8px'}}>
+              {!current ?
+            <div className="spin-stage">
+                  <button className={'spin-btn' + (spinning ? ' spinning' : '')}
+              onClick={() => doSpin(false)} disabled={spinning}>
+                    {spinning && spinDisplay
+                      ? <span className="spin-btn-flag" style={{background: kitBg(spinDisplay), transition:'background .22s ease', animation:'none', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
+                          <span style={{position:'relative', fontSize:22, fontWeight:800, textShadow:'0 1px 3px rgba(0,0,0,.55)', color:'#fff'}}>{spinDisplay.cc}</span>
+                          <span style={{position:'relative', fontSize:9, fontWeight:700, letterSpacing:'.08em', textShadow:'0 1px 3px rgba(0,0,0,.55)', color:'#fff', opacity:.9}}>{spinDisplay.year}</span>
+                        </span>
+                      : <><span>SPIN</span><small>RANDOM TEAM</small></>
+                    }
+                  </button>
+                  {!spinning && <div className="spin-hint">Spin to draw a random legendary squad, then draft one player onto your XI.</div>}
+                </div> :
+
+            <div style={{display:'flex',alignItems:'center',gap:10,width:'100%'}}>
+                  <Crest t={current} big />
+                  <div className="tinfo" style={{flex:1}}>
+                    <div className="tname">{current.team}</div>
+                    <div className="tyear">{current.year} · {current.ctry}</div>
+                    {current.champ && <span className="champ-tag">★ European Champions</span>}
+                  </div>
+                  <button className="btn ghost" style={{fontSize:12,padding:'6px 10px',whiteSpace:'nowrap'}}
+              disabled={respins <= 0} onClick={() => doSpin(true)}>
+                    {respins > 0 ? `Re-spin (${respins})` : 'No re-spins'}
+                  </button>
+                </div>
+            }
+            </div>
+
+            {current &&
+          <>
+                {deadEnd &&
+                <div style={{background:'var(--accent)', color:'var(--accent-ink)', fontSize:12, fontWeight:800, padding:'8px 14px', textAlign:'center', letterSpacing:'.02em'}}>
+                  No one here fits your open positions — free re-spin! 🎁
+                </div>
+                }
+                <div className="pick-prompt" style={{fontSize:11,padding:'4px 14px'}}>
+                  Tap a player, then tap a slot below
+                </div>
+                <div className="player-list">
+                  {current.squad.map((p, i) => {
+                const fit = playerFits(p);
+                return (
+                  <PlayerRow key={i} p={p} fits={fitTagsFor(p)}
+                  selected={selIdx === i} disabled={!fit}
+                  hideStats={mode === 'pro'}
+                  teamC1={current ? (current.c1 || null) : null}
+                  teamC2={current ? (current.c2 || null) : null}
+                  onClick={() => setSelIdx(i)} />);
+
+              })}
+                </div>
+              </>
+          }
+            {!current &&
+          <div className="player-list">
+                <div style={{ color: 'var(--ink-dim)', fontSize: 13, padding: '20px 8px', textAlign: 'center', lineHeight: 1.5 }}>
+                  {filledCount === 0 ?
+              'Your pitch is empty. Hit SPIN to draw your first squad.' :
+              `${filledCount} of 11 positions filled. Spin again for the next pick.`}
+                </div>
+              </div>
+          }
+
+            {/* Mobile mini-slots bar */}
+            <MobileSlotsBar fk={fk} placements={placements} eligibleSlots={eligibleSlots} selPlayer={selPlayer} onPlace={placeAt} />
+
+          </aside>
+        </div>
+      }
+
+      {phase === 'final' &&
+      <FinalScreen fk={fk} placements={placements} mode={mode} onReset={resetGame} onEnter={enterCup} showLines={pitchLines} />
+      }
+
+      {phase === 'cup' && cupRun &&
+      <window.CupScreen fk={fk} result={cupRun} placements={placements} mode={mode}
+        onBack={() => setPhase('final')} onReset={resetGame} />
+      }
+
+      <TweaksPanel>
+        <TweakSection label="Look" />
+        <TweakColor label="Accent" value={accent}
+        options={['#E9B824', '#1ef08a', '#37d4ff', '#ff5d73', '#ffb020']}
+        onChange={setAccent} />
+        <TweakToggle label="Pitch markings" value={pitchLines}
+        onChange={setPitchLines} />
+        <TweakSection label="Rules" />
+        <TweakToggle label="Strict positions" value={strict}
+        onChange={setStrict} />
+        <TweakButton label="Start a new game" onClick={resetGame} />
+      </TweaksPanel>
+    </div>);
+
+}
+
+/* ---------- mode screen ---------- */
+function ModeScreen({ onPick }) {
+  return (
+    <div className="screen">
+      <div className="center-wrap">
+        <div className="eyebrow">Women’s European Draft</div>
+        <h1 className="h1">Choose your <em>mode</em></h1>
+        <div style={{ background:'var(--ink)', color:'var(--bg)', padding:'12px 22px', borderRadius:'var(--radius)', margin:'6px 0 14px', textAlign:'center', maxWidth:560 }}>
+          <div style={{ fontSize:15, fontWeight:800, letterSpacing:'.03em' }}>THE GOAL: WIN EVERY GAME. <span style={{color:'#F0BC42'}}>BECOME QUEENS OF EUROPE.</span></div>
+        </div>
+        <div style={{ display:'flex', gap:20, flexWrap:'wrap', justifyContent:'center', marginTop:8 }}>
+          <div className="fcard" style={{ width:260, cursor:'pointer' }} onClick={() => onPick('classic')}>
+            <div className="fname">Classic</div>
+            <div className="fsub">Full stats visible — OVR rating, goals, assists and appearances. Make informed picks.</div>
+            <div style={{ marginTop:14, fontSize:13, color:'var(--accent)', fontWeight:700, letterSpacing:'.04em' }}>RECOMMENDED</div>
+          </div>
+          <div className="fcard" style={{ width:260, cursor:'pointer' }} onClick={() => onPick('pro')}>
+            <div className="fname">Pro</div>
+            <div className="fsub">Stats hidden — you only see names and positions. Draft from memory and prove your football knowledge.</div>
+            <div style={{ marginTop:14, fontSize:13, color:'var(--ink-dim)', fontWeight:700, letterSpacing:'.04em' }}>HARDER</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- mobile slots bar ---------- */
+function MobileSlotsBar({ fk, placements, eligibleSlots, selPlayer, onPlace }) {
+  const formation = window.WC_FORMATIONS[fk];
+  if (!formation) return null;
+  const hasSelection = !!selPlayer;
+
+  return (
+    <div className="mobile-slots-bar">
+      {formation.slots.map(slot => {
+        const placed = placements[slot.id];
+        const isEligible = hasSelection && eligibleSlots.has(slot.id);
+        const initials = placed
+          ? placed.p.n.split(' ').map(w => w[0]).slice(-2).join('')
+          : null;
+        return (
+          <div
+            key={slot.id}
+            className={'mobile-slot' + (isEligible ? ' eligible' : '') + (placed ? ' filled' : '')}
+            onClick={() => isEligible && onPlace(slot.id)}
+          >
+            <span className="mobile-slot-label">
+              {placed ? initials : slot.role}
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/* ---------- formation screen ---------- */
+function FormationScreen({ fk, setFk, onStart }) {
+  return (
+    <div className="screen"><div className="center-wrap">
+      <div>
+        <div className="eyebrow">Build your all-time XI</div>
+        <h1 className="h1" style={{ marginTop: 14 }}>Choose your <em>formation</em></h1>
+        <p className="sub" style={{ margin: '14px auto 0' }}>
+          Eleven rounds, eleven legends — one player from a random legendary women’s European squad each spin.
+          Start by picking how your team lines up.
+        </p>
+      </div>
+      <div className="formation-grid">
+        {Object.keys(FORMATIONS).map((key) => {
+            const f = FORMATIONS[key];
+            return (
+              <div key={key} className={'fcard' + (fk === key ? ' sel' : '')} onClick={() => setFk(key)}>
+              <div className="check">✓</div>
+              <div className="fname">{f.name}</div>
+              <div className="fsub">{f.sub}</div>
+              <MiniPitch fk={key} />
+            </div>);
+
+          })}
+      </div>
+      <button className="btn" onClick={onStart}>Let’s get started →</button>
+    </div></div>);
+
+}
+
+/* ---------- final screen ---------- */
+function shareSquadFromFinal({ fk, placements, mode }) {
+  const POS_EMOJI = { GK:'🧤', RB:'🛡️', LB:'🛡️', CB:'🛡️', DM:'⚙️', CM:'⚙️', AM:'✨', RW:'⚡', LW:'⚡', ST:'⚽' };
+  const FORMATION_ROWS = {
+    '4-3-3': [['gk'],['lb','cbl','cbr','rb'],['cml','cmc','cmr'],['lw','st','rw']],
+    '4-2-3-1': [['gk'],['lb','cbl','cbr','rb'],['dml','dmr'],['lw','cam','rw'],['st']],
+    '4-4-2': [['gk'],['lb','cbl','cbr','rb'],['lm','cml','cmr','rm'],['stl','str']],
+  };
+  const rows = FORMATION_ROWS[fk] || FORMATION_ROWS['4-3-3'];
+  const modeTag = mode === 'pro' ? '🧠 Pro mode' : '📋 Classic mode';
+  let lines = [modeTag, `⚽ Women's European Draft — ${fk}`, ''];
+  for (const row of rows) {
+    const parts = row.map(slotId => {
+      const pl = placements[slotId];
+      if (!pl) return '—';
+      return `${POS_EMOJI[pl.slotRole] || '⚽'} ${pl.p.n} (${pl.p.r})`;
+    });
+    lines.push(parts.join('  ·  '));
+  }
+  const text = lines.join('\n');
+  const url = location.href.split('#')[0];
+  if (navigator.share) {
+    navigator.share({ title: 'Women\u2019s European Draft — My XI', text, url }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(text + '\n' + url).then(() => {}, () => {});
+  }
+}
+
+function FinalScreen({ fk, placements, mode, onReset, onEnter, showLines }) {
+  const players = Object.values(placements).map((x) => x.p);
+  const avg = Math.round(players.reduce((s, p) => s + p.r, 0) / players.length);
+  const star = players.slice().sort((a, b) => b.r - a.r)[0];
+  return (
+    <div className="final">
+      <div style={{ textAlign: 'center' }}>
+        <div className="eyebrow">Squad complete · 11 / 11</div>
+        <h1 className="h1" style={{ marginTop: 10, fontSize: 'clamp(26px,4.5vw,42px)' }}>Your all-time women’s European XI</h1>
+        <div className="cup-strength">Avg {avg} OVR · star: {star.n} ({star.r})</div>
+      </div>
+      <Pitch fk={fk} placements={placements} eligible={new Set()} onSlot={() => {}} showLines={showLines} />
+      <div className="final-actions">
+        <button className="btn" onClick={onEnter}>Start the campaign →</button>
+        <button className="btn ghost" onClick={() => shareSquadFromFinal({ fk, placements, mode })}>Share my XI</button>
+        <button className="btn ghost" onClick={onReset}>Build another XI</button>
+      </div>
+    </div>);
+
+}
+
+window.FinalScreen = FinalScreen;
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);</script>
+</body>
+</html>
