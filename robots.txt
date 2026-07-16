@@ -7,4 +7,4 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
-Sitemap: https://win18games.com/sitemap.xml
+Sitemap: https://queeneuro.com/sitemap.xml

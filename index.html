@@ -4,32 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <!-- Primary SEO -->
-  <title>Win18Games — Draft Your All-Time Women’s European XI</title>
+  <title>QueenEuro — Draft Your All-Time Women’s European XI</title>
   <meta name="description" content="Draft your ultimate women’s European XI from 25 years of Champions League history. Pick players from legendary squads — Marta, Prinz, Hegerberg, Putellas, Bonmatí, Margrét Lára and more — then conquer Europe. Free to play.">
   <meta name="keywords" content="women’s champions league draft, women’s football draft game, all-time XI, uefa women’s cup history, pick your team, Marta, Hegerberg, Putellas, Bonmatí, Prinz, women’s football history game">
-  <meta name="author" content="win18games.com">
+  <meta name="author" content="queeneuro.com">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://win18games.com/">
+  <link rel="canonical" href="https://queeneuro.com/">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://win18games.com/">
+  <meta property="og:url" content="https://queeneuro.com/">
   <meta property="og:title" content="Win every game. Become Queens of Europe.">
   <meta property="og:description" content="Draft an all-time women’s XI from 67 legendary European squads — Marta, Hegerberg, Putellas, Margrét Lára — then survive the league phase and the knockouts. Only ~5% lift the trophy. Free, no signup.">
-  <meta property="og:image" content="https://win18games.com/og-image.png">
+  <meta property="og:image" content="https://queeneuro.com/og-image.png">
   <meta property="og:image:width" content="2400">
   <meta property="og:image:height" content="1260">
-  <meta property="og:site_name" content="win18games.com">
+  <meta property="og:site_name" content="queeneuro.com">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://win18games.com/">
+  <meta name="twitter:url" content="https://queeneuro.com/">
   <meta name="twitter:title" content="Win every game. Become Queens of Europe.">
   <meta name="twitter:description" content="Draft an all-time women’s XI from 67 legendary European squads and go all the way. Only ~5% lift the trophy.">
-  <meta name="twitter:image" content="https://win18games.com/og-image.png">
+  <meta name="twitter:image" content="https://queeneuro.com/og-image.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"Win18Games","url":"https://win18games.com/","description":"Draft your ultimate women’s European football XI from Champions League history.","applicationCategory":"GameApplication","genre":"Sports","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+  {"@context":"https://schema.org","@type":"WebApplication","name":"QueenEuro","url":"https://queeneuro.com/","description":"Draft your ultimate women’s European football XI from Champions League history.","applicationCategory":"GameApplication","genre":"Sports","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
   </script>
   <!-- Vercel Analytics -->
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
@@ -433,7 +433,7 @@ body{font-family:var(--font-ui);background:var(--bg);color:var(--ink);
 <div id="root"></div>
 <noscript>
   <main style="font-family:sans-serif;max-width:800px;margin:40px auto;padding:0 20px">
-    <h1>Win18Games — Draft Your All-Time Women’s European XI</h1>
+    <h1>QueenEuro — Draft Your All-Time Women’s European XI</h1>
     <p>Draft your ultimate women’s European squad from the greatest players in history. Pick from 67 legendary club squads spanning the UEFA Women’s Cup and Women’s Champions League, 2001–2026 — Marta, Birgit Prinz, Ada Hegerberg, Alexia Putellas, Aitana Bonmatí, Margrét Lára Viðarsdóttir and hundreds more, including every great Icelandic side from Breiðablik, Valur, KR, Stjarnan and Þór/KA.</p>
     <h2>How to play</h2>
     <p>You get 11 rounds. In each round you are shown a legendary European club squad and must pick one player. Fill your formation — goalkeeper, defenders, midfielders, forwards — then play a full European campaign in the modern Women’s Champions League format: a six-game league phase among 18 teams, a play-off round, and two-legged knockouts all the way to the final.</p>
@@ -2231,7 +2231,7 @@ Object.assign(window, {
     ctx.fillStyle = '#857a64';
     ctx.font = 'bold 26px Arial, sans-serif';
     ctx.textAlign = 'left';
-    ctx.fillText('WIN18GAMES.COM', 48, 48);
+    ctx.fillText('QUEENEURO.COM', 48, 48);
     ctx.textAlign = 'right';
     ctx.font = '24px Arial, sans-serif';
     ctx.fillText(new Date().getFullYear(), W - 48, 48);
@@ -2303,7 +2303,7 @@ Object.assign(window, {
     ctx.fillText('CAN YOU CONQUER EUROPE?', W/2, footerY + 52);
     ctx.fillStyle = '#F0BC42';
     ctx.font = 'bold 30px Arial, sans-serif';
-    ctx.fillText('win18games.com', W/2, footerY + 96);
+    ctx.fillText('queeneuro.com', W/2, footerY + 96);
   }
 
   function generateShareImage({ fk, placements, result, onToast }) {
@@ -2317,8 +2317,8 @@ Object.assign(window, {
     canvas.toBlob(blob => {
       const file = new File([blob], 'my-womens-european-xi.png', {type: 'image/png'});
       const shareText = result && v
-        ? `${v.grade} grade \u2014 ${result.placeLabel}. Can you conquer Europe?\nhttps://win18games.com`
-        : `My all-time women's European XI \u2014 can you conquer Europe?\nhttps://win18games.com`;
+        ? `${v.grade} grade \u2014 ${result.placeLabel}. Can you conquer Europe?\nhttps://queeneuro.com`
+        : `My all-time women's European XI \u2014 can you conquer Europe?\nhttps://queeneuro.com`;
       const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
       if (isMobile && navigator.share && navigator.canShare && navigator.canShare({files: [file]})) {
         navigator.share({files: [file], title: 'Women\u2019s European Draft', text: shareText}).catch(() => {
@@ -2338,7 +2338,7 @@ Object.assign(window, {
         copyBtn.textContent = '🔗 Copy link';
         copyBtn.style.cssText = 'padding:12px 24px;border-radius:999px;border:none;background:#fff;color:#111;font-weight:700;font-size:15px;cursor:pointer;';
         copyBtn.onclick = () => {
-          navigator.clipboard.writeText('https://win18games.com').then(() => {
+          navigator.clipboard.writeText('https://queeneuro.com').then(() => {
             copyBtn.textContent = 'Copied ✓';
             setTimeout(() => { copyBtn.textContent = '🔗 Copy link'; }, 2000);
           });
